@@ -8,17 +8,15 @@
 <title>Hello world plugin example - Working examples - Web Experience Toolkit
 </title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
-<!-- Meta data -->
 <meta name="description" content="A quick tutorial on how you can create your own WET plugin.">
-<!-- Meta data-->
 <!--[if gte IE 9 | !IE ]><!-->
-<link href="../../theme-base/assets/favicon.ico" rel="icon" type="image/x-icon">
-<link rel="stylesheet" href="../../theme-base/css/theme.min.css">
+<link href="../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../theme-wet-boew/css/theme.min.css">
 <!--<![endif]-->
 <!--[if lt IE 9]>
-		<link href="../../theme-base/assets/favicon.ico" rel="shortcut icon" />
-		<link rel="stylesheet" href="../../theme-base/css/ie8-theme.min.css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link href="../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="../../wet-boew/js/ie8-wet-boew.min.js"></script>
 		<![endif]-->
 <noscript><link rel="stylesheet" href="../../wet-boew/css/noscript.min.css" /></noscript>
@@ -57,7 +55,8 @@
 <div class="container">
 <div class="row">
 <div id="wb-sttl" class="col-md-8">
-<a href="http://wet-boew.github.io/v4.0-ci/index-en.html">
+<a href="../../index-en.html">
+<img src="../../theme-wet-boew/assets/logo.svg" alt="">
 <span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
 </a>
 </div>
@@ -93,10 +92,10 @@
 <div class="row">
 <ol class="breadcrumb">
 <li>
-<a href="http://wet-boew.github.io/v4.0-ci/index-en.html">Home</a>
+<a href="../../index-en.html">Home</a>
 </li>
 <li>
-<a href="http://wet-boew.github.io/v4.0-ci/demos/index-en.html">Working examples</a>
+<a href="../../demos/index-en.html">Working examples</a>
 </li>
 <li>Hello world plugin example</li>
 </ol>
@@ -106,6 +105,10 @@
 </header>
 <main role="main" property="mainContentOfPage" class="container">
 <h1 id="wb-cont" property="name">Hello world plugin example</h1>
+<ul class="list-inline">
+<li><a class="btn btn-primary" href="../../docs/ref/helloworld/helloworld-en.html">Documentation</a></li>
+<li><a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Hello%20world%20plugin%20example:%20">Questions or comments?</a></li>
+</ul>
 <p>A quick tutorial on how you can create your own WET plugin.</p>
 <div class="wb-prettify all-pre linenums"></div>
 <h2>Step 1 - Use a barebone plugin container</h2>
@@ -378,8 +381,8 @@ wb.add( selector );
 <section class="col-sm-3">
 <h3>About</h3>
 <ul class="list-unstyled">
-<li><a href="http://wet-boew.github.io/v4.0-ci/index-en.html#about">About the Web Experience Toolkit</a></li>
-<li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+<li><a href="../../index-en.html#about">About the Web Experience Toolkit</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
 </ul>
 </section>
 <section class="col-sm-3">
@@ -392,14 +395,14 @@ wb.add( selector );
 <section class="col-sm-3">
 <h3>Stay connected</h3>
 <ul class="list-unstyled">
-<li><a href="https://twitter.com/WebExpToolkit">Twitter</a></li>
+<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
 </ul>
 </section>
 </nav>
 </div>
 </footer>
 <!--[if gte IE 9 | !IE ]><!-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="../../wet-boew/js/wet-boew.min.js"></script>
 <!--<![endif]-->
 <script src="demo/helloworld.min.js"></script>

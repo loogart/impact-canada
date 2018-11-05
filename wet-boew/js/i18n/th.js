@@ -156,6 +156,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "ตาราง",
 	"tbl-dtls": "แผนภูมิ รายละเอียดในตารางต่อไปนี้.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "เซสชั่นของคุณจะหมดอายุโดยอัตโนมัติใน #min# นาที #sec# วินาที.ที่จะขยายเซสชั่นของคุณ",
@@ -238,6 +239,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: TH (Thai; ไทย)
@@ -261,6 +272,7 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "โปรดระบุค่าน้อยกว่าหรือเท่ากับ {0}" ),
 	min: $.validator.format( "โปรดระบุค่ามากกว่าหรือเท่ากับ {0}" )
 } );
-
+return $;
+}));
 
 });

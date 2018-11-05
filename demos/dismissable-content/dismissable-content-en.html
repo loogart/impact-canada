@@ -8,17 +8,15 @@
 <title>Dismissable content - Working examples - Web Experience Toolkit
 </title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
-<!-- Meta data -->
 <meta name="description" content="Make content dismissable by users.">
-<!-- Meta data-->
 <!--[if gte IE 9 | !IE ]><!-->
-<link href="../../theme-base/assets/favicon.ico" rel="icon" type="image/x-icon">
-<link rel="stylesheet" href="../../theme-base/css/theme.min.css">
+<link href="../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../theme-wet-boew/css/theme.min.css">
 <!--<![endif]-->
 <!--[if lt IE 9]>
-		<link href="../../theme-base/assets/favicon.ico" rel="shortcut icon" />
-		<link rel="stylesheet" href="../../theme-base/css/ie8-theme.min.css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link href="../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="../../wet-boew/js/ie8-wet-boew.min.js"></script>
 		<![endif]-->
 <noscript><link rel="stylesheet" href="../../wet-boew/css/noscript.min.css" /></noscript>
@@ -57,7 +55,8 @@
 <div class="container">
 <div class="row">
 <div id="wb-sttl" class="col-md-8">
-<a href="http://wet-boew.github.io/v4.0-ci/index-en.html">
+<a href="../../index-en.html">
+<img src="../../theme-wet-boew/assets/logo.svg" alt="">
 <span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
 </a>
 </div>
@@ -93,10 +92,10 @@
 <div class="row">
 <ol class="breadcrumb">
 <li>
-<a href="http://wet-boew.github.io/v4.0-ci/index-en.html">Home</a>
+<a href="../../index-en.html">Home</a>
 </li>
 <li>
-<a href="http://wet-boew.github.io/v4.0-ci/demos/index-en.html">Working examples</a>
+<a href="../../demos/index-en.html">Working examples</a>
 </li>
 <li>Dismissable content</li>
 </ol>
@@ -106,6 +105,10 @@
 </header>
 <main role="main" property="mainContentOfPage" class="container">
 <h1 id="wb-cont" property="name">Dismissable content</h1>
+<ul class="list-inline">
+<li><a class="btn btn-primary" href="../../docs/ref/dismissable-content/dismissable-content-en.html">Documentation</a></li>
+<li><a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Dismissable%20content:%20">Questions or comments?</a></li>
+</ul>
 <p id="dismiss1" class="wb-dismissable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et venenatis dui. Aliquam ac felis diam. Pellentesque eget risus quam. Duis ante ipsum, tincidunt eget pretium et, fermentum interdum nunc. Curabitur vulputate suscipit nulla, rhoncus finibus erat porta sit amet. Nullam condimentum pellentesque lacus a euismod. Ut malesuada finibus diam. Mauris a lorem in leo auctor dictum.</p>
 <p>Ut aliquam purus a neque tristique, sed gravida ligula varius. Fusce non scelerisque risus, vitae pretium orci. Donec cursus mollis velit non pretium. In feugiat massa ut enim consectetur porta. Mauris gravida erat vel bibendum finibus. Pellentesque ullamcorper eget elit id lobortis. Proin cursus consequat tellus vitae eleifend. Aliquam erat volutpat. Donec consectetur egestas metus ac cursus. Praesent sodales tempus nisi. Suspendisse finibus eget ligula a interdum. Cras lobortis odio nec interdum vulputate. In in tristique justo, id elementum dolor. Proin euismod ex a eros finibus lobortis. Suspendisse vitae vestibulum eros, in mollis neque. Nunc eu leo vitae augue imperdiet volutpat sed a ligula.</p>
 <p id="dismiss2" class="wb-dismissable">Vivamus vulputate lectus sit amet mauris venenatis, sed tempus lorem gravida. Praesent eu neque et ipsum luctus congue non in nulla. Morbi blandit libero sed urna congue dignissim. Praesent ut leo eu quam fringilla pellentesque. Morbi congue quam lacus, ut auctor est viverra pellentesque. Nullam augue risus, pharetra a justo id, vulputate efficitur arcu. Ut ut ligula ante. Aenean luctus tellus et eros lacinia aliquet. Fusce dictum, orci a bibendum ullamcorper, urna justo consectetur justo, sit amet maximus magna nisi mattis leo. Praesent luctus lacus nulla, id imperdiet arcu facilisis a.</p>
@@ -136,8 +139,8 @@
 <section class="col-sm-3">
 <h3>About</h3>
 <ul class="list-unstyled">
-<li><a href="http://wet-boew.github.io/v4.0-ci/index-en.html#about">About the Web Experience Toolkit</a></li>
-<li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+<li><a href="../../index-en.html#about">About the Web Experience Toolkit</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
 </ul>
 </section>
 <section class="col-sm-3">
@@ -150,14 +153,14 @@
 <section class="col-sm-3">
 <h3>Stay connected</h3>
 <ul class="list-unstyled">
-<li><a href="https://twitter.com/WebExpToolkit">Twitter</a></li>
+<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
 </ul>
 </section>
 </nav>
 </div>
 </footer>
 <!--[if gte IE 9 | !IE ]><!-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="../../wet-boew/js/wet-boew.min.js"></script>
 <!--<![endif]-->
 <!--[if lt IE 9]>

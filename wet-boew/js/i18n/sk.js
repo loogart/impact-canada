@@ -156,6 +156,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Tabuľka",
 	"tbl-dtls": "Graf. Podrobnosti v nasledujúcej tabuľke.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Vaša relácia vyprší automaticky #min# min #sec# sec.",
@@ -238,6 +239,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: SK (Slovak; slovenčina, slovenský jazyk)
@@ -258,6 +269,7 @@ $.extend( $.validator.messages, {
 	min: $.validator.format( "Nemôže byť menej ako {0}." ),
 	creditcard: "Číslo platobnej karty musí byť platné."
 } );
-
+return $;
+}));
 
 });

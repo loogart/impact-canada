@@ -156,6 +156,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "表",
 	"tbl-dtls": "チャート図。詳細については次の表を参照。",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "セッションは、 #min# 分 #sec# 秒で自動的に期限切れになります。",
@@ -238,6 +239,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: JA (Japanese; 日本語)
@@ -258,9 +269,11 @@ $.extend( $.validator.messages, {
 	minlength: $.validator.format( "{0} 文字以上で入力してください。" ),
 	rangelength: $.validator.format( "{0} 文字から {1} 文字までの値を入力してください。" ),
 	range: $.validator.format( "{0} から {1} までの値を入力してください。" ),
+	step: $.validator.format( "{0} の倍数を入力してください。" ),
 	max: $.validator.format( "{0} 以下の値を入力してください。" ),
 	min: $.validator.format( "{0} 以上の値を入力してください。" )
 } );
-
+return $;
+}));
 
 });

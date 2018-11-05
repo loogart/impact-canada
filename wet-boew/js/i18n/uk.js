@@ -156,6 +156,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Таблиця",
 	"tbl-dtls": "Графік. Див. деталі в таблиці.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Ваш сеанс закінчиться автоматично в #min# хв #sec# сек .",
@@ -238,6 +239,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: UK (Ukrainian; українська мова)
@@ -261,6 +272,7 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Будь ласка, введіть число, менше або рівно {0}." ),
 	min: $.validator.format( "Будь ласка, введіть число, більше або рівно {0}." )
 } );
-
+return $;
+}));
 
 });

@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.28-development - 2018-02-22
+ * v4.0.29 - 2018-09-20
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /* Modernizr (Custom Build) | MIT & BSD
@@ -2990,6 +2990,29 @@ var componentName = "wb-charts",
 						grid: {
 							hoverable: true
 						}
+					},
+					slicelegend: {
+						base: "pie",
+						series: {
+							pie: {
+								radius: 1,
+								label: {
+									radius: 1,
+									show: true,
+									threshold: 0.05
+								},
+								combine: {
+									threshold: 0.05,
+									color: "#555",
+									label: i18nText.slicelegend
+								}
+							}
+						},
+						fn: {
+							"/series/pie/label/formatter": function( label ) {
+								return label;
+							}
+						}
 					}
 				},
 
@@ -3054,7 +3077,7 @@ var componentName = "wb-charts",
 							"/getcellvalue": function( elem ) {
 
 								// Get the number from the data cell, #3267
-								var cellValue = $.trim( $( elem ).text() );
+								var cellValue = $.trim( elem.dataset.wbChartsValue || $( elem ).text() );
 								return [
 									parseFloat( cellValue.replace( /(\d{1,3}(?:(?: |,)\d{3})*)(?:(?:.|,)(\d{1,2}))?$/, function( a, b, c ) {
 										return b.replace( / |,/g, "" ) + "." + c || "0";
@@ -3970,7 +3993,8 @@ var componentName = "wb-charts",
 				i18n = wb.i18n;
 				i18nText = {
 					tableMention: i18n( "hyphen" ) + i18n( "tbl-txt" ),
-					tableFollowing: i18n( "hyphen" ) + i18n( "tbl-dtls" )
+					tableFollowing: i18n( "hyphen" ) + i18n( "tbl-dtls" ),
+					slicelegend: i18n( "chrt-cmbslc" )
 				};
 			}
 
@@ -4047,7 +4071,7 @@ var componentName = "wb-collapsible",
 	selector = "details.alert",
 	initEvent = "wb-init." + componentName,
 	$document = wb.doc,
-	details, key,
+	key,
 
 	/**
 	 * @method init
@@ -4058,9 +4082,11 @@ var componentName = "wb-collapsible",
 		// Start initialization
 		// returns DOM object = proceed with init
 		// returns undefined = do not proceed with init (e.g., already initialized)
-		details = wb.init( event, componentName, selector );
+		var details = wb.init( event, componentName, selector ),
+			$details;
 
 		if ( details ) {
+			$details = $( details );
 
 			key = "alert-collapsible-state-" + details.getAttribute( "id" );
 
@@ -4089,7 +4115,7 @@ var componentName = "wb-collapsible",
 			} catch ( e ) {}
 
 			// Identify that initialization has completed
-			wb.ready( $document, componentName );
+			wb.ready( $details, componentName );
 		}
 	};
 
@@ -4103,7 +4129,8 @@ if ( Modernizr.details ) {
 	$document.on( "click keydown toggle." + componentName, selector + " summary", function( event ) {
 		var which = event.which,
 			currentTarget = event.currentTarget,
-			isClosed;
+			isClosed,
+			details;
 
 		// Ignore middle/right mouse buttons and wb-toggle enhanced summary elements (except for toggle)
 		if ( ( !which || which === 1 ) &&
@@ -4208,7 +4235,7 @@ var componentName = "wb-ctrycnt",
 
 			// From https://github.com/aFarkas/webshim/blob/master/src/shims/geolocation.js#L89-L127
 			$.ajax( {
-				url: "http://freegeoip.net/json/",
+				url: "https://freegeoip.net/json/",
 				dataType: "jsonp",
 				cache: true,
 				jsonp: "callback",
@@ -5393,9 +5420,9 @@ var componentName = "wb-feeds",
 
 			// due to CORS we cannot default to simple ajax pulls of the image. We have to inline the content box
 			return "<li><a class='feed-flickr' href='javascript:;' data-flickr='" +
-                wb.escapeAttribute( JSON.stringify( flickrData ) ) + "'><img src='" + flickrData.thumbnail + "' alt='" +
-                wb.escapeAttribute( flickrData.title ) + "' title='" + wb.escapeAttribute( flickrData.title ) +
-                "' class='img-responsive'/></a></li>";
+				wb.escapeAttribute( JSON.stringify( flickrData ) ) + "'><img src='" + flickrData.thumbnail + "' alt='" +
+				wb.escapeAttribute( flickrData.title ) + "' title='" + wb.escapeAttribute( flickrData.title ) +
+				"' class='img-responsive'/></a></li>";
 		},
 
 		/**
@@ -5411,10 +5438,10 @@ var componentName = "wb-feeds",
 
 			// Due to CORS we cannot default to simple ajax pulls of the image. We have to inline the content box
 			return "<li class='col-md-4 col-sm-6 feed-youtube' data-youtube='" +
-                wb.escapeAttribute( JSON.stringify( youtubeDate ) ) + "'><a href='javascript:;'><img src='" +
-                wb.pageUrlParts.protocol + "//img.youtube.com/vi/" + youtubeDate.videoId + "/mqdefault.jpg' alt='" +
-                wb.escapeAttribute( youtubeDate.title ) + "' title='" + wb.escapeAttribute( youtubeDate.title ) +
-                "' class='img-responsive' /></a></li>";
+				wb.escapeAttribute( JSON.stringify( youtubeDate ) ) + "'><a href='javascript:;'><img src='" +
+				wb.pageUrlParts.protocol + "//img.youtube.com/vi/" + youtubeDate.videoId + "/mqdefault.jpg' alt='" +
+				wb.escapeAttribute( youtubeDate.title ) + "' title='" + wb.escapeAttribute( youtubeDate.title ) +
+				"' class='img-responsive' /></a></li>";
 		},
 
 		/**
@@ -5424,7 +5451,7 @@ var componentName = "wb-feeds",
 		 */
 		pinterest: function( data ) {
 			var content = fromCharCode( data.description ).replace( /<a href="\/pin[^"]*"><img ([^>]*)><\/a>([^<]*)(<a .*)?/, "<a href='" +
-                data.link + "'><img alt='' class='center-block' $1><br/>$2</a>$3" );
+				data.link + "'><img alt='' class='center-block' $1><br/>$2</a>$3" );
 			return "<li class='media'>" + content +
 			( data.publishedDate !== "" ? " <small class='small feeds-date'><time>" +
 			wb.date.toDateISO( data.publishedDate, true ) + "</time></small>" : "" ) + "</li>";
@@ -5438,8 +5465,12 @@ var componentName = "wb-feeds",
 		generic: function( data ) {
 			var title = data.title;
 
-			if ( typeof( title ) === "object" && title.content ) {
-				title = title.content;
+			if ( typeof( title ) === "object" ) {
+				if ( title.content ) {
+					title = title.content;
+				} else if ( title.type === "xhtml" && title.div ) {
+					title = title.div.content;
+				}
 			}
 			return "<li><a href='" + data.link + "'>" + title + "</a><br />" +
 				( data.publishedDate !== "" ? " <small class='feeds-date'><time>" +
@@ -5937,25 +5968,89 @@ var componentName = "wb-filter",
 			replace( /_NBITEM_/g, nbItem ).
 			replace( /_TOTAL_/g, total );
 	},
+
+	/*
+	 * Takes in the text from the filter box
+	 * Returns:
+	 *  An array of search words
+	 *      Special characters are escaped
+	 *      Double and single quotes removed
+	 */
+	filterQueryParser = function( filter ) {
+
+		// Pattern to seperate the filter text into "words"
+		var pattern = /[^\s"]+|"([^"]*)"/gi;
+
+		// Make strings safe again for regex
+		// Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+		filter = filter.replace( /[.*+?^${}()|[\]\\]/g, "\\$&" );
+
+		// Apply the word match pattern and return
+		return filter.match( pattern );
+	},
+
+	/**
+	 * Build the Regular Expression that we are going
+	 * to use to filter content
+	 * This involves identifying the type of search being
+	 * applied and then breaking up the search string into
+	 * words
+	 */
+	buildSearchFilterRegularExp =  function( filterType, filter ) {
+
+		var words, wordRegExFilter = filter,
+			i, i_len;
+
+		switch ( filterType ) {
+
+		case "and":
+			words = filterQueryParser( filter );
+			if ( words ) {
+				wordRegExFilter = ".*";
+				i_len = words.length;
+				for ( i = 0; i < i_len; i++ ) {
+					wordRegExFilter = wordRegExFilter + ( "(?=.*" + words[ i ] + ")" );
+				}
+			}
+			break;
+
+		case "or": // If one word fall back on default
+			words = filterQueryParser( filter );
+			if ( words ) {
+				wordRegExFilter =  words.join( "|" );
+			}
+			break;
+
+		default:
+			break;
+
+		}
+
+		return new RegExp( wordRegExFilter, "i" );
+
+	},
+
 	filter = function( $field, $elm, settings ) {
 		var unAccent = function( str ) {
 				return str.normalize( "NFD" ).replace( /[\u0300-\u036f]/g, "" );
 			},
-			filter = unAccent( $field.val() ),
+			filter = unAccent( $field.val().trim() ),
 			fCallBack = settings.filterCallback,
 			secSelector = ( settings.section || "" )  + " ",
 			hndParentSelector = settings.hdnparentuntil,
 			$items = $elm.find( secSelector + settings.selector ),
 			itemsLength = $items.length,
-			i, $item, text;
+			i, $item, text, searchFilterRegularExp;
 
 		$elm.find( "." + filterClass ).removeClass( filterClass );
+
+		searchFilterRegularExp = buildSearchFilterRegularExp( settings.filterType, filter );
 
 		for ( i = 0; i < itemsLength; i += 1 ) {
 			$item = $items.eq( i );
 			text = unAccent( $item.text() );
 
-			if ( !text.match( new RegExp( filter, "i" ) ) ) {
+			if ( !text.match( searchFilterRegularExp ) ) {
 				if ( hndParentSelector ) {
 					$item = $item.parentsUntil( hndParentSelector );
 				}
@@ -6180,6 +6275,9 @@ var componentName = "wb-frmvld",
 					"site!deps/jquery.validate" + modeJS,
 					"site!deps/additional-methods" + modeJS
 				],
+				testReady: function() {
+					return ( $.validator && $.validator.methods.bic );
+				},
 				complete: function() {
 					var $elm = $( "#" + elmId ),
 						$form = $elm.find( "form" ),
@@ -6680,8 +6778,8 @@ var componentName = "wb-lbx",
 					}
 
 					$wrap.append( "<span tabindex='0' class='lbx-end wb-inv'></span>" )
-                        .find( ".activate-open" )
-                        .trigger( "wb-activate" );
+						.find( ".activate-open" )
+						.trigger( "wb-activate" );
 
 					this.contentContainer.attr( "data-pgtitle", document.getElementsByTagName( "H1" )[ 0 ].textContent );
 				},
@@ -7206,15 +7304,19 @@ var componentName = "wb-menu",
 								.innerHTML +
 						"</div></header><div class='modal-body'>" + panel + "</div>";
 				panelDOM.className += " wb-overlay modal-content overlay-def wb-panel-r";
-				$panel
+
+				// fix #8241
+				$( document ).ajaxStop( function() {
+					$panel
 					.trigger( "wb-init.wb-overlay" )
 					.find( "summary" )
 						.attr( "tabindex", "-1" )
 						.trigger( detailsInitEvent );
-				$panel
+					$panel
 					.find( ".mb-menu > li:first-child" )
-						.find( ".mb-item" )
-							.attr( "tabindex", "0" );
+					.find( ".mb-item" )
+						.attr( "tabindex", "0" );
+				} );
 
 				/*
 				 * Build the regular mega menu
@@ -7314,7 +7416,16 @@ var componentName = "wb-menu",
 				.attr( {
 					"aria-hidden": "true",
 					"aria-expanded": "false"
-				} );
+				} )
+
+				// Close nested submenus
+				.find( "details" )
+					.removeAttr( "open" )
+					.children( "ul" )
+						.attr( {
+							"aria-hidden": "true",
+							"aria-expanded": "false"
+						} );
 
 		if ( removeActive ) {
 			$elm.removeClass( "active" );
@@ -7331,12 +7442,14 @@ var componentName = "wb-menu",
 
 		menuClose( $elm.find( ".active" ), true );
 
+		menu.addClass( "active" );
+
 		// Ignore if doesn't have a submenu
 		if ( menuLink.attr( "aria-haspopup" ) === "true" ) {
 
 			// Add the open state classes
 			menu
-				.addClass( "active sm-open" )
+				.addClass( "sm-open" )
 				.children( ".sm" )
 					.addClass( "open" )
 					.attr( {
@@ -7523,26 +7636,44 @@ $document.on( "keydown", selector + " [role=menuitem]", function( event ) {
 		$menuLink, $parentMenu, $parent, $subMenu, result,
 		menuitemSelector, isOpen, menuItemOffsetTop, menuContainer;
 
+	// Define keycodes. (Make const when WET supports ES6)
+	var TAB_KC = 9,
+		ENTER_KC = 13,
+		ESC_KC = 27,
+		LEFT_KC = 37,
+		UP_KC = 38,
+		RIGHT_KC = 39,
+		DOWN_KC = 40,
+		SPACE_KC = 32;
+
 	if ( !( event.ctrlKey || event.altKey || event.metaKey ) ) {
 
 		// Tab key = Hide all sub-menus
-		if ( which === 9 ) {
+		if ( which === TAB_KC ) {
+			menuClose( $( selector + " .active" ), true );
+
+		//Enter or spacebar on a link = follow the link and close menus
+		} else if ( menuItem.nodeName === "A" && menuItem.hasAttribute( "href" ) &&
+			( which === ENTER_KC || which === SPACE_KC ) ) {
+
+			event.preventDefault();
+			menuItem.click();
 			menuClose( $( selector + " .active" ), true );
 
 		// Menu item is within a menu bar
 		} else if ( inMenuBar ) {
 
 			// Left / right arrow = Previous / next menu item
-			if ( which === 37 || which === 39 ) {
+			if ( which === LEFT_KC || which === RIGHT_KC ) {
 				event.preventDefault();
 				menuIncrement(
 					$menu.find( "> li > a" ),
 					$menuItem,
-					which === 37 ? -1 : 1
+					which === LEFT_KC ? -1 : 1
 				);
 
 			// Enter sub-menu
-			} else if ( hasPopup && ( which === 13 || which === 38 || which === 40 ) ) {
+			} else if ( hasPopup && ( which === ENTER_KC || which === SPACE_KC || which === UP_KC || which === DOWN_KC ) ) {
 				event.preventDefault();
 				$parent = $menuItem.parent();
 				$subMenu = $parent.find( ".sm" );
@@ -7556,7 +7687,7 @@ $document.on( "keydown", selector + " [role=menuitem]", function( event ) {
 				$subMenu.children( "li" ).eq( 0 ).find( menuItemSelector ).trigger( focusEvent );
 
 			// Hide sub-menus and set focus
-			} else if ( which === 27 ) {
+			} else if ( which === ESC_KC ) {
 				event.preventDefault();
 				menuClose( $menu.closest( selector ).find( ".active" ), false );
 
@@ -7565,7 +7696,7 @@ $document.on( "keydown", selector + " [role=menuitem]", function( event ) {
 				event.preventDefault();
 				selectByLetter(
 					which,
-					$menuItem.parent().find( "> ul > li > a" ).get()
+					$menuItem.parent().find( "> ul > li > a, > ul > li > details > summary" ).get()
 				);
 			}
 
@@ -7574,21 +7705,21 @@ $document.on( "keydown", selector + " [role=menuitem]", function( event ) {
 			menuitemSelector = menuItemSelector;
 
 			// Up / down arrow = Previous / next menu item
-			if ( which === 38 || which === 40 ) {
+			if ( which === UP_KC || which === DOWN_KC ) {
 				event.preventDefault();
 				menuIncrement(
 					$menu.children( "li" ).find( menuitemSelector ),
 					$menuItem,
-					which === 38 ? -1 : 1
+					which === UP_KC ? -1 : 1
 				);
 
-			// Enter or right arrow with a submenu
-			} else if ( hasPopup && ( which === 13 || which === 39 ) ) {
+			// Enter, space, or right arrow with a submenu
+			} else if ( hasPopup && ( which === ENTER_KC || which === SPACE_KC || which === RIGHT_KC ) ) {
 				$parent = $menuItem.parent();
 
-				if ( which === 39 ) {
-					event.preventDefault();
-				}
+				// Prevent handling by details.js polyfill
+				event.stopImmediatePropagation();
+				event.preventDefault();
 
 				// If the menu item is a summary element
 				if ( menuItem.nodeName.toLowerCase( "summary" ) ) {
@@ -7612,10 +7743,8 @@ $document.on( "keydown", selector + " [role=menuitem]", function( event ) {
 
 							menuContainer.scrollTop = menuItemOffsetTop;
 						}
-					}
 
-					// Ensure the menu is opened or stays open
-					if ( ( !isOpen && which === 39 ) || ( isOpen && which === 13 ) ) {
+						// Ensure the menu is opened or stays open
 						$menuItem.trigger( "click" );
 					}
 
@@ -7631,19 +7760,19 @@ $document.on( "keydown", selector + " [role=menuitem]", function( event ) {
 				}
 
 			// Escape, left / right arrow without a submenu
-			} else if ( which === 27 || which === 37 || which === 39 ) {
+			} else if ( which === ESC_KC || which === LEFT_KC || which === RIGHT_KC ) {
 				$parent = $menu.parent();
 				$parentMenu = $parent.closest( "[role^='menu']" );
-				if ( which === 37 || which === 39 ) {
+				if ( which === LEFT_KC || which === RIGHT_KC ) {
 					event.preventDefault();
 				}
 
 				// If the parent menu is a menubar
 				if ( $parentMenu.attr( "role" ) === "menubar" ) {
-					$menuLink = $parent.children( "[href=#" + $menu.attr( "id" ) + "]" );
+					$menuLink = $menu.siblings( "a" );
 
 					// Escape key = Close menu and return to menu bar item
-					if ( which === 27 ) {
+					if ( which === ESC_KC ) {
 						event.preventDefault();
 						$menuLink.trigger( focusEvent );
 
@@ -7657,13 +7786,13 @@ $document.on( "keydown", selector + " [role=menuitem]", function( event ) {
 						menuIncrement(
 							$parentMenu.find( "> li > a" ),
 							$menuLink,
-							which === 37 ? -1 : 1
+							which === LEFT_KC ? -1 : 1
 						);
 					}
 
 				// Escape or left arrow: Go up a level if there is a higher-level
 				// menu or close the current submenu if there isn't
-				} else if ( which !== 39 ) {
+				} else if ( which !== RIGHT_KC ) {
 					$subMenu = $parentMenu.length !== 0 ? $menu : $menuItem;
 
 					// There is a higher-level menu
@@ -7704,6 +7833,12 @@ $document.on( "keydown", selector + " [role=menuitem]", function( event ) {
 			}
 		}
 	}
+} );
+
+// Prevent Firefox from double-triggering menu behaviour
+$document.on( "keyup", selector + " [role=menuitem]", function( event ) {
+	event.preventDefault();
+	return false;
 } );
 
 // Close the mobile panel if switching to medium, large or extra large view
@@ -9652,7 +9787,7 @@ var $modal, $modalLink, countdownInterval, i18n, i18nText,
 			temp = document.createElement( "div" );
 
 			// Create the modal dialog.  A temp <div> element is used so that its innerHTML can be set as a string.
-			temp.innerHTML = "<a class='wb-lbx lbx-modal mfp-hide' href='#" + componentName + "-modal'></a>" +
+			temp.innerHTML = "<a class='wb-lbx lbx-modal mfp-hide' href='#" + componentName + "-modal'>" + i18nText.timeoutTitle + "</a>" +
 				"<section id='" + componentName + "-modal' class='mfp-hide modal-dialog modal-content overlay-def'>" +
 				"<header class='modal-header'><h2 class='modal-title'>" + i18nText.timeoutTitle + "</h2></header>" +
 				"<div class='modal-body'></div>" +
@@ -10227,7 +10362,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @jeresiv
  */
- /*jshint scripturl:true*/
+/*jshint scripturl:true*/
 ( function( $, window, wb ) {
 "use strict";
 
@@ -10405,7 +10540,7 @@ $document.on( "submit", ".wb-tables-filter", function( event ) {
 	// Lets reset the search;
 	$datatable.search( "" ).columns().search( "" );
 
-    // Lets loop throug all options
+	// Lets loop throug all options
 	$form.find( "[name]" ).each( function() {
 		var $elm = $( this ),
 			$value = ( $elm.is( "select" ) ) ? $elm.find( "option:selected" ).val() : $elm.val();
@@ -10822,8 +10957,6 @@ var componentName = "wb-tabs",
 			listCounter = listItems.length - 1,
 			isDetails = $panels[ 0 ].nodeName.toLowerCase() === "details",
 			isActive, item, link, panelId, activeFound;
-
-		$panels.attr( "tabindex", "-1" );
 
 		for ( ; tabCounter !== -1; tabCounter -= 1 ) {
 			item = panels[ tabCounter ];
@@ -11729,9 +11862,8 @@ var componentName = "wb-toggle",
 			if ( isGroup ) {
 
 				// Get the grouped elements using data.group as the CSS selector
-				// and filter to only retrieve currently open grouped elements
 				dataGroup = $.extend( {}, data, { selector: data.group } );
-				$elmsGroup = getElements( link, dataGroup ).filter( "." + data.stateOn + ", [open]" );
+				$elmsGroup = getElements( link, dataGroup );
 
 				// Set the toggle state to "off".  For tab lists, this is stored on the tab element
 				setState( isTablist ? $( data.parent ).find( selectorTab ) : $elmsGroup,
@@ -11765,6 +11897,12 @@ var componentName = "wb-toggle",
 				isTablist: isTablist,
 				elms: $elms
 			} );
+
+			// Ensure that last focused element in the accordion remains keyboard focusable
+			// whether it is collapsed or not
+			if ( isGroup ) {
+				$elms.find( "summary" ).attr( { "tabindex": "0" } );
+			}
 
 			// Store the toggle link's current state if persistence is turned on.
 			// Try/catch is required to address exceptions thrown when using BB10 or

@@ -156,6 +156,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Bảng",
 	"tbl-dtls": "Chart. Thông tin chi tiết trong bảng dưới đây.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Phiên của bạn sẽ tự động hết hạn trong  #min# phút #sec# giây.",
@@ -238,6 +239,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: VI (Vietnamese; Tiếng Việt)
@@ -261,6 +272,7 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Hãy nhập từ {0} trở xuống." ),
 	min: $.validator.format( "Hãy nhập từ {1} trở lên." )
 } );
-
+return $;
+}));
 
 });

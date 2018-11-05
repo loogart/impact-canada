@@ -156,6 +156,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Маса",
 	"tbl-dtls": "Графика. Подробности в таблицата по-долу.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Вашата сесия ще изтече автоматично в #min# мин. #sec# сек.",
@@ -238,6 +239,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: BG (Bulgarian; български език)
@@ -261,6 +272,7 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Моля, въведете стойност по-малка или равна на {0}." ),
 	min: $.validator.format( "Моля, въведете стойност по-голяма или равна на {0}." )
 } );
-
+return $;
+}));
 
 });

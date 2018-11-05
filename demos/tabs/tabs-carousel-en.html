@@ -8,17 +8,15 @@
 <title>Tabbed Interface - Carousel - Working examples - Web Experience Toolkit
 </title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
-<!-- Meta data -->
 <meta name="description" content="Dynamically stacks multiple images and captions into a carousel (or slider) widget.">
-<!-- Meta data-->
 <!--[if gte IE 9 | !IE ]><!-->
-<link href="../../theme-base/assets/favicon.ico" rel="icon" type="image/x-icon">
-<link rel="stylesheet" href="../../theme-base/css/theme.min.css">
+<link href="../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../theme-wet-boew/css/theme.min.css">
 <!--<![endif]-->
 <!--[if lt IE 9]>
-		<link href="../../theme-base/assets/favicon.ico" rel="shortcut icon" />
-		<link rel="stylesheet" href="../../theme-base/css/ie8-theme.min.css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link href="../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="../../wet-boew/js/ie8-wet-boew.min.js"></script>
 		<![endif]-->
 <noscript><link rel="stylesheet" href="../../wet-boew/css/noscript.min.css" /></noscript>
@@ -57,7 +55,8 @@
 <div class="container">
 <div class="row">
 <div id="wb-sttl" class="col-md-8">
-<a href="http://wet-boew.github.io/v4.0-ci/index-en.html">
+<a href="../../index-en.html">
+<img src="../../theme-wet-boew/assets/logo.svg" alt="">
 <span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
 </a>
 </div>
@@ -93,10 +92,10 @@
 <div class="row">
 <ol class="breadcrumb">
 <li>
-<a href="http://wet-boew.github.io/v4.0-ci/index-en.html">Home</a>
+<a href="../../index-en.html">Home</a>
 </li>
 <li>
-<a href="http://wet-boew.github.io/v4.0-ci/demos/index-en.html">Working examples</a>
+<a href="../../demos/index-en.html">Working examples</a>
 </li>
 <li>Tabbed Interface - Carousel</li>
 </ol>
@@ -106,6 +105,10 @@
 </header>
 <main role="main" property="mainContentOfPage" class="container">
 <h1 id="wb-cont" property="name">Tabbed Interface - Carousel</h1>
+<ul class="list-inline">
+<li><a class="btn btn-primary" href="../../docs/ref/tabs/tabs-en.html">Documentation</a></li>
+<li><a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Tabbed%20Interface%20-%20Carousel:%20">Questions or comments?</a></li>
+</ul>
 <span class="wb-prettify all-pre hide"></span>
 <section>
 <h2>Purpose</h2>
@@ -391,7 +394,7 @@
 </div>
 <!--
 
-               -->
+			-->
 <h3>Carousel - Style 1 - Only one choice (slider controls and tranisitions are not applied)</h3>
 <div class="wb-tabs carousel-s1">
 <ul role="tablist">
@@ -598,25 +601,25 @@
 <div class="tabpanels">
 <div role="tabpanel" id="panel19" class="in fade">
 <figure class="wb-mltmd">
-<video poster="http://www.servicecanada.gc.ca/eng/video/images/te-lj-eng.jpg" title="Looking for a Job">
+<video poster="../multimedia/demo/video1-en.jpg" title="Looking for a Job">
 <source type="video/webm" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-eng.webm">
 <source type="video/mp4" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-eng.mp4">
 <track src="../multimedia/cpts-lg-en.html" kind="captions" data-type="text/html" srclang="en" label="English">
 </video>
 <figcaption>
-<p>Looking for a Job (<a href="http://www.servicecanada.gc.ca/eng/video/lj.shtml">Transcript</a>)</p>
+<p>Looking for a Job (<a href="../multimedia/cpts-lg-en.html">Transcript</a>)</p>
 </figcaption>
 </figure>
 </div>
 <div role="tabpanel" id="panel20" class="out fade">
 <figure class="wb-mltmd">
-<video poster="http://www.servicecanada.gc.ca/eng/video/images/dc-td-eng.jpg" title="Training and Development">
+<video poster="../multimedia/demo/video2-en.jpg" title="Training and Development">
 <source type="video/webm" src="http://video2.servicecanada.gc.ca/video/boew-wet/dc-td-eng.webm">
 <source type="video/mp4" src="http://video2.servicecanada.gc.ca/video/boew-wet/dc-td-eng.mp4">
-<track src="../multimedia/cpts-lg2-en.html" kind="captions" data-type="text/html" srclang="en" label="English">
+<track src="../multimedia/demo/video2-captions-en.xml" kind="captions" data-type="application/ttml+xml" srclang="en" label="English">
 </video>
 <figcaption>
-<p>Training and Development (<a href="http://www.servicecanada.gc.ca/eng/video/td.shtml">Transcript</a>)</p>
+<p>Training and Development (<a href="../multimedia/cpts-lg2-en.html">Transcript</a>)</p>
 </figcaption>
 </figure>
 </div>
@@ -638,25 +641,25 @@
 			&lt;div class=&quot;tabpanels&quot;&gt;
 				&lt;div role=&quot;tabpanel&quot; id=&quot;panel19&quot; class=&quot;in fade&quot;&gt;
 					&lt;figure class=&quot;wb-mltmd&quot;&gt;
-						&lt;video poster=&quot;http://www.servicecanada.gc.ca/eng/video/images/te-lj-eng.jpg&quot; title=&quot;Looking for a Job&quot;&gt;
+						&lt;video poster=&quot;../multimedia/demo/video1-en.jpg&quot; title=&quot;Looking for a Job&quot;&gt;
 							&lt;source type=&quot;video/webm&quot; src=&quot;http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-eng.webm&quot; /&gt;
 							&lt;source type=&quot;video/mp4&quot; src=&quot;http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-eng.mp4&quot; /&gt;
 							&lt;track src=&quot;../multimedia/cpts-lg-en.html&quot; kind=&quot;captions&quot; data-type=&quot;text/html&quot; srclang=&quot;en&quot; label=&quot;English&quot; /&gt;
 						&lt;/video&gt;
 						&lt;figcaption&gt;
-							&lt;p&gt;Looking for a Job (&lt;a href=&quot;http://www.servicecanada.gc.ca/eng/video/lj.shtml&quot;&gt;Transcript&lt;/a&gt;)&lt;/p&gt;
+							&lt;p&gt;Looking for a Job (&lt;a href=&quot;../multimedia/cpts-lg-en.html&quot;&gt;Transcript&lt;/a&gt;)&lt;/p&gt;
 						&lt;/figcaption&gt;
 					&lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div role=&quot;tabpanel&quot; id=&quot;panel20&quot; class=&quot;out fade&quot;&gt;
 					&lt;figure class=&quot;wb-mltmd&quot;&gt;
-						&lt;video poster=&quot;http://www.servicecanada.gc.ca/eng/video/images/dc-td-eng.jpg&quot; title=&quot;Training and Development&quot;&gt;
+						&lt;video poster=&quot;../multimedia/demo/video2-en.jpg&quot; title=&quot;Training and Development&quot;&gt;
 							&lt;source type=&quot;video/webm&quot; src=&quot;http://video2.servicecanada.gc.ca/video/boew-wet/dc-td-eng.webm&quot; /&gt;
 							&lt;source type=&quot;video/mp4&quot; src=&quot;http://video2.servicecanada.gc.ca/video/boew-wet/dc-td-eng.mp4&quot; /&gt;
-							&lt;track src=&quot;../multimedia/cpts-lg2-en.html&quot; kind=&quot;captions&quot; data-type=&quot;text/html&quot; srclang=&quot;en&quot; label=&quot;English&quot; /&gt;
+							&lt;track src=&quot;../multimedia/demo/video2-captions-en.xml&quot; kind=&quot;captions&quot; data-type=&quot;application/ttml+xml&quot; srclang=&quot;en&quot; label=&quot;English&quot; /&gt;
 						&lt;/video&gt;
 						&lt;figcaption&gt;
-							&lt;p&gt;Training and Development (&lt;a href=&quot;http://www.servicecanada.gc.ca/eng/video/td.shtml&quot;&gt;Transcript&lt;/a&gt;)&lt;/p&gt;
+							&lt;p&gt;Training and Development (&lt;a href=&quot;../multimedia/cpts-lg2-en.html&quot;&gt;Transcript&lt;/a&gt;)&lt;/p&gt;
 						&lt;/figcaption&gt;
 					&lt;/figure&gt;
 				&lt;/div&gt;
@@ -884,7 +887,7 @@
 </section>
 <dl id="wb-dtmd">
 <dt>Date modified:&#32;</dt>
-<dd><time property="dateModified">2017-10-02</time></dd>
+<dd><time property="dateModified">2018-04-18</time></dd>
 </dl>
 </main>
 <footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
@@ -900,8 +903,8 @@
 <section class="col-sm-3">
 <h3>About</h3>
 <ul class="list-unstyled">
-<li><a href="http://wet-boew.github.io/v4.0-ci/index-en.html#about">About the Web Experience Toolkit</a></li>
-<li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+<li><a href="../../index-en.html#about">About the Web Experience Toolkit</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
 </ul>
 </section>
 <section class="col-sm-3">
@@ -914,14 +917,14 @@
 <section class="col-sm-3">
 <h3>Stay connected</h3>
 <ul class="list-unstyled">
-<li><a href="https://twitter.com/WebExpToolkit">Twitter</a></li>
+<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
 </ul>
 </section>
 </nav>
 </div>
 </footer>
 <!--[if gte IE 9 | !IE ]><!-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="../../wet-boew/js/wet-boew.min.js"></script>
 <!--<![endif]-->
 <!--[if lt IE 9]>
