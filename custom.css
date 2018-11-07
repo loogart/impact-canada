@@ -67,11 +67,8 @@ a {
   text-decoration: none;
 }
 
-header {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 1069;
+body.wb-modal > #wb-tphp {
+  z-index: 1070;
 }
 
 nav.navigation-bar {

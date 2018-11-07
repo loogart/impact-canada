@@ -48,12 +48,17 @@ a {
     }
 }
 
-header {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 1069;
+body.wb-modal > #wb-tphp{
+    z-index:1070;
 }
+
+header {
+//    position: sticky;
+//    position: -webkit-sticky;
+//    top: 0;
+//    z-index: 1069;
+}
+
 
 nav.navigation-bar {
     background-color: $navy-blue;
