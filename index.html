@@ -45,18 +45,19 @@
 </head>
 
 <body vocab="http://schema.org/" typeof="WebPage">
-    <ul id="wb-tphp">
-        <li class="wb-slc">
-            <a class="wb-sl" href="#wb-cont">Skip to main content</a>
-        </li>
-        <li class="wb-slc visible-sm visible-md visible-lg">
-            <a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
-        </li>
-        <li class="wb-slc">
-            <a class="wb-sl" href="#wb-lng">Skip to Language Toggle</a>
-        </li>
-    </ul>
+
     <header role="banner">
+        <ul id="wb-tphp">
+            <li class="wb-slc">
+                <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+            </li>
+            <li class="wb-slc visible-sm visible-md visible-lg">
+                <a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+            </li>
+            <li class="wb-slc">
+                <a class="wb-sl" href="#wb-lng">Skip to Language Toggle</a>
+            </li>
+        </ul>
         <nav role="navigation" class="pre-nav">
             <div class="container">
                 <section class="pre-nav__items">
@@ -176,12 +177,11 @@
 		
 		<![endif]-->
     <script>
-//        $(document).ready(function() {
-//            $("#toggle-menu").click(function() {
-//                $(".menu").toggleClass("menu-mobile-visible");
-//            });
-//        });
-
+        $(document).ready(function() {
+            $("#toggle-menu").click(function() {
+                $(".menu").toggleClass("menu-mobile-visible");
+            });
+        });
     </script>
 </body>
 

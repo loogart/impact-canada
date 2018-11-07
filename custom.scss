@@ -39,6 +39,7 @@ a {
         img.back-to-canada {
             display: inline-block;
             width: 200px;
+            height:19px;
         }
 
         a {
@@ -49,14 +50,14 @@ a {
 }
 
 body.wb-modal > #wb-tphp{
-    z-index:1070;
+    z-index:1070!important;
 }
 
 header {
-//    position: sticky;
-//    position: -webkit-sticky;
-//    top: 0;
-//    z-index: 1069;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1069;
 }
 
 
@@ -70,6 +71,7 @@ nav.navigation-bar {
         img.logo {
             display: inline-block;
             width: 200px;
+            height:65px;
             padding-top: 1rem;
             padding-bottom: 1rem;
         }

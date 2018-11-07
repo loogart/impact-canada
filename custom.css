@@ -61,6 +61,7 @@ a {
 .pre-nav .pre-nav__items img.back-to-canada {
   display: inline-block;
   width: 200px;
+  height: 19px;
 }
 .pre-nav .pre-nav__items a {
   color: #fff;
@@ -68,7 +69,14 @@ a {
 }
 
 body.wb-modal > #wb-tphp {
-  z-index: 1070;
+  z-index: 1070 !important;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1069;
 }
 
 nav.navigation-bar {
@@ -81,6 +89,7 @@ nav.navigation-bar .navigation__items {
 nav.navigation-bar .navigation__items img.logo {
   display: inline-block;
   width: 200px;
+  height: 65px;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
