@@ -268,7 +268,7 @@ section {
     margin-bottom: $space-lg;
 
     .img-holder {
-        height: 469px;
+        height:369px;
         background: #e5e5e5;
         overflow: hidden;
 
@@ -276,7 +276,7 @@ section {
             transition: all .5s ease;
             overflow: hidden;
             object-fit: cover;
-            height: 469px;
+            height:369px;
             width: 100%;
 
             &:hover {
@@ -302,7 +302,7 @@ section {
 
         %sts-pill-shared {
             position: absolute;
-            top: 400px;
+            top: 30px;
             right: 50px;
             z-index: 3;
             background: $navy-blue;
