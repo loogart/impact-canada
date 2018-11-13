@@ -47,9 +47,15 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
+
+main {
+    padding: 0;
+}
+
 p {
     &.lead {
         font-weight: 500;
+        margin-bottom: $space-lg;
     }
 }
 
@@ -90,6 +96,14 @@ p {
 
 .blt-red {
     background: $gradient-red;
+}
+
+.blt-blue {
+    background: $blue;
+}
+
+.blt-gray-blue {
+    background: $gray-blue;
 }
 
 
@@ -212,7 +226,7 @@ nav.navigation-bar {
             display: flex;
             justify-content: start;
             padding-top: 3em;
-            height: calc(100vh - 108px);
+            height: calc(100vh - 59px);
         }
 
     }
@@ -225,7 +239,6 @@ nav.navigation-bar {
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: center 50%;
-    background-attachment: fixed;
     margin-bottom: 0;
     color: #fff;
     display: flex;
@@ -253,7 +266,6 @@ section {
         background-repeat: no-repeat;
         background-position: center;
         background-color: #fff;
-        background-attachment: fixed;
     }
 
     &#prevChallenges {
@@ -263,19 +275,54 @@ section {
     &#nonChallenges {
         background-color: $light-gray;
     }
-    &#ctaBox{
-        background-color:#fff;
-        padding:15px;
-        .cta__inner{
-            background-color: $navy-blue;
-            color:#fff;
+
+    &#ctaBox {
+        background-color: #fff;
+        padding: $space-md;
+
+        %cta__shared {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: $space-xl;
+
+            p {
+                font-weight: 500;
+                margin: $space-lg auto;
+            }
+
+            a {
+                color: #fff;
+            }
+
+            @media(max-width:767px) {
+                padding: $space-md;
+            }
+
         }
+
+        .cta {
+            @extend %cta__shared;
+        }
+
+        .cta__navy {
+            background-color: $blue;
+            color: $navy-blue;
+        }
+
+        .cta__pink {
+            background-color: $pink;
+            color: #fff;
+        }
+
+
     }
 }
 
 .card {
     transition: all 0.5s ease;
-    margin-bottom: $space-lg;
+    margin-bottom: $space-xl;
 
     .img-holder {
         height: 369px;
@@ -383,4 +430,17 @@ section {
 
 .wb-eqht {
     display: inline-block;
+}
+
+footer{
+    background-color: $dark-blue;
+    padding:$space-xl;
+    color:#fff;
+    a{
+        color:#fff;
+        text-decoration: none!important;
+        &:hover{
+            color:#ccc;
+        }
+    }
 }
