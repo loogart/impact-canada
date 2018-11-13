@@ -45,7 +45,14 @@
 </head>
 
 <body vocab="http://schema.org/" typeof="WebPage">
-
+    <nav role="navigation" class="pre-nav">
+        <div class="container">
+            <section class="pre-nav__items">
+                <a href="https://canada.ca" target="_blank"><img class="back-to-canada" src="./img/GoC-fip-en.svg"></a>
+                <a id="wb-lng" lang="fr" hreflang="fr" href="#!"><span class="sr-only">Toggle language</span>Français</a>
+            </section>
+        </div>
+    </nav>
     <header role="banner">
         <ul id="wb-tphp">
             <li class="wb-slc">
@@ -58,15 +65,7 @@
                 <a class="wb-sl" href="#wb-lng">Skip to Language Toggle</a>
             </li>
         </ul>
-        <nav role="navigation" class="pre-nav">
-            <div class="container">
-                <section class="pre-nav__items">
-                    <a href="https://canada.ca" target="_blank"><img class="back-to-canada" src="./img/GoC-fip-en.svg"></a>
-                    <a id="wb-lng" lang="fr" hreflang="fr" href="#!"><span class="sr-only">Toggle language</span>Français</a>
-                </section>
-                </ul>
-            </div>
-        </nav>
+
         <nav role="navigation" class="navigation-bar">
             <div class="container">
                 <section class="navigation__items">
@@ -92,47 +91,259 @@
         <div class="jumbotron">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-offset-1 col-sm-10">
-                        <h1 id="wb-cont" property="name">Help us solve Canada’s biggest challenges.</h1>
-                        <button type="button" class="btn btn-primary btn-lg">View challenges</button>
+                    <div class="col-md-7">
+                        <h1 id="wb-cont" property="name" class="mrgn-bttm-lg">Help us solve Canada’s biggest challenges.</h1>
+                        <a type="button" class="btn btn-primary btn-lg shadow-lg" href="#challenges">View challenges</a>
+                    </div>
+                    <div class="col-md-5 hidden-xs">
+                        <!--                        <img class="img-responsive" src="" alt="Simple animation representing a challenge">-->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <section>
-                <div class="row">
-                    <div class="col-sm-offset-1 col-sm-10">
-                        <h2>Impact Canada Challenge Hub</h2>
-                        <p>The Government of Canada wants innovative solutions to economic, environmental, and social problems.</p>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="card">
-                                    <a href="#!">
-                                        <img src="" alt="" class="img-responsive" style="height:369px;background:#ddd;" />
-                                    </a>
-                                    <h3><span class="small">Finance Canada</span><br>Open Banking Challenge</h3>
-                                    <a href="#!">View Challenge</a>
+
+        <!-- challenges section -->
+        <section id="challenges">
+            <div class="container">
+
+                <h2 class="h1"><span class="blt blt-teal"></span>Impact Canada Challenge Hub</h2>
+                <p class="lead">The Government of Canada wants innovative solutions to economic, environmental, and social problems.</p>
+                <div class="row wb-eqht">
+                    <div class="col-sm-6">
+                        <a href="#!">
+                            <div class="card">
+                                <div class="img-holder">
+                                    <img src="./img/test-challenge.jpg" alt="" class="img-responsive" style="filter:hue-rotate(130deg)"/>
+                                </div>
+                                <div class="card-body">
+                                    <div class="sts">Coming soon</div>
+                                    <div class="blt"></div>
+                                    <div>
+                                        <p>Finance Canada</p>
+                                        <h3>Open Banking Challenge</h3>
+                                        <a href="#!" class="sr-only">View Challenge</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="card">
-                                    <a href="#!">
-                                        <img src="" alt="" class="img-responsive" style="height:369px;background:#ddd;" />
-                                    </a>
-                                    <h3><span class="small">Finance Canada</span><br>Open Banking Challenge</h3>
-                                    <a href="#!">View Challenge</a>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
+                    <div class="col-sm-6">
+                        <a href="#!">
+                            <div class="card">
+                                <div class="img-holder">
+                                    <img src="./img/test-challenge.jpg" alt="" class="img-responsive" style="filter:hue-rotate(130deg)"/>
+                                </div>
+                                <div class="card-body">
+                                    <div class="sts">Coming soon</div>
+                                    <div class="blt"></div>
+                                    <div>
+                                        <p>Department Name</p>
+                                        <h3>Growing Perishable Food in the North Challenge</h3>
+                                        <a href="#!" class="sr-only">View Challenge</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#!">
+                            <div class="card">
+                                <div class="img-holder">
+                                    <img src="./img/test-challenge.jpg" alt="" class="img-responsive" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="sts">Coming soon</div>
+                                    <div class="blt"></div>
+                                    <div>
+                                        <p>Natural Resources Canada</p>
+                                        <h3>Off-Diesel Challenge</h3>
+                                        <a href="#!" class="sr-only">View Challenge</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#!">
+                            <div class="card">
+                                <div class="img-holder">
+                                    <img src="./img/test-challenge.jpg" alt="" class="img-responsive" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="sts">Coming Soon</div>
+                                    <div class="blt"></div>
+                                    <div>
+                                        <p>Statistics Canada / ISED</p>
+                                        <h3>Who's your data Challenge</h3>
+                                        <a href="#!" class="sr-only">View Challenge</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#!">
+                            <div class="card">
+                                <div class="img-holder">
+                                    <img src="./img/challenge-imagery/7_power-forward.jpg" alt="" class="img-responsive" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="sts sts-open">Open challenge</div>
+                                    <div class="blt blt-teal"></div>
+                                    <div>
+                                        <p>Natural Resources Canada</p>
+                                        <h3>Power Forward Challenge</h3>
+                                        <a href="#!" class="sr-only">View Challenge</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#!">
+                            <div class="card">
+                                <div class="img-holder">
+                                    <img src="./img/challenge-imagery/8_crush-it.jpg" alt="" class="img-responsive" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="sts sts-open">Open challenge</div>
+                                    <div class="blt blt-teal"></div>
+                                    <div>
+                                        <p>Natural Resources Canada</p>
+                                        <h3>Crush it! Challenge</h3>
+                                        <a href="#!" class="sr-only">View Challenge</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#!">
+                            <div class="card">
+                                <div class="img-holder">
+                                    <img src="./img/challenge-imagery/4_indigenous-homes.jpg" alt="" class="img-responsive" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="sts sts-closed">Closed challenge</div>
+                                    <div class="blt blt-red"></div>
+                                    <div>
+                                        <p>Indigenous Services Canada</p>
+                                        <h3>Indigenous Homes Innovation Initiative</h3>
+                                        <a href="#!" class="sr-only">View Challenge</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#!">
+                            <div class="card">
+                                <div class="img-holder">
+                                    <img src="./img/challenge-imagery/5_skys-the-limit.jpg" alt="" class="img-responsive" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="sts sts-open">Open challenge</div>
+                                    <div class="blt blt-teal"></div>
+                                    <div>
+                                        <p>Natural Resources Canada</p>
+                                        <h3>The Sky's the Limit Challenge</h3>
+                                        <a href="#!" class="sr-only">View Challenge</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#!">
+                            <div class="card">
+                                <div class="img-holder">
+                                    <img src="./img/challenge-imagery/3_drug-checking.jpg" alt="" class="img-responsive" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="sts sts-open">Open Challenge</div>
+                                    <div class="blt blt-teal"></div>
+                                    <div>
+                                        <p>Health Canada</p>
+                                        <h3>Drug Checking Technology Challenge</h3>
+                                        <a href="#!" class="sr-only">View Challenge</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#!">
+                            <div class="card">
+                                <div class="img-holder">
+                                    <img src="./img/challenge-imagery/5_skys-the-limit.jpg" alt="" class="img-responsive" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="sts">Coming soon</div>
+                                    <div class="blt blt-navy"></div>
+                                    <div>
+                                        <p>Department of Fisheries and Oceans</p>
+                                        <h3>Whales Innovation Challenge</h3>
+                                        <a href="#!" class="sr-only">View Challenge</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#!">
+                            <div class="card">
+                                <div class="img-holder">
+                                    <img src="./img/challenge-imagery/2_women-cleantech.jpg" alt="" class="img-responsive" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="sts sts-closed">Closed challenge</div>
+                                    <div class="blt blt-red"></div>
+                                    <div>
+                                        <p>Natural Resources Canada</p>
+                                        <h3>Women in Cleantech Challenge</h3>
+                                        <a href="#!" class="sr-only">View Challenge</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#!">
+                            <div class="card">
+                                <div class="img-holder">
+                                    <img src="./img/challenge-imagery/1_smart-cities.jpg" alt="" class="img-responsive" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="sts sts-closed">Closed challenge</div>
+                                    <div class="blt blt-red"></div>
+                                    <div>
+                                        <p>Infrastructure Canada</p>
+                                        <h3>Smart Cities Challenge</h3>
+                                        <a href="#!" class="sr-only">View Challenge</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
-            </section>
-            <dl id="wb-dtmd">
-                <dt>Date modified:&#32;</dt>
-                <dd><time property="dateModified">2018-11-05</time></dd>
-            </dl>
-        </div>
+                <dl id="wb-dtmd">
+                    <dt>Date modified:&#32;</dt>
+                    <dd><time property="dateModified">2018-11-05</time></dd>
+                </dl>
+            </div>
+        </section>
+
+        <!-- previous challenges -->
+        <section id="prevChallenges">
+
+        </section>
+
+        <!-- previous challenges -->
+        <section id="nonChallenges">
+
+        </section>
+
     </main>
 
     <footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
@@ -182,6 +393,7 @@
                 $(".menu").toggleClass("menu-mobile-visible");
             });
         });
+
     </script>
 </body>
 

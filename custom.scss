@@ -5,16 +5,38 @@ $navy-blue:#1F3169;
 $red: #E25456;
 $pink: #D84190;
 $light-gray: #D9E9F6;
+$gray-blue: #85A7C2;
 $dark-blue: #10172D;
+$light-blue: #D9E9F6;
 $gradient-red: linear-gradient(90deg, #E25456 0%, #D84190 100%);
 $gradient-teal: linear-gradient(90deg, #51E7F2 0%, #469EE1 100%);
+$shadow-none: none !important;
+$shadow-sm: 0 .125rem .25rem rgba(0, 0, 0, .15) !important;
+$shadow: 0 .5rem 1rem rgba(0, 0, 0, .175) !important;
+$shadow-lg: 0 1rem 3rem rgba(0, 0, 0, .35) !important;
+$shadow-card: 2px 8px 20px 0 hsla(200, 1%, 47%, .25) !important;
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,900');
+//spacing
+$space-unit:1em;
+$space-xxs: $space-unit * 0.25;
+$space-xs: $space-unit * 0.25;
+$space-sm: $space-unit * 0.75;
+$space-md: $space-unit * 1.25;
+$space-lg: $space-unit * 2;
+$space-xl:$space-unit * 3.25;
+$space-xxl: $space-unit * 5.25;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900');
 
 @import "custom-buttons";
 
 
+body {
+    min-height: 1000px;
+}
+
 //typography
+body,
 h1,
 h2,
 h3,
@@ -25,12 +47,59 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
+p {
+    &.lead {
+        font-weight: 500;
+    }
+}
+
+//shadow
+.shadow-sm {
+    box-shadow: $shadow-sm;
+}
+
+.shadow {
+    box-shadow: $shadow;
+}
+
+.shadow-lg {
+    box-shadow: $shadow-lg;
+}
+
+
+//impact bullets
+
+%blt-shared {
+    display: inline-block;
+    width: $space-unit;
+    height: $space-unit;
+    background: $navy-blue;
+    border-radius: 0 $space-unit 0 0;
+    -moz-border-radius: 0 $space-unit 0 0;
+    -webkit-border-radius: 0 $space-unit 0 0;
+    margin-right: 0.5em;
+}
+
+.blt {
+    @extend %blt-shared;
+}
+
+.blt-teal {
+    background: $gradient-teal;
+}
+
+.blt-red {
+    background: $gradient-red;
+}
+
+
 
 // custom components
 .pre-nav {
     background-color: $dark-blue;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    height: 100%;
 
     .pre-nav__items {
         display: flex;
@@ -39,7 +108,7 @@ a {
         img.back-to-canada {
             display: inline-block;
             width: 200px;
-            height:19px;
+            height: 19px;
         }
 
         a {
@@ -49,8 +118,8 @@ a {
     }
 }
 
-body.wb-modal > #wb-tphp{
-    z-index:1070!important;
+body.wb-modal > #wb-tphp {
+    z-index: 1070 !important;
 }
 
 header {
@@ -64,6 +133,7 @@ header {
 nav.navigation-bar {
     background-color: $navy-blue;
 
+
     .navigation__items {
         display: flex;
         justify-content: space-between;
@@ -71,7 +141,7 @@ nav.navigation-bar {
         img.logo {
             display: inline-block;
             width: 200px;
-            height:65px;
+            height: 65px;
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
@@ -83,6 +153,7 @@ nav.navigation-bar {
                 color: #fff;
                 display: flex !important;
                 align-items: center;
+                cursor: pointer;
             }
 
             .branding {
@@ -110,6 +181,7 @@ nav.navigation-bar {
                 &:active,
                 &.active {
                     border-bottom: 0.69rem solid $red;
+
                 }
             }
 
@@ -152,10 +224,14 @@ nav.navigation-bar {
     background-image: url('./img/background-circles-red.svg');
     background-size: 110%;
     background-repeat: no-repeat;
-    background-position: center -10%;
+    background-position: center 50%;
+    background-attachment: fixed;
+    margin-bottom: 0;
     color: #fff;
     display: flex;
     align-items: center;
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
 
     h1 {
         border-bottom: 0 !important;
@@ -164,5 +240,137 @@ nav.navigation-bar {
     @media(max-width:767px) {
         background-position: center;
         background-size: 160%;
+        min-height: 80vh;
     }
+}
+
+section {
+    &#challenges {
+        padding-top: $space-xl;
+        padding-bottom: $space-xl;
+        background-image: url('./img/background-circles-light-blue.svg');
+        background-size: 110%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #fff;
+        background-attachment: fixed;
+    }
+    &#prevChallenges{
+        background-color: $gray-blue;
+    }
+    &#nonChallenges{
+        background-color: $light-gray;
+    }    
+}
+
+.card {
+    transition: all 0.5s ease;
+    margin-bottom: $space-lg;
+
+    .img-holder {
+        height: 469px;
+        background: #e5e5e5;
+        overflow: hidden;
+
+        img {
+            transition: all .5s ease;
+            overflow: hidden;
+            object-fit: cover;
+            height: 469px;
+            width: 100%;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+        }
+
+        @media(max-width:767px) {
+            height: 269px;
+
+            img {
+                height: 269px;
+                width: 100%;
+            }
+        }
+    }
+
+    .card-body {
+        padding: 2em;
+        display: flex;
+        background-color: #fff;
+
+        %sts-pill-shared {
+            position: absolute;
+            top: 400px;
+            right: 50px;
+            z-index: 3;
+            background: $navy-blue;
+            padding: 0.5em 1.5em;
+            color: $blue;
+            font-weight: 500;
+            border-radius: $space-md;
+            box-shadow: $shadow-lg;
+
+            @media (max-width: 767px) {
+                top: 210px;
+                right: 30px;
+            }
+        }
+
+        .sts {
+            @extend %sts-pill-shared;
+        }
+
+        .sts-open {
+            background: $gradient-teal;
+            color: #fff;
+        }
+
+        .sts-closed {
+            background: $gradient-red;
+            color: #fff;
+        }
+
+        .blt {
+            height: $space-md;
+            width: $space-md;
+            border-radius: 0 $space-md 0 0;
+            margin-right: $space-sm;
+            transition: all .25s ease;
+        }
+
+        p {
+            color: $red;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            color: $navy-blue;
+            font-size: 1.6em;
+            line-height: 1.25;
+        }
+
+        a {
+            color: $blue;
+            text-decoration: none;
+        }
+    }
+
+    &:hover {
+        box-shadow: $shadow-card;
+
+        .card-body {
+            .blt {
+                transform: translateY(-15px) scale(1.1) rotate(-45deg);
+            }
+        }
+    }
+}
+
+.wb-eqht{
+    display: inline-block;
 }
