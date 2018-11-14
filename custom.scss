@@ -256,7 +256,8 @@ nav.navigation-bar {
         background-position: 72%;
         background-size: 200%;
         min-height: 60vh;
-        h1{
+
+        h1 {
             line-height: 1.325;
         }
     }
@@ -457,10 +458,11 @@ footer nav {
         grid-area: left;
         background-color: $dark-blue;
         padding: $space-xl;
-        @media(max-width:767px){
-            -ms-grid-row:2;
-            -ms-grid-column:1;
-            -ms-grid-column-span:2;
+
+        @media(max-width: 767px) {
+            -ms-grid-row: 2;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 2;
         }
     }
 
@@ -500,22 +502,22 @@ footer nav {
             background: $gradient-teal;
             z-index: 0;
         }
-        
-        @media(max-width:767px){
-            -ms-grid-row:1;
-            -ms-grid-column:1;
-            -ms-grid-column-span:2;
+
+        @media(max-width:767px) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 2;
         }
     }
 
     .footer-logo {
-       max-width: 169px;
+        max-width: 169px;
         margin-bottom: $space-md;
     }
 
     h3 {
         margin-bottom: $space-md;
-        color:#fff;
+        color: #fff;
     }
 
     ul {
@@ -540,7 +542,7 @@ footer nav {
         grid-template-areas:
             'right right'
             'left left';
-        
+
     }
-    
+
 }

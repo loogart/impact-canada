@@ -97,6 +97,7 @@
                     </div>
                     <div class="col-md-5 hidden-xs">
                         <!--                        <img class="img-responsive" src="" alt="Simple animation representing a challenge">-->
+                        <div id="bm" class="bodymovin"></div>
                     </div>
                 </div>
             </div>
@@ -423,6 +424,16 @@
             });
         });
 
+    </script>
+        <script src="bodymovin.js"></script>
+    <script>
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('bm'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'nacho-libre-2.json'
+        })
     </script>
 </body>
 
