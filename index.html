@@ -95,8 +95,10 @@
     </nav>
     <main role="main" property="mainContentOfPage">
         <div class="jumbotron">
-            <div class="jumbotron__bg-img">
-                <!--                <img class="" src="./img/background-circles-red.svg">-->
+            <div class="jumbotron__bg-img rellax-2">
+                <!--[if IE]>
+                       <img class="" src="./img/background-circles-red.svg">
+                <![endif]-->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 796.94 254.94">
                     <defs>
                         <style>.cls-1{fill:none;stroke:#E25456;stroke-linejoin:round;stroke-width:3px;}</style>
@@ -438,18 +440,15 @@
 		<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
 		
 		<![endif]-->
+    <script src="./custom-js/rellax.min.js"></script>
+    <script src="./custom-js/scrollreveal.min.js"></script>
+    <script src="./custom-js/bodymovin.js"></script>
     <script>
         $(document).ready(function() {
             $("#toggle-menu").click(function() {
                 $(".menu").toggleClass("menu-mobile-visible");
             });
         });
-
-    </script>
-    <script src="./custom-js/rellax.min.js"></script>
-    <script src="./custom-js/scrollreveal.min.js"></script>
-    <script src="./custom-js/bodymovin.js"></script>
-    <script>
         var animation = bodymovin.loadAnimation({
             container: document.getElementById('bm'),
             renderer: 'svg',
@@ -458,16 +457,20 @@
             path: './custom-js/nacho-libre-2.json'
         })
         // Accepts any class name
-        var rellax = new Rellax('.rellax');
+        var rellax = new Rellax('.rellax', {
+            speed: -4
+        });
+        var rellax = new Rellax('.rellax-2', {
+            speed: 2
+        });
         //ScrollReveal
-//        ScrollReveal().reveal('.headline');
+        //        ScrollReveal().reveal('.headline');
         ScrollReveal().reveal('.card', {
             interval: 16,
             reset: false,
-            duration:1250,
-            scale:0.5
+            duration: 1250,
+            scale: 0.5
         });
-
     </script>
 </body>
 

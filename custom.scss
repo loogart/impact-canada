@@ -530,6 +530,7 @@ footer nav {
             height: 420px;
             background: $gradient-red;
             z-index: 0;
+            transition: all 0.750s ease;
         }
 
         .circle-teal {
@@ -539,6 +540,8 @@ footer nav {
             height: 269px;
             background: $gradient-teal;
             z-index: 0;
+            transition: all 1s 0.3s ease;
+
         }
 
         @media(max-width:767px) {
@@ -567,6 +570,9 @@ footer nav {
     a {
         color: #fff !important;
         text-decoration: none !important;
+        &:hover{
+            color:$blue!important;
+        }
 
     }
 
@@ -581,6 +587,16 @@ footer nav {
             'right right'
             'left left';
 
+    }
+
+    &:hover {
+        .circle-red {
+            transform: scale(1.1) translateX(50px) translateY(-20px);
+        }
+
+        .circle-teal {
+            transform: scale(1.3) translateX(100px) translateY(40px);
+        }
     }
 
 }
