@@ -255,6 +255,10 @@ nav.navigation-bar .navigation__items .menu-mobile-visible {
     line-height: 1.325;
   }
 }
+.jumbotron .bodymovin svg {
+  height: 500px !important;
+  width: 100%;
+}
 
 section#challenges {
   padding-top: 3.25em;
