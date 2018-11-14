@@ -35,6 +35,14 @@ body {
     min-height: 1000px;
 }
 
+.wb-sl {
+    background: $gradient-red;
+    color: #fff;
+    font-weight: 700;
+    padding: $space-sm $space-md;
+    border-radius: 4em !important;
+}
+
 .container {}
 
 //typography
@@ -138,9 +146,9 @@ body.wb-modal > #wb-tphp {
     z-index: 1070 !important;
 }
 
-header {
-    position: sticky;
-    position: -webkit-sticky;
+nav.navigation-bar {
+    position: sticky !important;
+    position: -webkit-sticky !important;
     top: 0;
     z-index: 1069;
 }
@@ -237,16 +245,40 @@ nav.navigation-bar {
 .jumbotron {
     min-height: 50vh;
     background-color: #1C2C5B;
-    background-image: url('./img/background-circles-red.svg');
+    //    background-image: url('./img/background-circles-red.svg');
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: center 50%;
+    background-attachment: fixed;
     margin-bottom: 0;
     color: #fff;
     display: flex;
     align-items: center;
     padding-top: $space-xl;
     padding-bottom: $space-xl;
+    overflow: hidden;
+
+    .jumbotron__bg-img {
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        .cls-1 {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 8s ease alternate infinite;
+        }
+
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 1000;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    }
 
     h1 {
         border-bottom: 0 !important;
@@ -256,14 +288,16 @@ nav.navigation-bar {
         background-position: 72%;
         background-size: 200%;
         min-height: 60vh;
+        background-attachment: scroll;
 
         h1 {
             line-height: 1.325;
         }
     }
-    .bodymovin svg{
-        height:500px!important;
-        width:100%;
+
+    .bodymovin svg {
+        height: 500px !important;
+        width: 100%;
     }
 }
 

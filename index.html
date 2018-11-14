@@ -42,17 +42,10 @@
     <noscript>
         <link rel="stylesheet" href="./wet-boew/css/noscript.min.css" />
     </noscript>
+
 </head>
 
 <body vocab="http://schema.org/" typeof="WebPage">
-    <nav role="navigation" class="pre-nav">
-        <div class="container">
-            <section class="pre-nav__items">
-                <a href="https://canada.ca" target="_blank"><img class="back-to-canada" src="./img/GoC-fip-en.svg"></a>
-                <a id="wb-lng" lang="fr" hreflang="fr" href="#!"><span class="sr-only">Toggle language</span>Français</a>
-            </section>
-        </div>
-    </nav>
     <header role="banner">
         <ul id="wb-tphp">
             <li class="wb-slc">
@@ -64,31 +57,62 @@
             <li class="wb-slc">
                 <a class="wb-sl" href="#wb-lng">Skip to Language Toggle</a>
             </li>
+            <li class="wb-slc">
+                <a class="wb-sl" href="#challenges">Skip to Current Challenges</a>
+            </li>
+            <li class="wb-slc">
+                <a class="wb-sl" href="#nonChallenges">Skip to Other Initiatives</a>
+            </li>
         </ul>
-
-        <nav role="navigation" class="navigation-bar">
+        <nav role="navigation" class="pre-nav">
             <div class="container">
-                <section class="navigation__items">
-                    <div class="branding">
-                        <a href="./" class="to-the-homepage">
-                            <img class="logo" src="./img/logo-header.svg" alt="Impact Canada Home">
-                            <span class="sr-only">Impact Canada</span>
-                        </a>
-                        <a class="mobile-menu-bars visible-xs" id="toggle-menu"><i class="fas fa-bars" aria-hidden></i> &nbsp;Menu</a>
-                    </div>
-                    <div class="menu">
-                        <h2 class="sr-only">Topics menu</h2>
-                        <a href="#!" class="active">About</a>
-                        <a href="#!">How it works</a>
-                        <a href="#!">News</a>
-                        <a href="#!">Partner with us</a>
-                    </div>
+                <section class="pre-nav__items">
+                    <a href="https://canada.ca" target="_blank"><img class="back-to-canada" src="./img/GoC-fip-en.svg"></a>
+                    <a id="wb-lng" lang="fr" hreflang="fr" href="#!"><span class="sr-only">Toggle language</span>Français</a>
                 </section>
             </div>
         </nav>
     </header>
+    <nav role="navigation" class="navigation-bar">
+        <div class="container">
+            <section class="navigation__items">
+                <div class="branding">
+                    <a href="./" class="to-the-homepage">
+                        <img class="logo" src="./img/logo-header.svg" alt="Impact Canada Home">
+                        <span class="sr-only">Impact Canada</span>
+                    </a>
+                    <a class="mobile-menu-bars visible-xs" id="toggle-menu"><i class="fas fa-bars" aria-hidden></i> &nbsp;Menu</a>
+                </div>
+                <div class="menu">
+                    <h2 class="sr-only">Topics menu</h2>
+                    <a href="#!" class="active">About</a>
+                    <a href="#!">How it works</a>
+                    <a href="#!">News</a>
+                    <a href="#!">Partner with us</a>
+                </div>
+            </section>
+        </div>
+    </nav>
     <main role="main" property="mainContentOfPage">
         <div class="jumbotron">
+            <div class="jumbotron__bg-img">
+                <!--                <img class="" src="./img/background-circles-red.svg">-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 796.94 254.94">
+                    <defs>
+                        <style>.cls-1{fill:none;stroke:#E25456;stroke-linejoin:round;stroke-width:3px;}</style>
+                    </defs>
+                    <title>background-circles</title>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="extras">
+                            <circle class="cls-1" cx="669.47" cy="127.47" r="42.01" />
+                            <circle class="cls-1" cx="669.47" cy="127.47" r="125.97" />
+                            <circle class="cls-1" cx="669.47" cy="127.47" r="83.98" />
+                            <rect class="cls-1" x="669.47" y="1.5" width="125.97" height="125.97" />
+                            <line class="cls-1" x1="670" y1="211.45" y2="211.45" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -96,8 +120,8 @@
                         <a type="button" class="btn btn-primary btn-lg shadow-lg" href="#challenges">View challenges</a>
                     </div>
                     <div class="col-md-5 hidden-xs">
-                        <!--                        <img class="img-responsive" src="" alt="Simple animation representing a challenge">-->
-                        <div id="bm" class="bodymovin"></div>
+                        <!--                        <img class="img-responsive shadow-lg" src="./img/challenge-imagery/test-challenge.jpg" alt="Simple animation representing a challenge">-->
+                        <div id="bm" class="bodymovin rellax"></div>
                     </div>
                 </div>
             </div>
@@ -330,10 +354,7 @@
                     </div>
 
                 </div>
-                <dl id="wb-dtmd">
-                    <dt>Date modified:&#32;</dt>
-                    <dd><time property="dateModified">2018-11-05</time></dd>
-                </dl>
+
             </div>
         </section>
 
@@ -364,10 +385,10 @@
         <nav role="navigation">
             <div class="footer__left">
                 <div class="row">
-                   <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-4">
                         <h3><a href="./index.html"><img class="footer-logo" src="./img/logo-footer.svg" alt="Impact Canada logo"></a></h3>
                     </div>
-                   <div class="col-sm-6 col-md-4">
+                    <div class="col-sm-6 col-md-4">
                         <h3>Legal</h3>
                         <ul>
                             <li><a href="#!">Terms</a></li>
@@ -376,7 +397,7 @@
                             <li><a href="#!">Partner with us</a></li>
                         </ul>
                     </div>
-                   <div class="col-sm-6 col-md-4">
+                    <div class="col-sm-6 col-md-4">
                         <h3>Useful Links</h3>
                         <ul>
                             <li><a href="#!">Past challenges</a></li>
@@ -394,7 +415,7 @@
                 <div class="row">
                     <span class="circle circle-teal"></span>
                     <span class="circle circle-red"></span>
-                   <div class="col-sm-6">
+                    <div class="col-sm-6">
                         <h3>Follow</h3>
                         <ul>
                             <li><a href="#!"><i class="fab fa-twitter" aria-hidden></i> Twitter</a></li>
@@ -402,7 +423,7 @@
                             <li><a href="#!"><i class="fab fa-youtube" aria-hidden></i> Youtube</a></li>
                         </ul>
                     </div>
-                   <div class="col-sm-6">
+                    <div class="col-sm-6">
 
                     </div>
                 </div>
@@ -425,15 +446,28 @@
         });
 
     </script>
-        <script src="bodymovin.js"></script>
+    <script src="./custom-js/rellax.min.js"></script>
+    <script src="./custom-js/scrollreveal.min.js"></script>
+    <script src="./custom-js/bodymovin.js"></script>
     <script>
         var animation = bodymovin.loadAnimation({
             container: document.getElementById('bm'),
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: 'nacho-libre-2.json'
+            path: './custom-js/nacho-libre-2.json'
         })
+        // Accepts any class name
+        var rellax = new Rellax('.rellax');
+        //ScrollReveal
+//        ScrollReveal().reveal('.headline');
+        ScrollReveal().reveal('.card', {
+            interval: 16,
+            reset: false,
+            duration:1250,
+            scale:0.5
+        });
+
     </script>
 </body>
 

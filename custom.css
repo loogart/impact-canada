@@ -66,6 +66,14 @@ body {
   min-height: 1000px;
 }
 
+.wb-sl {
+  background: linear-gradient(90deg, #E25456 0%, #D84190 100%);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.75em 1.25em;
+  border-radius: 4em !important;
+}
+
 body,
 h1,
 h2,
@@ -149,9 +157,9 @@ body.wb-modal > #wb-tphp {
   z-index: 1070 !important;
 }
 
-header {
-  position: sticky;
-  position: -webkit-sticky;
+nav.navigation-bar {
+  position: sticky !important;
+  position: -webkit-sticky !important;
   top: 0;
   z-index: 1069;
 }
@@ -231,16 +239,35 @@ nav.navigation-bar .navigation__items .menu-mobile-visible {
 .jumbotron {
   min-height: 50vh;
   background-color: #1C2C5B;
-  background-image: url("./img/background-circles-red.svg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center 50%;
+  background-attachment: fixed;
   margin-bottom: 0;
   color: #fff;
   display: flex;
   align-items: center;
   padding-top: 3.25em;
   padding-bottom: 3.25em;
+  overflow: hidden;
+}
+.jumbotron .jumbotron__bg-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.jumbotron .jumbotron__bg-img .cls-1 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 8s ease alternate infinite;
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 .jumbotron h1 {
   border-bottom: 0 !important;
@@ -250,6 +277,7 @@ nav.navigation-bar .navigation__items .menu-mobile-visible {
     background-position: 72%;
     background-size: 200%;
     min-height: 60vh;
+    background-attachment: scroll;
   }
   .jumbotron h1 {
     line-height: 1.325;
