@@ -98,16 +98,16 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-sm-7">
                         <h1 id="wb-cont" property="name" class="mrgn-bttm-lg">Help us solve Canada’s biggest challenges.</h1>
                         <a type="button" class="btn btn-primary btn-lg shadow-lg" href="#challenges">View challenges</a>
                     </div>
-                    <div class="col-md-5 hidden-xs">
-                       
-                        <div id="bm" class="bodymovin rellax"></div>
-                        <div class="rellax-2">
-                         <img class="img-responsive" src="./img/logomark.svg" alt="Simple animation representing a challenge">
-                        </div>
+                    <div class="col-sm-5">
+                        <img class="rellax img-responsive" src="./img/map_1.svg" data-rellax-speed="-5">
+                        <img class="rellax shape shape__1" src="./img/circle-gradient-teal.svg" data-rellax-speed="-2">
+                        <img class="rellax shape shape__2" src="./img/square-blue.svg" data-rellax-speed="2">
+                        <img class="rellax shape shape__3" src="./img/diamond-outline-white.svg" data-rellax-speed="4">
+                        <img class="rellax shape shape__4" src="./img/quarter-gradient-red.svg" data-rellax-speed="-3">
                     </div>
                 </div>
             </div>
@@ -433,20 +433,8 @@
                 $(".menu").toggleClass("menu-mobile-visible");
             });
         });
-        var animation = bodymovin.loadAnimation({
-            container: document.getElementById('bm'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: './custom-js/nacho-libre-2.json'
-        })
         // Accepts any class name
-        var rellax = new Rellax('.rellax', {
-            speed: -4
-        });
-        var rellax = new Rellax('.rellax-2', {
-            speed: 3
-        });
+        var rellax = new Rellax('.rellax');
         //ScrollReveal
         //        ScrollReveal().reveal('.headline');
         ScrollReveal().reveal('.card', {

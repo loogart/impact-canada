@@ -248,7 +248,7 @@ nav.navigation-bar {
     position: relative;
     min-height: 50vh;
     background-color: #1C2C5B;
-    background-image: url('./img/background-circles-red.svg');
+    //    background-image: url('./img/background-circles-red.svg');
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: center 50%;
@@ -265,26 +265,44 @@ nav.navigation-bar {
     }
 
     @media(max-width:767px) {
-        background-position: 72%;
-        background-size: 200%;
+        background-position: -60%;
+        background-size: cover;
         min-height: 60vh;
+        //        background-image: url('./img/map_1.svg');
 
         h1 {
             line-height: 1.325;
         }
+
     }
 
-    .bodymovin svg {
-        height: 500px !important;
-        width: 100%;
+    .shape {
+        height: 40px;
+        width: 40px;
+        position: absolute;
     }
-    .rellax-2{
-        position:absolute;
-        right:50px;
-        bottom:50px;
-        width:100px;
-        height:100px;
-        display: block;
+
+    .shape__1 {
+        top: 80px;
+        right: 100px;
+    }
+
+    .shape__2 {
+        bottom: 40px;
+        left: 69px;
+
+    }
+
+    .shape__3 {
+        left: 120px;
+        bottom: -100px;
+        height: 100px;
+        width: 100px;
+    }
+
+    .shape__4 {
+        right: 40px;
+        top: 60px;
     }
 }
 
