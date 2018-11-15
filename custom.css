@@ -85,9 +85,17 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+body.wb-modal > #wb-tphp {
+  z-index: 1070 !important;
+}
+
 main {
   padding: 0;
   padding: 0;
+}
+
+.wb-eqht {
+  display: inline-block;
 }
 
 p.lead {
@@ -155,18 +163,11 @@ p.lead {
   text-decoration: none;
 }
 
-body.wb-modal > #wb-tphp {
-  z-index: 1070 !important;
-}
-
 nav.navigation-bar {
   position: sticky !important;
   position: -webkit-sticky !important;
   top: 0;
   z-index: 1069;
-}
-
-nav.navigation-bar {
   background-color: #1F3169;
 }
 nav.navigation-bar .navigation__items {
@@ -329,55 +330,6 @@ nav.navigation-bar .navigation__items .menu-mobile-visible {
   right: 169px;
 }
 
-section#challenges {
-  padding-top: 3.25em;
-  padding-bottom: 3.25em;
-  background-size: 110%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fff;
-}
-section#prevChallenges {
-  background-color: #85A7C2;
-}
-section#nonChallenges {
-  background-color: #D9E9F6;
-}
-section#ctaBox {
-  background-color: #fff;
-  padding: 1.25em;
-}
-section#ctaBox .cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3.25em;
-}
-section#ctaBox .cta h2.h1 {
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-}
-section#ctaBox .cta p {
-  font-weight: 500;
-  margin: 2em auto;
-}
-section#ctaBox .cta a {
-  color: #fff;
-}
-@media (max-width: 767px) {
-  section#ctaBox .cta {
-    padding: 1.25em;
-  }
-}
-section#ctaBox .cta__navy {
-  background-color: #469EE1;
-  color: #1F3169;
-}
-section#ctaBox .cta__pink {
-  background-color: #D84190;
-  color: #fff;
-}
-
 .card {
   transition: all 0.5s ease;
   margin-bottom: 3.25em;
@@ -446,7 +398,7 @@ section#ctaBox .cta__pink {
 }
 .card .card-body p {
   color: #E25456;
-  margin-bottom: 0;
+  margin-bottom: 4px;
   font-weight: 500;
 }
 .card .card-body h3 {
@@ -467,8 +419,67 @@ section#ctaBox .cta__pink {
   transform: translateY(-15px) scale(1.1) rotate(-45deg);
 }
 
-.wb-eqht {
-  display: inline-block;
+section#challenges {
+  padding-top: 3.25em;
+  padding-bottom: 3.25em;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  color: #1F3169;
+}
+section#nonChallenges {
+  background-color: #85A7C2;
+  color: #1F3169;
+  padding-top: 3.25em;
+  padding-bottom: 3.25em;
+}
+section#nonChallenges h2.h1 {
+  margin-top: 0;
+}
+section#nonChallenges .card .img-holder {
+  height: 240px;
+  width: 100%;
+  background: #51E7F2;
+}
+section#nonChallenges .card .img-holder img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+section#ctaBox {
+  background-color: #fff;
+  padding: 1.25em;
+}
+section#ctaBox .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.25em;
+}
+section#ctaBox .cta h2.h1 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+section#ctaBox .cta p {
+  font-weight: 500;
+  margin: 2em auto;
+}
+section#ctaBox .cta a {
+  color: #fff;
+}
+@media (max-width: 767px) {
+  section#ctaBox .cta {
+    padding: 1.25em;
+  }
+}
+section#ctaBox .cta__navy {
+  background-color: #469EE1;
+  color: #1F3169;
+}
+section#ctaBox .cta__pink {
+  background-color: #D84190;
+  color: #fff;
 }
 
 footer nav {
@@ -555,6 +566,16 @@ footer nav p.small {
   color: #85A7C2;
   margin-top: 2em;
 }
+footer nav img.wink {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  display: block;
+  top: -69px;
+  right: -69px;
+  transition: all 0.3s ease;
+  transition-delay: 2s;
+}
 @media (max-width: 767px) {
   footer nav {
     -ms-grid-columns: 2f 2fr;
@@ -566,6 +587,26 @@ footer nav:hover .circle-red {
 }
 footer nav:hover .circle-teal {
   transform: scale(1.3) translateX(100px) translateY(40px);
+}
+footer nav:hover img.wink {
+  transform: scale(1.6) translateX(-100px) translateY(100px);
+}
+
+.sub-footer {
+  background: #0d1021;
+  padding: 2em;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .sub-footer {
+    padding: 1.25em;
+    justify-content: center;
+  }
+}
+.sub-footer img.sub-footer__logo {
+  max-width: 150px;
+  height: 24px;
 }
 
 /*# sourceMappingURL=custom.css.map */

@@ -1,4 +1,6 @@
-// variables
+// ======== New variables =======
+
+// -------- colors --------
 $blue: #469EE1;
 $teal: #51E7F2;
 $navy-blue:#1F3169;
@@ -16,7 +18,7 @@ $shadow: 0 .5rem 1rem rgba(0, 0, 0, .175) !important;
 $shadow-lg: 0 1rem 3rem rgba(0, 0, 0, .35) !important;
 $shadow-card: 2px 8px 20px 0 hsla(200, 1%, 47%, .25) !important;
 
-//spacing
+// -------- spacing --------
 $space-unit:1em;
 $space-xxs: $space-unit * 0.25;
 $space-xs: $space-unit * 0.25;
@@ -26,11 +28,14 @@ $space-lg: $space-unit * 2;
 $space-xl:$space-unit * 3.25;
 $space-xxl: $space-unit * 5.25;
 
+
+// ======== Import Google Fonts =======
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900');
 
+// ======== Import other sass files =======
 @import "custom-buttons";
 
-
+// ======== General body styling =======
 body {
     min-height: 1000px;
 }
@@ -43,9 +48,7 @@ body {
     border-radius: 4em !important;
 }
 
-.container {}
-
-//typography
+// -------- typography --------
 body,
 h1,
 h2,
@@ -58,9 +61,17 @@ a {
 }
 
 
+body.wb-modal > #wb-tphp {
+    z-index: 1070 !important;
+}
+
 main {
     padding: 0;
     padding: 0;
+}
+
+.wb-eqht {
+    display: inline-block;
 }
 
 p {
@@ -70,7 +81,7 @@ p {
     }
 }
 
-//shadow
+// -------- shadow --------
 .shadow-sm {
     box-shadow: $shadow-sm;
 }
@@ -83,8 +94,7 @@ p {
     box-shadow: $shadow-lg;
 }
 
-
-//impact bullets
+// -------- Impact bullets --------
 
 %blt-shared {
     display: inline-block;
@@ -117,9 +127,7 @@ p {
     background: $gray-blue;
 }
 
-
-
-// custom components
+// ======== Custom html components =======
 .pre-nav {
     background-color: $dark-blue;
     padding-top: 1rem;
@@ -144,19 +152,12 @@ p {
     }
 }
 
-body.wb-modal > #wb-tphp {
-    z-index: 1070 !important;
-}
-
+// -------- navigation bar --------
 nav.navigation-bar {
     position: sticky !important;
     position: -webkit-sticky !important;
     top: 0;
     z-index: 1069;
-}
-
-
-nav.navigation-bar {
     background-color: $navy-blue;
 
 
@@ -244,6 +245,7 @@ nav.navigation-bar {
     }
 }
 
+// -------- jumbotron section --------
 .jumbotron {
     position: relative;
     min-height: 50vh;
@@ -268,12 +270,10 @@ nav.navigation-bar {
         background-position: -60%;
         background-size: cover;
         min-height: 60vh;
-        //        background-image: url('./img/map_1.svg');
 
         h1 {
             line-height: 1.325;
         }
-
     }
 
     .grid-line {
@@ -307,7 +307,6 @@ nav.navigation-bar {
         border-color: rgba(31, 49, 105, 0.3);
     }
 
-
     .shape {
         height: 40px;
         width: 40px;
@@ -339,87 +338,21 @@ nav.navigation-bar {
     }
 
     .shape__5 {
-        height:50px;
-        width:50px;
+        height: 50px;
+        width: 50px;
         right: -10px;
         bottom: 29px;
     }
-    .shape__6{
-        height:100px;
-        width:100px;
-        bottom:69px;
-        right:169px;
+
+    .shape__6 {
+        height: 100px;
+        width: 100px;
+        bottom: 69px;
+        right: 169px;
     }
 }
 
-section {
-    &#challenges {
-        padding-top: $space-xl;
-        padding-bottom: $space-xl;
-        background-size: 110%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #fff;
-
-    }
-
-    &#prevChallenges {
-        background-color: $gray-blue;
-    }
-
-    &#nonChallenges {
-        background-color: $light-gray;
-    }
-
-    &#ctaBox {
-        background-color: #fff;
-        padding: $space-md;
-
-        %cta__shared {
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: $space-xl;
-
-            h2.h1 {
-                margin-top: $space-sm;
-                margin-bottom: $space-sm;
-            }
-
-            p {
-                font-weight: 500;
-                margin: $space-lg auto;
-            }
-
-            a {
-                color: #fff;
-            }
-
-            @media(max-width:767px) {
-                padding: $space-md;
-            }
-
-        }
-
-        .cta {
-            @extend %cta__shared;
-        }
-
-        .cta__navy {
-            background-color: $blue;
-            color: $navy-blue;
-        }
-
-        .cta__pink {
-            background-color: $pink;
-            color: #fff;
-        }
-
-
-    }
-}
-
+// -------- cards --------
 .card {
     transition: all 0.5s ease;
     margin-bottom: $space-xl;
@@ -499,7 +432,7 @@ section {
 
         p {
             color: $red;
-            margin-bottom: 0;
+            margin-bottom: 4px;
             font-weight: 500;
         }
 
@@ -528,10 +461,97 @@ section {
     }
 }
 
-.wb-eqht {
-    display: inline-block;
+
+// -------- page sections --------
+section {
+    &#challenges {
+        padding-top: $space-xl;
+        padding-bottom: $space-xl;
+        background-size: 110%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #fff;
+        color: $navy-blue;
+
+    }
+
+
+    &#nonChallenges {
+        background-color: $gray-blue;
+        color: $navy-blue;
+        padding-top: $space-xl;
+        padding-bottom: $space-xl;
+
+        h2.h1 {
+            margin-top: 0;
+        }
+
+        .card {
+            .img-holder {
+                height: 240px;
+                width: 100%;
+                background: $teal;
+
+                img {
+                    height: 240px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+        }
+    }
+
+    &#ctaBox {
+        background-color: #fff;
+        padding: $space-md;
+
+        %cta__shared {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: $space-xl;
+
+            h2.h1 {
+                margin-top: $space-sm;
+                margin-bottom: $space-sm;
+            }
+
+            p {
+                font-weight: 500;
+                margin: $space-lg auto;
+            }
+
+            a {
+                color: #fff;
+            }
+
+            @media(max-width:767px) {
+                padding: $space-md;
+            }
+
+        }
+
+        .cta {
+            @extend %cta__shared;
+        }
+
+        .cta__navy {
+            background-color: $blue;
+            color: $navy-blue;
+        }
+
+        .cta__pink {
+            background-color: $pink;
+            color: #fff;
+        }
+
+
+    }
 }
 
+// -------- footer --------
 footer nav {
     display: -ms-grid;
     display: grid;
@@ -633,6 +653,17 @@ footer nav {
         margin-top: $space-lg;
     }
 
+    img.wink {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        display: block;
+        top: -69px;
+        right: -69px;
+        transition: all 0.3s ease;
+        transition-delay: 2s;
+    }
+
     @media(max-width:767px) {
         -ms-grid-columns: 2f 2fr;
         grid-template-areas:
@@ -649,6 +680,29 @@ footer nav {
         .circle-teal {
             transform: scale(1.3) translateX(100px) translateY(40px);
         }
+
+        img.wink {
+            transform: scale(1.6) translateX(-100px) translateY(100px);
+
+        }
+    }
+
+}
+
+.sub-footer {
+    background: #0d1021;
+    padding: $space-lg;
+    display: flex;
+    justify-content: flex-end;
+
+    @media(max-width: 767px) {
+        padding: $space-md;
+        justify-content: center;
+    }
+
+    img.sub-footer__logo {
+        max-width: 150px;
+        height: 24px;
     }
 
 }
