@@ -266,28 +266,67 @@ nav.navigation-bar .navigation__items .menu-mobile-visible {
     line-height: 1.325;
   }
 }
+.jumbotron .grid-line {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 120px;
+  bottom: 0;
+  border-left: 4px dotted #1F3169;
+}
+.jumbotron .grid-line:nth-child(2) {
+  right: 240px;
+}
+.jumbotron .grid-line:nth-child(3) {
+  right: 360px;
+}
+.jumbotron .grid-line:nth-child(4) {
+  right: 480px;
+}
+.jumbotron .grid-line:nth-child(5) {
+  right: 600px;
+  border-color: rgba(31, 49, 105, 0.6);
+}
+.jumbotron .grid-line:nth-child(6) {
+  right: 720px;
+  border-color: rgba(31, 49, 105, 0.3);
+}
 .jumbotron .shape {
   height: 40px;
   width: 40px;
   position: absolute;
 }
 .jumbotron .shape__1 {
+  height: 29px;
+  width: 29px;
   top: 80px;
-  right: 100px;
+  right: 130px;
 }
 .jumbotron .shape__2 {
   bottom: 40px;
-  left: 69px;
+  left: 100px;
 }
 .jumbotron .shape__3 {
-  left: 120px;
-  bottom: -100px;
+  left: -40px;
+  bottom: -60px;
   height: 100px;
   width: 100px;
 }
 .jumbotron .shape__4 {
   right: 40px;
-  top: 60px;
+  top: 29px;
+}
+.jumbotron .shape__5 {
+  height: 50px;
+  width: 50px;
+  right: -10px;
+  bottom: 29px;
+}
+.jumbotron .shape__6 {
+  height: 100px;
+  width: 100px;
+  bottom: 50px;
+  right: 37px;
 }
 
 section#challenges {

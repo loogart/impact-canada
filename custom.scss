@@ -276,6 +276,38 @@ nav.navigation-bar {
 
     }
 
+    .grid-line {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 120px;
+        bottom: 0;
+        border-left: 4px dotted $navy-blue;
+    }
+
+    .grid-line:nth-child(2) {
+        right: 240px;
+    }
+
+    .grid-line:nth-child(3) {
+        right: 360px;
+    }
+
+    .grid-line:nth-child(4) {
+        right: 480px;
+    }
+
+    .grid-line:nth-child(5) {
+        right: 600px;
+        border-color: rgba(31, 49, 105, 0.6);
+    }
+
+    .grid-line:nth-child(6) {
+        right: 720px;
+        border-color: rgba(31, 49, 105, 0.3);
+    }
+
+
     .shape {
         height: 40px;
         width: 40px;
@@ -283,26 +315,40 @@ nav.navigation-bar {
     }
 
     .shape__1 {
+        height: 29px;
+        width: 29px;
         top: 80px;
-        right: 100px;
+        right: 130px;
     }
 
     .shape__2 {
         bottom: 40px;
-        left: 69px;
-
+        left: 100px;
     }
 
     .shape__3 {
-        left: 120px;
-        bottom: -100px;
+        left: -40px;
+        bottom: -60px;
         height: 100px;
         width: 100px;
     }
 
     .shape__4 {
         right: 40px;
-        top: 60px;
+        top: 29px;
+    }
+
+    .shape__5 {
+        height:50px;
+        width:50px;
+        right: -10px;
+        bottom: 29px;
+    }
+    .shape__6{
+        height:100px;
+        width:100px;
+        bottom:50px;
+        right:37px;
     }
 }
 
