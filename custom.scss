@@ -77,7 +77,7 @@ main {
 p {
     &.lead {
         font-weight: 500;
-        margin-bottom: $space-lg;
+        margin-bottom: 0;
     }
 }
 
@@ -98,12 +98,12 @@ p {
 
 %blt-shared {
     display: inline-block;
-    width: $space-unit;
-    height: $space-unit;
+    width: $space-md;
+    height: $space-md;
     background: $navy-blue;
-    border-radius: 0 $space-unit 0 0;
-    -moz-border-radius: 0 $space-unit 0 0;
-    -webkit-border-radius: 0 $space-unit 0 0;
+    border-radius: 0 $space-lg 0 0;
+    -moz-border-radius: 0 $space-lg 0 0;
+    -webkit-border-radius: 0 $space-lg 0 0;
     margin-right: 0.5em;
 }
 
@@ -467,6 +467,7 @@ section {
         background-position: center;
         background-color: #fff;
         color: $navy-blue;
+
         a {
             text-decoration: none;
         }
@@ -479,11 +480,16 @@ section {
         padding-top: $space-xl;
         padding-bottom: $space-xl;
 
+        a {
+            text-decoration: none;
+        }
+
         h2.h1 {
             margin-top: 0;
         }
 
         .card {
+            
             .img-holder {
                 height: 240px;
                 width: 100%;
@@ -497,6 +503,7 @@ section {
             }
 
         }
+                
     }
 
     &#ctaBox {
