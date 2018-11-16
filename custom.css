@@ -580,6 +580,7 @@ footer nav img.wink {
   right: -69px;
   transition: all 0.3s ease;
   transition-delay: 2s;
+  z-index: 3;
 }
 @media (max-width: 767px) {
   footer nav {
@@ -612,6 +613,20 @@ footer nav:hover img.wink {
 .sub-footer img.sub-footer__logo {
   max-width: 150px;
   height: 24px;
+}
+
+.this-is {
+  position: fixed;
+  bottom: -320px;
+  margin: auto;
+  width: 269px;
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+
+.sparta {
+  bottom: 0;
+  z-index: 4;
 }
 
 /*# sourceMappingURL=custom.css.map */

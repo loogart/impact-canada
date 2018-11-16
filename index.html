@@ -374,7 +374,7 @@
                 <div class="row">
                     <span class="circle circle-teal"></span>
                     <span class="circle circle-red"></span>
-                    <img class="wink" src="./img/kiss-wink-heart-solid.svg">
+                    <img class="wink" src="./img/kiss-wink-heart-solid.svg" id="hiRodney">
                     <div class="col-sm-6">
                         <h3>Follow</h3>
                         <ul>
@@ -392,6 +392,7 @@
         </nav>
         <div class="sub-footer"><img class="sub-footer__logo" src="./img/canada-wordmark-white.svg" alt="Canada wordmark"></div>
     </footer>
+    <img src="./img/rodney-ghali.png" class="this-is" id="byeRodney">
     <!--[if gte IE 9 | !IE ]><!-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="./wet-boew/js/wet-boew.min.js"></script>
@@ -407,6 +408,12 @@
             $("#toggle-menu").click(function() {
                 $(".menu").toggleClass("menu-mobile-visible");
             });
+            $("#hiRodney").click(function() {
+                $(".this-is").toggleClass("sparta");
+            });
+            $("#byeRodney").click(function() {
+                $(".this-is").toggleClass("sparta");
+            });
         });
 
         // Parallax effects
@@ -419,7 +426,6 @@
             duration: 1250,
             scale: 0.5
         });
-
     </script>
 </body>
 
