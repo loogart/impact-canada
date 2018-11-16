@@ -443,11 +443,6 @@ nav.navigation-bar {
             font-size: 1.6em;
             line-height: 1.25;
         }
-
-        a {
-            color: $blue;
-            text-decoration: none;
-        }
     }
 
     &:hover {
@@ -472,7 +467,9 @@ section {
         background-position: center;
         background-color: #fff;
         color: $navy-blue;
-
+        a {
+            text-decoration: none;
+        }
     }
 
 
