@@ -41,6 +41,10 @@ body {
     min-height: 1000px;
 }
 
+.container.narrow {
+    max-width: 800px;
+}
+
 .wb-sl {
     background: $gradient-red;
     color: #fff;
@@ -48,6 +52,7 @@ body {
     padding: $space-sm $space-md;
     border-radius: 4em !important;
 }
+
 
 // -------- typography --------
 body,
@@ -524,9 +529,6 @@ section {
     }
 
     &#staticContent {
-        .container {
-            max-width: 800px;
-        }
 
         h2 {
             margin-bottom: $space-sm;
@@ -551,7 +553,6 @@ section {
     }
 
     &#newsContent {
-
         img {
             margin-bottom: $space-md;
         }
@@ -579,16 +580,19 @@ section {
             color: $blue;
             font-weight: 500;
         }
-        
+
         .pagination {
             margin: auto;
 
-            a, span {
-            background-color: transparent;
+            a,
+            span {
+                background-color: transparent;
                 color: $navy-blue;
                 border: 1px solid $navy-blue;
-                &:hover,&focus{
-                    color:$blue;
+
+                &:hover,
+                &focus {
+                    color: $blue;
                     background-color: $navy-blue;
                 }
             }
@@ -597,6 +601,42 @@ section {
 
     }
 
+}
+
+
+//color combos
+
+.cta {
+    @extend %cta__shared;
+    padding: $space-xl;
+    border-radius: $space-md;
+}
+
+.cta__gray {
+    background-color: #d8d8d8;
+
+    h2 {
+        color: $navy-blue !important;
+        margin-top: 0;
+    }
+
+    p {
+        color: $dark-blue !important;
+    }
+}
+
+.cta__navy {
+    background-color: $navy-blue;
+
+    h2 {
+        color: $blue !important;
+        margin-top: 0;
+
+    }
+
+    p {
+        color: #fff !important;
+    }
 }
 
 
@@ -744,6 +784,8 @@ section {
         }
     }
 }
+
+
 
 // -------- footer --------
 footer nav {

@@ -8,7 +8,7 @@
 }
 
 .btn-primary {
-  color: #fff;
+  color: #fff !important;
   background: linear-gradient(90deg, #51E7F2 0%, #469EE1 100%);
   background-color: #469EE1;
   border-color: transparent;
@@ -27,7 +27,7 @@
 }
 
 .btn-navy {
-  color: #fff;
+  color: #fff !important;
   background-color: #1F3169;
   border-color: transparent;
 }
@@ -45,7 +45,7 @@
 }
 
 .btn-blue {
-  color: #fff;
+  color: #fff !important;
   background-color: #469EE1;
   border-color: transparent;
 }
@@ -63,7 +63,7 @@
 }
 
 .btn-red {
-  color: #fff;
+  color: #fff !important;
   background-color: #E25456;
   border-color: transparent;
 }
@@ -82,6 +82,10 @@
 
 body {
   min-height: 1000px;
+}
+
+.container.narrow {
+  max-width: 800px;
 }
 
 .wb-sl {
@@ -482,9 +486,6 @@ section#ctaBox .cta__dark h2 {
 section#ctaBox .cta__dark p {
   color: #469EE1 !important;
 }
-section#staticContent .container {
-  max-width: 800px;
-}
 section#staticContent h2 {
   margin-bottom: 0.75em;
   color: #1F3169;
@@ -529,14 +530,44 @@ section#newsContent a {
 section#newsContent .pagination {
   margin: auto;
 }
-section#newsContent .pagination a, section#newsContent .pagination span {
+section#newsContent .pagination a,
+section#newsContent .pagination span {
   background-color: transparent;
   color: #1F3169;
   border: 1px solid #1F3169;
 }
-section#newsContent .pagination a:hover, section#newsContent .pagination afocus, section#newsContent .pagination span:hover, section#newsContent .pagination spanfocus {
+section#newsContent .pagination a:hover, section#newsContent .pagination afocus,
+section#newsContent .pagination span:hover,
+section#newsContent .pagination spanfocus {
   color: #469EE1;
   background-color: #1F3169;
+}
+
+.cta {
+  padding: 3.25em;
+  border-radius: 1.25em;
+}
+
+.cta__gray {
+  background-color: #d8d8d8;
+}
+.cta__gray h2 {
+  color: #1F3169 !important;
+  margin-top: 0;
+}
+.cta__gray p {
+  color: #10172D !important;
+}
+
+.cta__navy {
+  background-color: #1F3169;
+}
+.cta__navy h2 {
+  color: #469EE1 !important;
+  margin-top: 0;
+}
+.cta__navy p {
+  color: #fff !important;
 }
 
 .card {
