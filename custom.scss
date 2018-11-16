@@ -29,6 +29,7 @@ $space-xl:$space-unit * 3.25;
 $space-xxl: $space-unit * 5.25;
 
 
+
 // ======== Import Google Fonts =======
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900');
 
@@ -58,8 +59,20 @@ h5,
 h6,
 a {
     font-family: 'Roboto', sans-serif;
+    display: inline-block;
 }
 
+h1 {
+        color: $navy-blue;
+    margin-bottom: $space-sm;
+    border-bottom: 0;
+    font-size: $space-xl;
+
+    @media(max-width: 767px) {
+        line-height: 1.325;
+        font-size: $space-lg;
+    }
+}
 
 body.wb-modal > #wb-tphp {
     z-index: 1070 !important;
@@ -72,6 +85,15 @@ main {
 
 .wb-eqht {
     display: inline-block;
+}
+
+.align-vertical {
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 767px) {
+        display: block;
+    }
 }
 
 p {
@@ -92,6 +114,10 @@ p {
 
 .shadow-lg {
     box-shadow: $shadow-lg;
+}
+
+.shadow-card {
+    box-shadow: $shadow-card;
 }
 
 // -------- Impact bullets --------
@@ -245,6 +271,7 @@ nav.navigation-bar {
     }
 }
 
+
 // -------- jumbotron section --------
 .jumbotron {
     position: relative;
@@ -263,6 +290,7 @@ nav.navigation-bar {
 
     h1 {
         border-bottom: 0 !important;
+        font-size: $space-xl;
     }
 
     @media(max-width:767px) {
@@ -272,6 +300,7 @@ nav.navigation-bar {
 
         h1 {
             line-height: 1.325;
+            font-size: $space-lg;
         }
     }
 
@@ -351,6 +380,141 @@ nav.navigation-bar {
     }
 }
 
+// -------- largetron section --------
+.largetron {}
+
+
+// -------- page sections --------
+section {
+    &#challenges {
+        padding-top: $space-xl;
+        padding-bottom: $space-xl;
+        background-size: 110%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #fff;
+        color: $navy-blue;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &#nonChallenges {
+        background-color: $gray-blue;
+        color: $navy-blue;
+        padding-top: $space-xl;
+        padding-bottom: $space-xl;
+
+        a {
+            text-decoration: none;
+        }
+
+        h2.h1 {
+            margin-top: 0;
+        }
+
+        .card {
+
+            .img-holder {
+                height: 240px;
+                width: 100%;
+                background: $teal;
+
+                img {
+                    height: 240px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+        }
+
+    }
+
+    &#ctaBox {
+        background-color: #fff;
+        padding: $space-md;
+
+        %cta__shared {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: $space-xl;
+
+            h2.h1 {
+                margin-top: $space-sm;
+                margin-bottom: $space-sm;
+            }
+
+            p {
+                font-weight: 500;
+                margin: $space-lg auto;
+                color: $navy-blue;
+            }
+
+            a {
+                color: #fff;
+            }
+
+            @media(max-width:767px) {
+                padding: $space-md;
+            }
+
+        }
+
+        .cta {
+            @extend %cta__shared;
+        }
+
+        .cta__navy {
+            background-color: $blue;
+
+            h2,
+            p {
+                color: $navy-blue;
+            }
+        }
+
+        .cta__pink {
+            background-color: $pink;
+
+            h2,
+            p {
+                color: #fff !important;
+            }
+        }
+
+
+    }
+
+    &#staticContent {
+        .container {
+            max-width: 800px;
+        }
+        h2 {
+            margin-bottom: $space-sm;
+            color:$navy-blue;
+        }
+        p,
+        li {
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 1.5;
+            letter-spacing: .02em;
+            color: rgba(0, 0, 0, .86);
+            color: $dark-blue;
+        }
+        
+        p, img {
+            margin-bottom: $space-md;
+        }
+    }
+}
+
+
 // -------- cards --------
 .card {
     transition: all 0.5s ease;
@@ -422,7 +586,7 @@ nav.navigation-bar {
         }
 
         .blt {
-            flex:0 0 $space-md;
+            flex: 0 0 $space-md;
             height: $space-md;
             width: $space-md;
             border-radius: 0 $space-md 0 0;
@@ -458,102 +622,41 @@ nav.navigation-bar {
     }
 }
 
+// --------horizontal cards --------
+.b-card {
+    display: flex;
+    margin-bottom: $space-md;
 
-// -------- page sections --------
-section {
-    &#challenges {
-        padding-top: $space-xl;
-        padding-bottom: $space-xl;
-        background-size: 110%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #fff;
-        color: $navy-blue;
-
-        a {
-            text-decoration: none;
-        }
+    img {
+        flex: 0 0 $space-md;
+        max-width: 120px;
+        max-height: 120px;
+        background: #ddd;
+        margin-right: $space-md;
     }
 
-
-    &#nonChallenges {
-        background-color: $gray-blue;
-        color: $navy-blue;
-        padding-top: $space-xl;
-        padding-bottom: $space-xl;
-
+    .b-card__body {
         a {
             text-decoration: none;
+            color:$navy-blue;
         }
 
-        h2.h1 {
+        h3 {
             margin-top: 0;
         }
 
-        .card {
-
-            .img-holder {
-                height: 240px;
-                width: 100%;
-                background: $teal;
-
-                img {
-                    height: 240px;
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-
+        p {
+            font-size: 1em !important;
         }
-
     }
 
-    &#ctaBox {
-        background-color: #fff;
-        padding: $space-md;
+    @media(max-width:767px) {
+        flex-direction: column;
 
-        %cta__shared {
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: $space-xl;
-
-            h2.h1 {
-                margin-top: $space-sm;
-                margin-bottom: $space-sm;
-            }
-
-            p {
-                font-weight: 500;
-                margin: $space-lg auto;
-            }
-
-            a {
-                color: #fff;
-            }
-
-            @media(max-width:767px) {
-                padding: $space-md;
-            }
+        img {
+            margin-bottom: $space-md;
 
         }
-
-        .cta {
-            @extend %cta__shared;
-        }
-
-        .cta__navy {
-            background-color: $blue;
-            color: $navy-blue;
-        }
-
-        .cta__pink {
-            background-color: $pink;
-            color: #fff;
-        }
-
-
     }
 }
 
@@ -566,6 +669,7 @@ footer nav {
     grid-template-columns: 1fr 1fr;
     -ms-grid-columns: 1fr 1fr;
     grid-gap: 0;
+    font-size: 1em;
 
     .footer__left {
         -ms-grid-row: 1;
@@ -713,16 +817,17 @@ footer nav {
     }
 
 }
-.this-is{
-    position:fixed;
-    bottom:-320px;
-    margin:auto;
-    width:269px;
+
+.this-is {
+    position: fixed;
+    bottom: -320px;
+    margin: auto;
+    width: 269px;
     transition: all 0.5s ease;
     z-index: 1000;
 }
 
-.sparta{
-    bottom:0;
+.sparta {
+    bottom: 0;
     z-index: 4;
 }

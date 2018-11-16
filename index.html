@@ -84,10 +84,10 @@
                 </div>
                 <div class="menu">
                     <h2 class="sr-only">Topics menu</h2>
-                    <a href="#!" aria-posinset="1" aria-setsize="4">About</a>
-                    <a href="#!" aria-posinset="2" aria-setsize="4">How it works</a>
-                    <a href="#!" aria-posinset="3" aria-setsize="4">News</a>
-                    <a href="#!" aria-posinset="4" aria-setsize="4">Partner with us</a>
+                    <a href="./about.html" aria-posinset="1" aria-setsize="4">About</a>
+                    <a href="./how-it-works.html" aria-posinset="2" aria-setsize="4">How it works</a>
+                    <a href="./news.html" aria-posinset="3" aria-setsize="4">News</a>
+                    <a href="./partner-with-us.html" aria-posinset="4" aria-setsize="4">Partner with us</a>
                 </div>
             </section>
         </div>
@@ -101,10 +101,10 @@
             <div class="grid-line"></div>
             <div class="grid-line"></div>
             <div class="container">
-                <div class="row">
+                <div class="row align-vertical">
                     <div class="col-sm-7">
-                        <h1 id="wb-cont" property="name" class="mrgn-bttm-lg">Help us solve Canada’s biggest challenges.</h1>
-                        <a type="button" class="btn btn-primary btn-lg shadow-lg" href="#challenges">View challenges</a>
+                            <h1 id="wb-cont" property="name" class="mrgn-bttm-lg">Help us solve Canada’s biggest challenges.</h1>
+                            <a type="button" class="btn btn-primary btn-lg shadow-lg" href="#challenges">View challenges</a>
                     </div>
                     <div class="col-sm-5">
                         <img class="rellax shape shape__3" src="./img/diamond-outline-white.svg" data-rellax-speed="4">
@@ -269,10 +269,10 @@
             </div>
         </section>
 
-        <!-- previous challenges -->
+        <!-- other initiatives -->
         <section id="nonChallenges">
             <div class="container">
-                <h2 class="h1"><span class="blt blt-red"></span>Other initiatives</h2>
+                <h2 class="h1"><span class="blt blt-red"></span> Other initiatives</h2>
                 <div class="row mrgn-tp-lg wb-eqht">
                     <div class="col-sm-6 col-md-4">
                         <a href="#!">
@@ -333,7 +333,7 @@
                 <div class="container">
                     <h2 class="h1"><span class="blt blt-red"></span> Become a partner. Launch a Challenge.</h2>
                     <p>The Impact Canada Initiative is led by a Centre of Expertise housed within the Impact and Innovation Unit of the Privy Council Office, which also manages this platform in partnership with Government of Canada departments.</p>
-                    <a type="button" class="btn btn-navy" href="#challenges">Become a partner</a>
+                    <a type="button" class="btn btn-navy" href="./partner-with-us.html">Become a partner</a>
                 </div>
             </div>
         </section>
@@ -391,7 +391,7 @@
 
         </nav>
         <div class="sub-footer"><img class="sub-footer__logo" src="./img/canada-wordmark-white.svg" alt="Canada wordmark"></div>
-            <img src="./img/rodney-ghali.png" class="this-is" id="byeRodney" aria-hidden="true">
+        <img src="./img/rodney-ghali.png" class="this-is" id="byeRodney" aria-hidden="true">
     </footer>
 
     <!--[if gte IE 9 | !IE ]><!-->
@@ -403,31 +403,8 @@
 		<![endif]-->
     <script src="./custom-js/rellax.min.js"></script>
     <script src="./custom-js/scrollreveal.min.js"></script>
-    <script>
-        // Custom mobile menu and more
-        $(document).ready(function() {
-            $("#toggle-menu").click(function() {
-                $(".menu").toggleClass("menu-mobile-visible");
-            });
-            $("#hiRodney").click(function() {
-                $(".this-is").toggleClass("sparta");
-            });
-            $("#byeRodney").click(function() {
-                $(".this-is").toggleClass("sparta");
-            });
-        });
+    <script src="./custom-js/scripts.js"></script>
 
-        // Parallax effects
-        var rellax = new Rellax('.rellax');
-
-        // Scroll Reveal effects
-        ScrollReveal().reveal('.card', {
-            interval: 16,
-            reset: false,
-            duration: 1250,
-            scale: 0.5
-        });
-    </script>
 </body>
 
 </html>
