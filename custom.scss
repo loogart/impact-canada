@@ -59,11 +59,10 @@ h5,
 h6,
 a {
     font-family: 'Roboto', sans-serif;
-    display: inline-block;
 }
 
 h1 {
-        color: $navy-blue;
+    color: $navy-blue;
     margin-bottom: $space-sm;
     border-bottom: 0;
     font-size: $space-xl;
@@ -72,6 +71,13 @@ h1 {
         line-height: 1.325;
         font-size: $space-lg;
     }
+}
+
+h1,
+h2,
+h3 {
+    display: inline-block;
+
 }
 
 body.wb-modal > #wb-tphp {
@@ -443,14 +449,14 @@ section {
             align-items: center;
             padding: $space-xl;
 
-            h2.h1 {
+            h2 {
                 margin-top: $space-sm;
-                margin-bottom: $space-sm;
+                margin-bottom: $space-sm!important;
             }
 
             p {
                 font-weight: 500;
-                margin: $space-lg auto;
+                margin-bottom: $space-lg;
                 color: $navy-blue;
             }
 
@@ -493,10 +499,12 @@ section {
         .container {
             max-width: 800px;
         }
+
         h2 {
             margin-bottom: $space-sm;
-            color:$navy-blue;
+            color: $navy-blue;
         }
+
         p,
         li {
             font-weight: 400;
@@ -507,8 +515,9 @@ section {
             color: rgba(0, 0, 0, .86);
             color: $dark-blue;
         }
-        
-        p, img {
+
+        p,
+        img {
             margin-bottom: $space-md;
         }
     }
@@ -638,7 +647,7 @@ section {
     .b-card__body {
         a {
             text-decoration: none;
-            color:$navy-blue;
+            color: $navy-blue;
         }
 
         h3 {

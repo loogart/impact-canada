@@ -83,7 +83,6 @@ h5,
 h6,
 a {
   font-family: "Roboto", sans-serif;
-  display: inline-block;
 }
 
 h1 {
@@ -97,6 +96,12 @@ h1 {
     line-height: 1.325;
     font-size: 2em;
   }
+}
+
+h1,
+h2,
+h3 {
+  display: inline-block;
 }
 
 body.wb-modal > #wb-tphp {
@@ -404,13 +409,13 @@ section#ctaBox .cta {
   align-items: center;
   padding: 3.25em;
 }
-section#ctaBox .cta h2.h1 {
+section#ctaBox .cta h2 {
   margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.75em !important;
 }
 section#ctaBox .cta p {
   font-weight: 500;
-  margin: 2em auto;
+  margin-bottom: 2em;
   color: #1F3169;
 }
 section#ctaBox .cta a {
@@ -452,7 +457,8 @@ section#staticContent li {
   color: rgba(0, 0, 0, 0.86);
   color: #10172D;
 }
-section#staticContent p, section#staticContent img {
+section#staticContent p,
+section#staticContent img {
   margin-bottom: 1.25em;
 }
 
