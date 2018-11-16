@@ -486,7 +486,7 @@ section#ctaBox .cta__dark h2 {
 section#ctaBox .cta__dark p {
   color: #469EE1 !important;
 }
-section#staticContent h2 {
+section#staticContent h2, section#staticContent h3 {
   margin-bottom: 0.75em;
   color: #1F3169;
 }
@@ -503,6 +503,9 @@ section#staticContent li {
 section#staticContent p,
 section#staticContent img {
   margin-bottom: 1.25em;
+}
+section#staticContent a {
+  color: #469EE1;
 }
 section#newsContent img {
   margin-bottom: 1.25em;

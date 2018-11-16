@@ -530,7 +530,7 @@ section {
 
     &#staticContent {
 
-        h2 {
+        h2, h3 {
             margin-bottom: $space-sm;
             color: $navy-blue;
         }
@@ -549,6 +549,9 @@ section {
         p,
         img {
             margin-bottom: $space-md;
+        }
+        a {
+            color:$blue;
         }
     }
 
