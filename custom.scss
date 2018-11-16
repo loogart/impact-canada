@@ -73,13 +73,6 @@ h1 {
     }
 }
 
-h1,
-h2,
-h3 {
-    display: inline-block;
-
-}
-
 body.wb-modal > #wb-tphp {
     z-index: 1070 !important;
 }
@@ -144,11 +137,15 @@ p {
 }
 
 .blt-teal {
-    background: $gradient-teal;
+    background: $teal;
 }
 
 .blt-red {
-    background: $gradient-red;
+    background: $red;
+}
+
+.blt-pink {
+    background: $pink;
 }
 
 .blt-blue {
@@ -157,6 +154,14 @@ p {
 
 .blt-gray-blue {
     background: $gray-blue;
+}
+
+.blt-lg {
+    width: $space-lg;
+    height: $space-lg;
+    border-radius: 0 $space-lg 0 0;
+    -moz-border-radius: 0 $space-lg 0 0;
+    -webkit-border-radius: 0 $space-lg 0 0;
 }
 
 // ======== Custom html components =======
@@ -451,7 +456,7 @@ section {
 
             h2 {
                 margin-top: $space-sm;
-                margin-bottom: $space-sm!important;
+                margin-bottom: $space-sm !important;
             }
 
             p {
@@ -474,12 +479,24 @@ section {
             @extend %cta__shared;
         }
 
-        .cta__navy {
+        .cta__blue {
             background-color: $blue;
 
             h2,
             p {
                 color: $navy-blue;
+            }
+        }
+
+        .cta__navy {
+            background-color: $navy-blue;
+
+            h2 {
+                color: $blue;
+            }
+
+            p {
+                color: #fff !important;
             }
         }
 
@@ -492,6 +509,17 @@ section {
             }
         }
 
+        .cta__dark {
+            background-color: $dark-blue;
+
+            h2 {
+                color: $teal;
+            }
+
+            p {
+                color: $blue !important;
+            }
+        }
 
     }
 
@@ -521,6 +549,54 @@ section {
             margin-bottom: $space-md;
         }
     }
+
+    &#newsContent {
+
+        img {
+            margin-bottom: $space-md;
+        }
+
+        p.department {
+            color: $red;
+            font-weight: 500;
+            margin-bottom: $space-md;
+        }
+
+        h2 {
+            margin-bottom: $space-sm;
+            color: $navy-blue;
+            margin-top: 0;
+        }
+
+        p.preview {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        a {
+            color: $blue;
+            font-weight: 500;
+        }
+        
+        .pagination {
+            margin: auto;
+
+            a, span {
+            background-color: transparent;
+                color: $navy-blue;
+                border: 1px solid $navy-blue;
+                &:hover,&focus{
+                    color:$blue;
+                    background-color: $navy-blue;
+                }
+            }
+        }
+
+
+    }
+
 }
 
 

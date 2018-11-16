@@ -86,3 +86,30 @@
         box-shadow:$shadow-none;
     }
 }
+
+//navy red button
+
+.btn-red {
+    color: #fff;
+    background-color: $red;
+    border-color: transparent;
+    
+    &.active,
+    &:active,
+    &:hover,
+    &.open > .btn-primary.dropdown-toggle {
+        color: #fff;
+        background: none;
+        background-color: $red;
+        border-color: transparent;
+        box-shadow:$shadow;
+    }
+
+    &.btn.focus,
+    &.btn:focus,
+    &btn:hover {
+        color: #fff;
+        text-decoration: none;
+        box-shadow:$shadow-none;
+    }
+}
