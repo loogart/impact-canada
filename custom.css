@@ -340,7 +340,7 @@ nav.challenge-bar .challenge-pills a {
   text-decoration: none;
   color: #1F3169;
   font-weight: 500;
-  margin-top: 0.3em;
+  margin-top: 0.5em;
   margin-bottom: 0;
   border-bottom: 0.69rem solid transparent;
   line-height: 2.5;
@@ -353,6 +353,8 @@ nav.challenge-bar .challenge-pills a:active, nav.challenge-bar .challenge-pills 
     display: block;
     overflow: auto;
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
   }
   nav.challenge-bar .challenge-pills:after {
     content: "";
@@ -637,7 +639,8 @@ section#staticContent h3 {
   color: #1F3169;
 }
 section#staticContent p,
-section#staticContent li {
+section#staticContent li,
+section#staticContent a {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -696,9 +699,16 @@ section#challengePage h2,
 section#challengePage h3 {
   color: #1F3169;
 }
-section#challengePage p {
+section#challengePage h4 {
+  color: #E25456;
+}
+section#challengePage p,
+section#challengePage li {
   font-family: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
   color: #222;
+}
+section#challengePage a {
+  color: #469EE1;
 }
 section#challenge-details {
   background-color: #D9E9F6;
