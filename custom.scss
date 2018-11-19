@@ -31,12 +31,16 @@ $space-xxl: $space-unit * 5.25;
 
 
 // ======== Import Google Fonts =======
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300i,400,400i,500,700,900');
 
 // ======== Import other sass files =======
 @import "custom-buttons";
 
 // ======== General body styling =======
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 1000px;
 }
@@ -70,7 +74,7 @@ h1 {
     color: $navy-blue;
     margin-bottom: $space-sm;
     border-bottom: 0;
-    font-size: $space-xl;
+    font-size: $space-lg;
 
     @media(max-width: 767px) {
         line-height: 1.325;
@@ -287,6 +291,60 @@ nav.navigation-bar {
     }
 }
 
+// -------- challenge pills --------
+nav.challenge-bar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 65px;
+    background-color: #fff;
+    z-index: 5;
+
+    .challenge-pills {
+        display: flex;
+        justify-content: flex-start;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: $navy-blue;
+            font-weight: 500;
+            margin-top: 0.3em;
+            margin-bottom: 0;
+            border-bottom: 0.69rem solid transparent;
+            line-height: 2.5;
+
+            &:active,
+            &:hover,
+            &.active {
+                border-bottom: 0.69rem solid $red;
+            }
+        }
+
+        @media(max-width:767px) {
+            display: block;
+            overflow: auto;
+            white-space: nowrap;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 5rem;
+                height: 100%;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%);
+            }
+
+            a {
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                min-width: 100px;
+            }
+        }
+
+    }
+}
 
 // -------- jumbotron section --------
 .jumbotron {
@@ -397,7 +455,84 @@ nav.navigation-bar {
 }
 
 // -------- largetron section --------
-.largetron {}
+.largetron {
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas:
+        'title imagery';
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-gap: 0;
+    
+    h1{
+        margin-top:$space-xs;
+    }
+    p{
+        color:$red;
+        font-weight: 500;
+        margin-top: $space-sm;
+        margin-bottom: 0;
+    }
+    a{
+        color:$blue;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .largetron__left {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        grid-area: title;
+        background-color: $dark-blue;
+        padding: $space-xl;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        
+        @media(max-width: 767px) {
+            -ms-grid-row: 2;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 2;
+            padding: $space-md;
+        }
+    }
+
+    .largetron__right {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        grid-area: imagery;
+        background-color: $navy-blue;
+        overflow: hidden;
+        position: relative;
+        background-color: $dark-blue;
+        max-height:30vh;
+        
+        img{
+            object-fit: cover;
+            width:100%;
+            height:30vh;
+        }
+        
+        @media(max-width:767px) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 2;
+        }
+    }
+        @media(max-width:767px) {
+        -ms-grid-columns: 2f 2fr;
+        grid-template-areas:
+            'title title'
+            'imagery imagery';
+            h1{
+                line-height: 1.25;
+            }
+
+    }
+
+}
 
 
 // -------- page sections --------
@@ -530,7 +665,8 @@ section {
 
     &#staticContent {
 
-        h2, h3 {
+        h2,
+        h3 {
             margin-bottom: $space-sm;
             color: $navy-blue;
         }
@@ -550,8 +686,9 @@ section {
         img {
             margin-bottom: $space-md;
         }
+
         a {
-            color:$blue;
+            color: $blue;
         }
     }
 
@@ -602,6 +739,77 @@ section {
         }
 
 
+    }
+
+    &#challengePage {
+
+        h1,
+        h2,
+        h3 {
+            color: $navy-blue;
+        }
+
+        p {
+            font-family: 'Roboto Slab', Georgia, Cambria, "Times New Roman", Times, serif;
+            color: #222;
+        }
+    }
+
+    &#challenge-details {
+        background-color: $light-blue;
+        padding: $space-xl;
+        background-color: #fff;
+        background-image: url('./img/challenge-details_bg.svg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+
+        .challenge-details__box {
+            padding: $space-xl;
+            background-color: $navy-blue;
+            color: #fff;
+            box-shadow: $shadow-lg;
+            border-left: $red solid 16px;
+
+            h2 {
+                margin-top: 0;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    background: $gradient-red;
+                    height: 6px;
+                    width: 120px;
+                    margin-top: $space-sm;
+                }
+            }
+
+            h3 {
+                color: $light-blue;
+            }
+
+            ul {
+                list-style: none;
+
+                li::before {
+                    content: "\2022";
+                    color: $gray-blue;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 2em;
+                    margin-left: -2em;
+                }
+            }
+
+            a {
+                color: #fff;
+            }
+
+        }
+
+        @media(max-width:767px) {
+            padding: $space-md 0;
+        }
     }
 
 }
