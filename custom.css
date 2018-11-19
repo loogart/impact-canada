@@ -473,6 +473,7 @@ nav.challenge-bar .challenge-pills a:active, nav.challenge-bar .challenge-pills 
   grid-template-columns: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr;
   grid-gap: 0;
+  min-height: 30vh;
 }
 .largetron h1 {
   margin-top: 0.25em;
@@ -516,12 +517,12 @@ nav.challenge-bar .challenge-pills a:active, nav.challenge-bar .challenge-pills 
   overflow: hidden;
   position: relative;
   background-color: #10172D;
-  height: 30vh;
+  height: 320px;
 }
 .largetron .largetron__right img {
   object-fit: cover;
   width: 100%;
-  height: 30vh;
+  height: 320px;
 }
 @media (max-width: 767px) {
   .largetron .largetron__right {
@@ -711,7 +712,6 @@ section#challengePage a {
   color: #469EE1;
 }
 section#challenge-details {
-  background-color: #D9E9F6;
   padding: 3.25em;
   background-color: #fff;
   background-image: url("./img/challenge-details_bg.svg");

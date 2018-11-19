@@ -465,6 +465,7 @@ nav.challenge-bar {
     grid-template-columns: 1fr 1fr;
     -ms-grid-columns: 1fr 1fr;
     grid-gap: 0;
+    min-height:30vh;
 
     h1 {
         margin-top: $space-xs;
@@ -511,12 +512,12 @@ nav.challenge-bar {
         overflow: hidden;
         position: relative;
         background-color: $dark-blue;
-        height: 30vh;
+        height: 320px;
 
         img {
             object-fit: cover;
             width: 100%;
-            height: 30vh;
+            height: 320px;
         }
 
         @media(max-width:767px) {
@@ -771,7 +772,6 @@ section {
     }
 
     &#challenge-details {
-        background-color: $light-blue;
         padding: $space-xl;
         background-color: #fff;
         background-image: url('./img/challenge-details_bg.svg');
