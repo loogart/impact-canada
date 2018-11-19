@@ -357,15 +357,6 @@ nav.challenge-bar .challenge-pills a:active, nav.challenge-bar .challenge-pills 
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
-  nav.challenge-bar .challenge-pills:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 5rem;
-    height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%);
-  }
   nav.challenge-bar .challenge-pills a {
     display: inline-block;
     text-align: center;
@@ -388,6 +379,9 @@ nav.challenge-bar .challenge-pills a:active, nav.challenge-bar .challenge-pills 
   padding-top: 3.25em;
   padding-bottom: 3.25em;
   overflow: hidden;
+}
+.jumbotron .above {
+  z-index: 1;
 }
 .jumbotron h1 {
   border-bottom: 0 !important;

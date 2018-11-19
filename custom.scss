@@ -328,16 +328,6 @@ nav.challenge-bar {
             -webkit-overflow-scrolling: touch;
             -ms-overflow-style: -ms-autohiding-scrollbar;
 
-            &:after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                width: 5rem;
-                height: 100%;
-                background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%);
-            }
-
             a {
                 display: inline-block;
                 text-align: center;
@@ -364,6 +354,10 @@ nav.challenge-bar {
     padding-top: $space-xl;
     padding-bottom: $space-xl;
     overflow: hidden;
+
+    .above {
+        z-index: 1
+    }
 
     h1 {
         border-bottom: 0 !important;
@@ -466,7 +460,7 @@ nav.challenge-bar {
     grid-template-columns: 1fr 1fr;
     -ms-grid-columns: 1fr 1fr;
     grid-gap: 0;
-    min-height:30vh;
+    min-height: 30vh;
 
     h1 {
         margin-top: $space-xs;
