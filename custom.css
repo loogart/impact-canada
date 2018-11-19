@@ -516,7 +516,7 @@ nav.challenge-bar .challenge-pills a:active, nav.challenge-bar .challenge-pills 
   overflow: hidden;
   position: relative;
   background-color: #10172D;
-  max-height: 30vh;
+  height: 30vh;
 }
 .largetron .largetron__right img {
   object-fit: cover;
