@@ -30,24 +30,24 @@ Webpage | Notes
 ## 2. Structural Changes to Impact Canada Site
 
 * Create Other Initiatives section on IC homepage and add back-end functionality 
-    1. Back-end functionality to create Other Initiatives similar to Create Challenge
-    2. Leverage same template as Challenges
+    * Back-end functionality to create Other Initiatives similar to Create Challenge
+    * Leverage same template as Challenges
 
 * Allow for different images between Impact Canada Homepage and a Challenge Page
-    1. Change functionality so that Main Challenge Image is no longer directly added to Impact Canada Homepage
-    2. Requires functionality to update Main Page separate from Challenge Pages
+    * Change functionality so that Main Challenge Image is no longer directly added to Impact Canada Homepage
+    * Requires functionality to update Main Page separate from Challenge Pages
 
 * Merge all News Items from Challenges and Other Initiatives into one page
-    1. Back-End - We still create a News Item, but the option for Which Challenge is eliminated. News items will automatically go to a News Page
-    2. Current functionality: Adding a News Items must be accompanied with  an identified Challenge (i.e. where does the news item go?)
+    * Back-End - We still create a News Item, but the option for Which Challenge is eliminated. News items will automatically go to a News Page
+    * Current functionality: Adding a News Items must be accompanied with  an identified Challenge (i.e. where does the news item go?)
 
 * Challenge - Update back-end configuration for new look and feel
-    1. New location for Challenge Details - 
-    2. Now at the bottom of the Challenge Homepage, and every page for a Challenge (i.e. Results, Connect, etc.) 
-    3. We can keep the back-end “sections functionality” for successful migration...or not.
-    4. Keep the admin tabs where we can add new pages easily
+    * New location for Challenge Details - 
+    * Now at the bottom of the Challenge Homepage, and every page for a Challenge (i.e. Results, Connect, etc.) 
+    * We can keep the back-end “sections functionality” for successful migration...or not.
+    * Keep the admin tabs where we can add new pages easily
 
 * Add Impact Canada Advisory Committee Members to About Page
-    1.  content from IIU Page (canada.ca)
+    *  content from IIU Page (canada.ca)
 
 
