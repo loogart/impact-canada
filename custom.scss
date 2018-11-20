@@ -261,6 +261,34 @@ nav.navigation-bar {
             @media (max-width:767px) {
                 display: none;
                 flex-direction: column;
+                -webkit-animation-name: loogart;
+                -webkit-animation-duration: 0.5s;
+                animation-name: loogart;
+                animation-duration: 0.5s;
+
+                @-webkit-keyframes loogart {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(-15px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                @keyframes loogart {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(-15px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
 
                 a {
                     justify-content: center;
@@ -286,7 +314,9 @@ nav.navigation-bar {
             justify-content: start;
             padding-top: 3em;
             height: calc(100vh - 59px);
+
         }
+
 
     }
 }
@@ -460,7 +490,8 @@ nav.challenge-bar {
     grid-template-columns: 1fr 1fr;
     -ms-grid-columns: 1fr 1fr;
     grid-gap: 0;
-    min-height: 30vh;
+    min-height: 320px;
+    //    max-height: 320px;
 
     h1 {
         margin-top: $space-xs;
@@ -496,6 +527,7 @@ nav.challenge-bar {
             -ms-grid-column: 1;
             -ms-grid-column-span: 2;
             padding: $space-md;
+            margin-left: 0;
         }
     }
 
@@ -507,12 +539,13 @@ nav.challenge-bar {
         overflow: hidden;
         position: relative;
         background-color: $dark-blue;
-        height: 320px;
+        width: 100%;
 
         img {
             object-fit: cover;
             width: 100%;
-            height: 320px;
+            height: 420px;
+            margin-top: -100px;
         }
 
         @media(max-width:767px) {
@@ -750,12 +783,26 @@ section {
             color: $navy-blue;
         }
 
+        h2 {
+            margin-bottom: $space-md;
+        }
+
+        h3 {
+            margin-top: $space-sm;
+        }
+
         h4 {
             color: $red;
+            margin-top: $space-sm;
+        }
+
+        ul {
+            margin-bottom: $space-lg;
         }
 
         p,
-        li {
+        li,
+        a {
             font-family: 'Roboto Slab', Georgia, Cambria, "Times New Roman", Times, serif;
             color: #222;
         }
@@ -763,10 +810,11 @@ section {
         a {
             color: $blue;
         }
+
     }
 
     &#challenge-details {
-        padding: $space-xl;
+        padding: $space-xl 0;
         background-color: #fff;
         background-image: url('./img/challenge-details_bg.svg');
         background-repeat: no-repeat;
@@ -812,6 +860,11 @@ section {
 
             a {
                 color: #fff;
+            }
+
+            @media(max-width:767px) {
+                border-left: $red solid 10px;
+                padding: $space-lg $space-md;
             }
 
         }
@@ -1004,7 +1057,157 @@ section {
     }
 }
 
+// -------- process timeline --------
 
+ul.process {
+    margin-top: $space-xl;
+    margin-bottom: $space-xl;
+}
+
+ul.process li {
+    border-left: 8px solid #469EE1;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+ul.process li:first-child {
+    border-left: 8px solid #469EE1;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    padding-top: 0;
+}
+
+ul.process li::before {
+    content: "";
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #E25456;
+    position: absolute;
+    margin-left: -3em;
+    margin-top: 1em;
+    border-radius: 4px;
+}
+
+ul.process li:first-child::before {
+    content: "";
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #E25456;
+    position: absolute;
+    margin-left: -3em;
+    margin-top: 0;
+    border-radius: 4px;
+}
+
+ul.process li:last-child::after {
+    content: "";
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #E25456;
+    position: absolute;
+    margin-left: -3em;
+    margin-top: 1em;
+    border-radius: 4px;
+}
+
+
+// -------- prize cards --------
+
+.prize {
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    margin-bottom: $space-md;
+    margin-top: $space-md;
+    border-radius: 1em;
+    box-shadow: $shadow;
+    transition: all 0.5s ease;
+
+    h3 {
+        padding: 1em;
+        text-align: center;
+        font-size: 2em;
+
+        i {
+            margin-bottom: $space-xs;
+        }
+    }
+
+    .prize-body {
+        padding: 1.5em;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.prize__1 {
+    background: $gradient-red;
+
+    h3,
+    h4,
+    p,
+    a {
+        color: #fff !important;
+    }
+}
+
+.prize__2 {
+    background: $gradient-teal;
+
+    h3,
+    h4,
+    p,
+    a {
+        color: $navy-blue !important;
+    }
+}
+
+.prize__3 {
+    background: $navy-blue;
+
+    h3 {
+        color: $blue !important;
+    }
+
+    h4 {
+        color: $pink !important;
+    }
+
+    p,
+    a {
+        color: #fff !important;
+    }
+}
+
+.prize__4 {
+    background: $gray-blue;
+
+    h3,
+    h4,
+    p,
+    a {
+        color: $navy-blue !important;
+    }
+}
+
+.prize {
+
+    .fn-lnk,
+    .wb-fnote .fn-rtn a {
+        background-color: $navy-blue !important;
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 2px 10px;
+        white-space: nowrap;
+        color: #fff !important;
+    }
+}
 
 // -------- footer --------
 footer nav {

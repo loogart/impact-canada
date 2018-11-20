@@ -1,4 +1,4 @@
-// Custom mobile menu and more
+// Custom mobile menu
 $(document).ready(function () {
     $("#toggle-menu").click(function () {
         $(".menu").toggleClass("menu-mobile-visible");
