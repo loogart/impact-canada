@@ -1,8 +1,18 @@
-# Impact Canada 2.0 Website
+# Impact Canada
+#### Website redesign by Chris Soueidan of the Impact & Innovation Unit at PCO
 
 ![Impact Canada Advisory Committee branding](https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/carousel-en-impact-career.jpg "Impact Canada Advisory Committee branding")
 
-## 1. Prototype Pages
+## 1. Pages
+
+**General Notes**: 
+
+* Built with SASS which compiles into a css file that overrides the ./theme-wet-boew/css/theme.min.css
+* Include all meta tags in the `head` section related to favicons
+* Include fontawesome CDN link in head
+* Skip links are built in the `header` with id="wb-tphp"
+* Include everything in between the `footer` tags
+* Scripts to include before the closing `body` tag: rellax.min.js, scrollreveal.min.js and script.js 
 
 Webpage | Notes
 ------------- | ------------- 
@@ -20,8 +30,7 @@ Webpage | Notes
 [12 Challenge Contact](https://loogart.github.io/impact-canada/challenge-contact.html) | **(1)** Include the section #challenge-details at the bottom of each page
 
 
-## Built using the Web Experience Toolkit?
+## 2. Built on the foundation of the Web Experience Toolkit
 
 * An [award-winning](http://wet-boew.github.io/wet-boew/docs/ref/accolades-en.html#awards) front-end framework for building websites that are [accessible](http://wet-boew.github.io/wet-boew/index-en.html#accessibility), [usable](http://wet-boew.github.io/wet-boew/index-en.html#usability), [interoperable](http://wet-boew.github.io/wet-boew/index-en.html#interoperability), [mobile friendly](http://wet-boew.github.io/wet-boew/index-en.html#mobile-friendly-responsive-design) and [multilingual](http://wet-boew.github.io/wet-boew/index-en.html#multilingual)
-* A collection of [flexible and themeable templates and reusable components](http://wet-boew.github.io/wet-boew/index-en.html#themeable-and-reusable)
 * A [collaborative open source project led by the Government of Canada](http://wet-boew.github.io/wet-boew/index-en.html#collaborative-approach)
