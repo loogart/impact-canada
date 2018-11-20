@@ -1,13 +1,5 @@
 # Impact Canada 2.0 Website
 
-[![Build Status](https://secure.travis-ci.org/wet-boew/wet-boew.svg?branch=master)](http://travis-ci.org/wet-boew/wet-boew)
-
-## Built using the Web Experience Toolkit?
-
-* An [award-winning](http://wet-boew.github.io/wet-boew/docs/ref/accolades-en.html#awards) front-end framework for building websites that are [accessible](http://wet-boew.github.io/wet-boew/index-en.html#accessibility), [usable](http://wet-boew.github.io/wet-boew/index-en.html#usability), [interoperable](http://wet-boew.github.io/wet-boew/index-en.html#interoperability), [mobile friendly](http://wet-boew.github.io/wet-boew/index-en.html#mobile-friendly-responsive-design) and [multilingual](http://wet-boew.github.io/wet-boew/index-en.html#multilingual)
-* A collection of [flexible and themeable templates and reusable components](http://wet-boew.github.io/wet-boew/index-en.html#themeable-and-reusable)
-* A [collaborative open source project led by the Government of Canada](http://wet-boew.github.io/wet-boew/index-en.html#collaborative-approach)
-
 ![Impact Canada Advisory Committee branding](https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/carousel-en-impact-career.jpg "Impact Canada Advisory Committee branding")
 
 ## 1. Prototype Pages
@@ -28,3 +20,8 @@ Webpage | Notes
 [12 Challenge Contact](https://loogart.github.io/impact-canada/challenge-contact.html) | **(1)** Include the section #challenge-details at the bottom of each page
 
 
+## Built using the Web Experience Toolkit?
+
+* An [award-winning](http://wet-boew.github.io/wet-boew/docs/ref/accolades-en.html#awards) front-end framework for building websites that are [accessible](http://wet-boew.github.io/wet-boew/index-en.html#accessibility), [usable](http://wet-boew.github.io/wet-boew/index-en.html#usability), [interoperable](http://wet-boew.github.io/wet-boew/index-en.html#interoperability), [mobile friendly](http://wet-boew.github.io/wet-boew/index-en.html#mobile-friendly-responsive-design) and [multilingual](http://wet-boew.github.io/wet-boew/index-en.html#multilingual)
+* A collection of [flexible and themeable templates and reusable components](http://wet-boew.github.io/wet-boew/index-en.html#themeable-and-reusable)
+* A [collaborative open source project led by the Government of Canada](http://wet-boew.github.io/wet-boew/index-en.html#collaborative-approach)
