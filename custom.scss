@@ -881,10 +881,12 @@ section {
     z-index: 1070;
     background: #10172D;
     opacity: 0.97;
+    padding:0;
 }
 
 .mfp-wrap {
     z-index: 1071;
+    
 }
 
 .overlay-def header {
@@ -896,6 +898,13 @@ section {
 .modal-footer {
     display: flex;
     justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 800px;
+        margin: 30px auto;
+    }
 }
 
 
