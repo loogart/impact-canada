@@ -798,6 +798,26 @@ section#challenge-details .challenge-details__box a {
   }
 }
 
+.mfp-bg {
+  z-index: 1070;
+  background: #10172D;
+  opacity: 0.97;
+}
+
+.mfp-wrap {
+  z-index: 1071;
+}
+
+.overlay-def header {
+  background-color: #1F3169;
+  color: #fff;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
 .cta {
   padding: 3.25em;
 }
