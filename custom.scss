@@ -364,6 +364,9 @@ nav.challenge-bar {
                 text-decoration: none;
                 min-width: 100px;
             }
+            &::-webkit-scrollbar{
+                display: none;
+            }
         }
 
     }

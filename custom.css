@@ -387,6 +387,9 @@ nav.challenge-bar .challenge-pills a:active, nav.challenge-bar .challenge-pills 
     text-decoration: none;
     min-width: 100px;
   }
+  nav.challenge-bar .challenge-pills::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .jumbotron {
