@@ -70,6 +70,15 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $navy-blue;
+}
+
 h1 {
     color: $navy-blue;
     margin-bottom: $space-sm;
@@ -321,6 +330,7 @@ nav.navigation-bar {
     }
 }
 
+
 // -------- challenge pills --------
 nav.challenge-bar {
     position: sticky;
@@ -364,7 +374,8 @@ nav.challenge-bar {
                 text-decoration: none;
                 min-width: 100px;
             }
-            &::-webkit-scrollbar{
+
+            &::-webkit-scrollbar {
                 display: none;
             }
         }
@@ -728,6 +739,21 @@ section {
         a {
             color: $blue;
         }
+        .breadcrumb {
+            background-color: transparent;
+            margin-bottom: 0;
+            padding: 8px 0;
+
+            li,
+            a {
+                font-size: 1em;
+            }
+
+            a {
+                color: #469EE1;
+            }
+        }
+
     }
 
     &#newsContent {
@@ -884,12 +910,12 @@ section {
     z-index: 1070;
     background: #10172D;
     opacity: 0.97;
-    padding:0;
+    padding: 0;
 }
 
 .mfp-wrap {
     z-index: 1071;
-    
+
 }
 
 .overlay-def header {

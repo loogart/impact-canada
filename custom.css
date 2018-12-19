@@ -131,6 +131,15 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1F3169;
+}
+
 h1 {
   color: #1F3169;
   margin-bottom: 0.75em;
@@ -679,6 +688,18 @@ section#staticContent img {
   margin-bottom: 1.25em;
 }
 section#staticContent a {
+  color: #469EE1;
+}
+section#staticContent .breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0;
+  padding: 8px 0;
+}
+section#staticContent .breadcrumb li,
+section#staticContent .breadcrumb a {
+  font-size: 1em;
+}
+section#staticContent .breadcrumb a {
   color: #469EE1;
 }
 section#newsContent img {
