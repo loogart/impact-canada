@@ -70,14 +70,6 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: $navy-blue;
-}
 
 h1 {
     color: $navy-blue;
@@ -713,6 +705,15 @@ section {
 
     &#staticContent {
 
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $navy-blue;
+        }
+
         h2,
         h3 {
             margin-bottom: $space-sm;
@@ -739,6 +740,7 @@ section {
         a {
             color: $blue;
         }
+
         .breadcrumb {
             background-color: transparent;
             margin-bottom: 0;
@@ -760,7 +762,7 @@ section {
         img {
             margin-bottom: $space-md;
             object-fit: cover;
-            width:100%;
+            width: 100%;
             height: 190px;
         }
 
