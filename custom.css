@@ -714,16 +714,18 @@ section#newsContent .news-cards p.department {
   color: #E25456;
   font-weight: 500;
   margin-bottom: 0.75em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 section#newsContent .news-cards h2 {
   margin-bottom: 0.75em;
   color: #1F3169;
   margin-top: 0;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
   font-size: 1.25em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 section#newsContent .news-cards p.small {
   color: slategray;

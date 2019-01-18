@@ -775,17 +775,19 @@ section {
                 color: $red;
                 font-weight: 500;
                 margin-bottom: $space-sm;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             h2 {
                 margin-bottom: $space-sm;
                 color: $navy-blue;
                 margin-top: 0;
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                -webkit-box-orient: vertical;
                 font-size: 1.25em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             p.small {
