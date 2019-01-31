@@ -743,6 +743,35 @@ section#challenge-details {
     .card .card-body .sts-closed {
       background: linear-gradient(90deg, #E25456 0%, #D84190 100%);
       color: #fff; }
+    .card .card-body .sts-selection {
+      animation: colorchange 3s infinite;
+      -webkit-animation: colorchange 3s infinite; }
+@keyframes colorchange {
+  0% {
+    color: #D84190;
+    background: white;
+    transform: scale(1) translateY(0); }
+  50% {
+    color: #469EE1;
+    background: #fff;
+    transform: scale(1.1) translateY(-3px); }
+  100% {
+    color: #D84190;
+    background: white;
+    transform: scale(1) translateY(0); } }
+@-webkit-keyframes colorchange {
+  0% {
+    color: #D84190;
+    background: white;
+    transform: scale(1) translateY(0); }
+  50% {
+    color: #469EE1;
+    background: #fff;
+    transform: scale(1.1) translateY(-3px); }
+  100% {
+    color: #D84190;
+    background: white;
+    transform: scale(1) translateY(0); } }
     .card .card-body .blt {
       flex: 0 0 1.25em;
       height: 1.25em;

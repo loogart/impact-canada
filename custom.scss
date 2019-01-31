@@ -1048,6 +1048,51 @@ section {
             color: #fff;
         }
 
+        .sts-selection {
+            animation: colorchange 3s infinite;
+            -webkit-animation: colorchange 3s infinite;
+        }
+
+        @keyframes colorchange {
+            0% {
+                color: $pink;
+                background:white;
+                transform: scale(1) translateY(0);
+            }
+
+            50% {
+                color: $blue;
+                background:#fff;
+                transform: scale(1.1) translateY(-3px);
+            }
+
+            100% {
+                color: $pink;
+                background:white;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        @-webkit-keyframes colorchange {
+            0% {
+                color: $pink;
+                background:white;
+                transform: scale(1) translateY(0);
+            }
+
+            50% {
+                color: $blue;
+                background:#fff;
+                transform: scale(1.1) translateY(-3px);
+            }
+
+            100% {
+                color: $pink;
+                background:white;
+                transform: scale(1) translateY(0);
+            }
+        }
+
         .blt {
             flex: 0 0 $space-md;
             height: $space-md;
