@@ -81,7 +81,9 @@
                     <a href="./about.html" aria-posinset="1" aria-setsize="4">About</a>
                     <a href="./how-it-works.html" aria-posinset="2" aria-setsize="4">How it works</a>
                     <a href="./news.html" aria-posinset="3" aria-setsize="4">News</a>
-                    <a href="./partner-with-us.html" class="active" aria-posinset="4" aria-setsize="4">Partner with us</a>
+                    <a href="./partner-with-us.html" class="active" aria-posinset="4" aria-setsize="4">Partnerships</a>
+                    <a href="./careers.html" aria-posinset="5" aria-setsize="5">Careers</a>
+
                 </div>
             </section>
         </div>
@@ -91,36 +93,119 @@
         <!-- content section -->
         <section id="staticContent">
             <div class="container">
-                <h1 id="wb-content">Partner with us</h1>
-                <p>This Impact Canada challenge platform is a core component of the initiative. It allows Government of Canada departments to issue challenges on a common site and reach a diverse group of problem solvers and innovators.</p>
-                <div class="row mrgn-tp-md mrgn-bttm-xl">
-                    <div class="col-sm-6">
-                        <div class="cta cta__gray shadow">
-                            <h2 class="h1">Government of Canada Departments</h2>
-                            <p>We are looking to bring together a diverse range of partners to identify shared problems.</p>
 
-                            <p>For governments and organizations that wish to consider contributing towards the development and potential co-funding of challenges, but that do not have prior engagement with a Government of Canada (GoC) department, the Impact and Innovation Unit in the Privy Council Office is available to discuss partnership opportunities that may be open.</p>
+                <section class="partnerships">
+                    <style>
+                        .img-banner {
+                        object-fit: cover;
+                        object-position: center;
+                        width: 100%;
+                        height: 50vh;
+                         }
+                        .floating-rounded-card {
+                            box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.25);
+                            transition: all 0.2s ease;
+                            border-radius: 2rem;
+                            border: 0;
+                            object-fit: cover;
+                            width: 100%;
+                            height: 35rem;
+                        }
 
-                            <p>The best way to explore potential partnership opportunities is to contact the Impact and Innovation Unit in the Privy Council Office.</p>
+                        .floating-rounded-card:hover,
+                        .floating-rounded-card.hover {
+                            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+                        }
 
-                            <a type="button" class="btn btn-blue" href="https://www.canada.ca/en/innovation-hub/corporate/expression-interest.html" target="_blank">GoC Partners</a>
+                        @media(min-width:768px) {
+                            .pl-4 {
+                                padding-left: 4rem;
+                            }
+                            .pr-4 {
+                                padding-right: 4rem;
+                            }
+                        }
+                </style>
+                    <div class="row mrgn-bttm-xl">
+                        <img class="img-banner" src="./img/parter-goc-banner.jpg">
+
+                        <div class="col-sm-12 mrgn-bttm-lg">
+                            <h1 id="wb-content">Partner with us</h1>
+                            <p>This Impact Canada challenge platform is a core component of the initiative. It allows Government of Canada departments to issue challenges on a common site and reach a diverse group of problem solvers and innovators.</p>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="cta cta__navy shadow-lg">
-                            <h2 class="h1">Non-Governmental Organizations</h2>
+                        <div class="col-md-5 mrgn-tp-lg">
+                            <img class="floating-rounded-card" src="./img/parter-goc.jpg">
+                        </div>
+                        <div class="col-md-7 pl-4">
+                            <h2>Government of Canada Departments</h2>
+                            <p>We are looking to bring together a diverse range of partners to identify shared problems.</p>
+                            <p>For governments and organizations that wish to consider contributing towards the development and potential co-funding of challenges, but that do not have prior engagement with a Government of Canada (GoC) department, the Impact and Innovation Unit in the Privy Council Office is available to discuss partnership opportunities that may be open.</p>
+                            <a type="button" class="btn btn-blue" href="https://www.canada.ca/en/innovation-hub/corporate/expression-interest.html" target="_blank">GoC Partners</a>
+
+                        </div>
+                        <div class="clearfix mrgn-bttm-xl"></div>
+                        <div class="col-md-push-7 col-md-5 mrgn-tp-lg">
+                            <img class="floating-rounded-card" src="./img/fellowship/fellowship-photo-4.jpg">
+                        </div>
+
+                        <div class="col-md-pull-5 col-md-7 pr-4">
+                            <h2>Non-Governmental Organizations</h2>
                             <p>The Impact Canada Initiative promotes partnerships with a diverse set of stakeholders.</p>
-
                             <p>The Impact Canada Initiative is led by a Centre of Expertise housed within the Impact and Innovation Unit of the Privy Council Office, which also manages this platform in partnership with Government of Canada departments.</p>
-
                             <p>Our purpose is to help departments develop innovative funding opportunities that bring together the best ideas and brightest talent and reward those organizations and individuals that deliver high impact results for Canadians.</p>
 
                             <a type="button" class="btn btn-red" href="mailto:christopher.soueidan@pco-bcp.gc.ca">Non-GoC Partners</a>
                         </div>
-                    </div>
-                </div>
 
-            </div>
+                        <div class="clearfix mrgn-bttm-xl"></div>
+
+                        <div class="col-md-6 mrgn-tp-lg">
+                            <img class="floating-rounded-card" src="./img/fellowship/fellowship-photo-4.jpg">
+                        </div>
+                        <div class="col-md-6" style="padding-left:4rem">
+                            <h2 id="hireFellow">Hire a Fellow</h2>
+                            <div class="alert alert-warning">
+                                <p style="margin-bottom:0;"><strong>Status:</strong> The call for placement proposals is currently <strong>closed</strong>. Impact Canada reviews all placement proposals and contact departments to discuss their submission.</p>
+                            </div>
+                            <p>Are you a Government of Canada department or agency who could benefit from subject matter expertise to help advance the Government’s agenda? Impact Canada recruits <strong>subject matter experts</strong> in five key areas (listed below) and pairs them with departments to support priority mandate commitments.
+                            </p>
+                            <ol class="mrgn-bttm-lg">
+                                <li>Behavioural Insights</li>
+                                <li>Innovative Finance</li>
+                                <li>Impact Measurement</li>
+                                <li>Prizes/Challenges</li>
+                                <li>Data Science</li>
+                            </ol>
+                            <a class="btn btn-navy" href="https://www.canada.ca/content/dam/pco-bcp/documents/pdfs/inn-inn/Fellowship_Placement_Proposal_Fall_2018_EN.pdf" target="_blank"><i class="fas fa-file-download"></i> Download the Placement Proposal</a>
+                            <hr>
+                            <small>Already submitted a placement proposal but didn’t hear back? <a style="font-size:100%" href="mailto:ici-iic@pco-bcp.gc.ca">Contact us</a>. There is no need to re-submit a placement proposal unless the scope of the work has changed. The IIU has entered your request into the system and will contact you to discuss further.</small>
+
+
+                        </div>
+                    </div>
+                </section>
+                <!-- custom js -->
+                <script src="./custom-js/scrollreveal.min.js"></script>
+                <script>
+                    // Scroll Reveal effects
+                    ScrollReveal().reveal('.img-banner', {
+                        reset: false,
+                        duration: 1500,
+                        easing: 'ease-out',
+                        opacity: 0,
+                        origin: 'top',
+                        distance: '29px',
+                        scale: 1
+                    });
+                    ScrollReveal().reveal('.floating-rounded-card', {
+                        reset: false,
+                        duration: 1250,
+                        origin: 'bottom',
+                        distance: '69px',
+                        scale: 1
+                    });
+
+                </script>
         </section>
 
     </main>

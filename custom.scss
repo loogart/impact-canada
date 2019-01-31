@@ -725,16 +725,11 @@ section {
         a {
             font-weight: 400;
             font-style: normal;
-            font-size: 20px;
+            font-size: 1.8rem;
             line-height: 1.5;
             letter-spacing: .02em;
             color: rgba(0, 0, 0, .86);
             color: $dark-blue;
-        }
-
-        p,
-        img {
-            margin-bottom: $space-md;
         }
 
         a {
