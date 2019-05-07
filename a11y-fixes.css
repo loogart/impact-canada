@@ -1,0 +1,102 @@
+/* a11y fixes */
+
+/*home page*/
+.wb-sl {
+    background-color: #1F3169;
+}
+
+.sr-only {
+    color: white !important;
+}
+
+.btn-primary {
+    color: white !important;
+    background: #1a5c8e!important;
+    background-color: #1a5c8e!important;
+}
+
+.card .card-body p {
+    color: #79191b;
+}
+
+section#ctaBox .cta__blue {
+    background-color: #b1d6f2;
+}
+
+.card .card-body .sts {
+    background: #1F3169;
+    color: white;
+}
+
+.card .card-body .sts-open {
+    background: #14673b;
+
+}
+
+.card .card-body .sts-closed {
+    background: #a01b1d;
+    color: #fff;
+}
+
+.card .card-body .sts-selection {
+    animation: none;
+    -webkit-animation: none;
+    background: white;
+    color: #1f3268;
+}
+
+nav#block-impact-bootstrap-footer h2{
+    color:white;
+}
+.footer__right .region-footer-right h2.block-title{
+    color:white;
+}
+
+/* about page */
+section#staticContent a, section.basic-page--content a {
+    color: #144e7a;
+}
+section#ctaBox .cta__pink {
+    background-color: #9c2060;
+}
+.btn-blue {
+    background-color: #1F3169;
+}
+
+/*partners */
+h3.red {
+    color: #79191b!important;
+}
+
+/* news */
+section#newsContent .news-cards p.department {
+    color: #79191b;
+}
+section#newsContent .news-cards p.small {
+    color: #48535d;
+}
+.btn-red {
+    color: #10172c!important;
+    background-color: #fff;
+}
+
+/* challenges */
+.largetron p,section#challengePage h4 {
+    color: #a01b1d;
+}
+.largetron a, section#challengePage a {
+    color: #144e7a;
+}
+
+.btn-secondary {
+    color: #10172c !important;
+    background: white;
+    background-color: white;
+}
+
+.prize__3 h4 {
+    color: white !important;
+}
+.box-indigenous {
+    background-color: #475c27!important;
+}
