@@ -79,10 +79,10 @@
                 <div class="menu">
                     <h2 class="sr-only">Topics menu</h2>
                     <a href="./about.html" class="active" aria-posinset="1" aria-setsize="4">About</a>
-                    <a href="./how-it-works.html" aria-posinset="2" aria-setsize="4">How it works</a>
-                    <a href="./news.html" aria-posinset="3" aria-setsize="4">News</a>
-                    <a href="./partner-with-us.html" aria-posinset="4" aria-setsize="4">Partnerships</a>
-                    <a href="./careers.html" aria-posinset="5" aria-setsize="5">Careers</a>
+<!--                    <a href="./how-it-works.html" aria-posinset="2" aria-setsize="4">How it works</a>-->
+                    <a href="./news.html" aria-posinset="2" aria-setsize="4">News</a>
+                    <a href="./partner-with-us.html" aria-posinset="3" aria-setsize="4">Partnerships</a>
+                    <a href="./careers.html" aria-posinset="4" aria-setsize="4">Careers</a>
                 </div>
             </section>
         </div>
@@ -92,84 +92,211 @@
 
         <!-- content section -->
         <section id="staticContent">
-            <div class="container narrow">
 
-                <h1 id="wb-content">About Impact Canada</h1>
+            <style>
+                .img-banner {
+                        object-fit: cover;
+                        object-position: center;
+                        width: 100%;
+                        height: 50vh;
+                         }
+                .sticky-hero__media {
+                      position: sticky;
+                      position: -webkit-sticky;
+                      top: 0;
+                      height: 100vh;
+                      background: url(https://images.unsplash.com/photo-1518112166137-85f9979a43aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjYyODc2fQ&auto=format&fit=crop&w=1234&q=80) no-repeat center center;
+                      background-size: cover;
+                      transform: translateZ(0);  
+                }
+                .sticky-hero__content{
+                    height:100vh;
+                    display: flex;
+                    align-items: center;   
+                    position: relative;
+                      transform: translateZ(0);
 
-                <p>Announced in Budget 2017, the Impact Canada Initiative is a Government of Canada-wide effort that will help departments accelerate the adoption of innovative funding approaches to deliver meaningful results to Canadians.</p>
+                }
+                .sticky-hero__content h2, .sticky-hero__content p{
+                    color:#fff!important;
+                }
+                #advCom img{
+                    height:300px;
+                    width:100%;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175) !important;
+                }
+            </style>
 
-                <p>This Impact Canada challenge platform is a core component of the initiative. It allows Government of Canada departments to issue challenges on a common site and reach a diverse group of problem solvers and innovators.</p>
-                
-                <img class="img-responsive shadow-lg" src="./img/iiu-team.jpg" alt="photo of the Impact &amp; Innovation Unit">
-
-                <h2 class="h1"><span class="blt blt-red"></span> The Team</h2>
-
-                <p>The Impact Canada Initiative is led by a Centre of Expertise housed within the Impact and Innovation Unit of the Privy Council Office, which also manages this platform in partnership with Government of Canada departments.</p>
-
-                     
-                <!-- Advisory committee -->
-                <h2 class="h1"><span class="blt blt-red"></span> Advisory Committee</h2>
-                <p>The Impact Canada Initiative Advisory Committee is a new body that brings together a distinguished group of senior leaders from the private, philanthropic, not-for-profit, and academic sectors.</p>
-                <a href="https://www.canada.ca/en/innovation-hub/services/impact-canada-initiative/impact-canada-advisory-committee-members.html" target="_blank">Meet the Advisory Committee</a>  
-                         
-                <!-- partners -->
-                <h2 class="h1"><span class="blt blt-red"></span> Our Partners</h2>
-                <div class="row wb-eqht">
-                    <div class="col-sm-6">
-                        <div class="b-card">
-                            <img class="" src="./img/fip-canada-social.jpg" alt="logo of Canada">
-                            <div class="b-card__body">
-                                <a href="#!" target="_blank"><h3>Infrastructure Canada</h3></a>
-                                <p>Our first partners and our first challenged started with Infrastructure Canada.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="b-card">
-                            <img class="" src="./img/fip-canada-social.jpg" alt="logo of Canada">
-                            <div class="b-card__body">
-                                <a href="#!" target="_blank"><h3>Natural Resources Canada</h3></a>
-                                <p>Long term partner with 4 challenges featured up to date.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="b-card">
-                            <img class="" src="./img/fip-canada-social.jpg" alt="logo of Canada">
-                            <div class="b-card__body">
-                                <a href="#!" target="_blank"><h3>Department of Fisheries and Oceans</h3></a>
-                                <p>Partners since late Summer of 2018 to help whale detection technology.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="b-card">
-                            <img class="" src="./img/fip-canada-social.jpg" alt="logo of Canada">
-                            <div class="b-card__body">
-                                <a href="#!" target="_blank"><h3>Health Canada</h3></a>
-                                <p>Working on one of the biggest and urgent portfolios affecting millions of Canadians.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="b-card">
-                            <img class="" src="./img/fip-canada-social.jpg" alt="logo of Canada">
-                            <div class="b-card__body">
-                                <a href="#!" target="_blank"><h3>Indigenous Services Canada</h3></a>
-                                <p>Partners since early Fall working on improving Indigenous housing.</p>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
+            <img class="img-banner" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2301&q=80" alt="">
 
             </div>
+            <div class="container narrow mrgn-tp-lg mrgn-bttm-lg">
+                <h1 id="wb-content">About Impact Canada</h1>
+                <p>Announced in Budget 2017, the Impact Canada Initiative is a Government of Canada-wide effort that will help departments accelerate the adoption of innovative funding approaches to deliver meaningful results to Canadians.</p>
+                <p>This Impact Canada challenge platform is a core component of the initiative. It allows Government of Canada departments to issue challenges on a common site and reach a diverse group of problem solvers and innovators.</p>
+                <img class="img-responsive img-rounded mrgn-tp-lg" src="https://news.images.itv.com/image/file/1837427/stream_img.jpg" alt="">
+                <h2>How it works</h2>
+                <p>Challenges offer funding and other resources to help innovators put their ideas into action.</p>
+                <p>The Government of Canada is issuing challenges to Canadians and global innovators to generate innovative solutions to some of the biggest issues that face Canadians and their communities. These challenges reward the best ideas and focus on achieving stronger social, environmental, and economic outcomes for citizens.</p>
+                <p>In general, funding available through each challenge will fall under the rules that pertain to grants and contributions funding within the Government of Canada and the Terms and Conditions of <a href="https://www.canada.ca/en/innovation-hub/topics/impact-canada-initiative.html" target="_blank"></a>Impact Canada</a> led by the Privy Council Office.</p>
+                <p>The Government of Canada launched two signature program streams as part of Impact Canada</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong>Smart Cities</strong>
+                            </div>
+                            <div class="panel-body">
+                                A Smart Cities Challenge program stream to help communities of all sizes to improve the lives of their residents through innovation, data and connected technology. This stream is delivered by Infrastructure Canada and will contribute $300M in funding over 11 years.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong>Cleantech</strong>
+                            </div>
+                            <div class="panel-body">
+                                A clean technology program stream to drive new solutions in 5 discrete areas, posted on the main page This stream is delivered by Natural Resources Canada and will contribute $75 million in funding over four years.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Further programs and projects will be managed through Impact Canada over time and will be showcased on the main landing page.</p>
+            </div>
+
+
+            <section class="sticky-hero js-sticky-hero">
+                <div class="sticky-hero__media" aria-hidden="true"></div>
+                <div class="sticky-hero__content">
+                    <div class="container narrow">
+                        <h2 style="font-size:4em;">The Team</h2>
+                        <p>The Impact Canada Initiative is led by a Centre of Expertise housed within the Impact and Innovation Unit of the Privy Council Office, which also manages this platform in partnership with Government of Canada departments.</p>
+                        <a hef="https://www.canada.ca/en/innovation-hub/services/about-us.html" target="_blank" class="btn btn-red mrgn-tp-lg shadow">Meet the Team</a>
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="container mrgn-tp-xl mrgn-bttm-xl" id="advCom">
+
+                <!-- Advisory committee -->
+                <h2 class="h1">Advisory Committee</h2>
+                <p>The Impact Canada Initiative Advisory Committee is a new body that brings together a distinguished group of senior leaders from the private, philanthropic, not-for-profit, and academic sectors.</p>
+
+                <div class="row mrgn-tp-lg mrgn-bttm-lg">
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Ilse_Treurnicht.jpg" alt="">
+                        <h3>Ilse Treurnicht</h3>
+                        <small>Chair of Impact Canada Advisory Committee | Former CEO, MaRS Discovery District</small>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Andrea_Barrack.jpg" alt="">
+                        <h3>Andrea Barrack</h3>
+                        <small>VP, Global Corporate Citizenship at TD Bank Group</small>
+                    </div>
+                    <div class="clearfix visible-sm"></div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Valerie_Chort.JPG" alt="">
+                        <h3>Valerie Chort</h3>
+                        <small>VP Corporate Citizenship for RBC and Executive Director of the RBC Foundation</small>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Sir_Ronald_Cohen.jpg" alt="">
+                        <h3>Sir Ronald Cohen</h3>
+                        <small>Chairman of the Global Steering Group for Impact Investment and The Portland Trust</small>
+                    </div>
+                </div>
+                <div class="row mrgn-tp-lg mrgn-bttm-lg">
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Joan_Larrea.jpg" alt="">
+                        <h3>Joan Larrea</h3>
+                        <small>CEO, Convergence Blended Finance</small>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Saadia_Madsbjerg.jpg" alt="">
+                        <h3>Saadia Madsbjerg</h3>
+                        <small>The Rockefeller Foundation Managing Director, Innovative Finance</small>
+                    </div>
+                    <div class="clearfix visible-sm"></div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/David_Martin.jpg" alt="">
+                        <h3>David Martin</h3>
+                        <small>President and CEO, Horizon Investments Founder, Capital for Aboriginal Prosperity and Entrepreneurship Fund</small>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Jaykumar_Menon.jpg" alt="">
+                        <h3>Jaykumar Menon</h3>
+                        <small>Chair and Co-Founder, Open Source Pharma Foundation</small>
+                    </div>
+                </div>
+                <div class="row mrgn-tp-lg mrgn-bttm-lg">
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Hector_Mujica.jpg" alt="">
+                        <h3>Hector Mujica</h3>
+                        <small>Regional Manager, Google.org</small>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Tracy_Palandjian.jpg" alt="">
+                        <h3>Tracy P. Palandjian</h3>
+                        <small>Co-Founder &amp; CEO, Social Finance U.S.</small>
+                    </div>
+                    <div class="clearfix visible-sm"></div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Claude_Pinard.jpg" alt="">
+                        <h3>Claude Pinard</h3>
+                        <small>Executive Director of the Fondation Mirella et Lino Saputo</small>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Irfhan_Rawji.jpg" alt="">
+                        <h3>Irfhan Rawji</h3>
+                        <small>Founder &amp; CEO, MobSquad | Venture Partner, Relay Ventures | Principal, Totem Capital Corporation | Adjunct Professor, Sauder School of Business at UBC</small>
+                    </div>
+                </div>
+                <div class="row mrgn-tp-lg mrgn-bttm-lg">
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Dilip_Soman.jpg" alt="">
+                        <h3>Dilip Soman</h3>
+                        <small>Canada Research Chair in Behavioural Science and Economics Rotman School of Management, University of Toronto</small>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Tamara_Vrooman.jpg" alt="">
+                        <h3>Tamara Vrooman</h3>
+                        <small>President &amp; Chief Executive Officer Vancity</small>
+                    </div>
+                    <div class="clearfix visible-sm"></div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="https://www.canada.ca/content/dam/pco-bcp/images/camp/innovation/Bill_Young.jpg" alt="">
+                        <h3>Bill Young</h3>
+                        <small>Founder of Social Capital Partners</small>
+                    </div>
+                </div>
+                <a href="https://www.canada.ca/en/innovation-hub/services/impact-canada-initiative/impact-canada-advisory-committee-members.html" target="_blank">More about the Advisory Committee</a>
+
+
+            </div>
+            <div class="container narrow">
+                <img class="img-responsive img-rounded" src="https://www.usnews.com/dims4/USNEWS/f7e9892/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2F59%2F96274b84e59f6abc7c2758a5f5b6f9%2Fmedia%3A0bb54d474b784f7abb9f155e85695ac3Britain_Trump_61754.jpg" alt="">
+                <h2 class="h1"></span> Our Partners</h2>
+                <ul>
+                    <li>Department of Fisheries and Oceans</li>
+                    <li>Employment and Social Development Canada</li>
+                    <li>Indigenous Services Canada</li>
+                    <li>Infrastructure Canada</li>
+                    <li>Health Canada</li>
+                    <li>Natural Resources Canada</li>
+                </ul>
+            </div>
+
         </section>
 
         <!-- CTA box -->
         <section id="ctaBox">
-            <div class="cta cta__pink">
+            <div class="cta cta__dark">
                 <div class="container">
-                    <h2 class="h1"><span class="blt blt-teal"></span> Become a partner. Launch a Challenge.</h2>
+                    <h2 class="h1"><span class="blt blt-red"></span> Become a partner. Launch a Challenge.</h2>
                     <p>The Impact Canada Initiative is led by a Centre of Expertise housed within the Impact and Innovation Unit of the Privy Council Office, which also manages this platform in partnership with Government of Canada departments.</p>
                     <a type="button" class="btn btn-blue" href="./partner-with-us.html">Become a partner</a>
                 </div>
@@ -239,6 +366,7 @@
     <script src="./custom-js/rellax.min.js"></script>
     <script src="./custom-js/scrollreveal.min.js"></script>
     <script src="./custom-js/scripts.js"></script>
+
 </body>
 
 </html>
