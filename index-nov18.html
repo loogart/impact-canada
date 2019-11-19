@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
+<!--[if gt IE 8]>
+<!-->
 <html class="no-js" lang="en" dir="ltr">
 <!--<![endif]-->
 
@@ -44,82 +45,93 @@
     </noscript>
     <style>
         .video-bg {
-              position: absolute;
-              right: 0;
-              bottom: 0;
-                top:0;
-                left:0;
-                 width: 100%; 
-                height:auto;
-                z-index:0;
-            }
-            .hero{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                min-height:69vh;
-                overflow: hidden;
-                z-index:0;
-                background-color: #263970;
-            }
-            .hero-content{
-                z-index:1;
-                position: relative;
-            }
-            .hero-container-copy{
-                width:60%;
-            }
-            .hero-content h1, .hero-content p{
-                color:white;
-                text-shadow: 0px 1px 30px rgba(0,0,0,0.22);
-            }
-            
-            .hero-content h1{
-                font-size: 3.5em;
-                margin-top:0;
-            }
-            .supertitle{
+            position: absolute;
+            right: -50%;
+            bottom: 0;
+            top: 0;
+            left: 20%;
+            width: 100%;
+            height: auto;
+            z-index: 0;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            min-height: 69vh;
+            overflow: hidden;
+            z-index: 0;
+            background-color: #263970;
+        }
+
+        .hero-content {
+            z-index: 1;
+            position: relative;
+        }
+
+        .hero-container-copy {
+            width: 60%;
+        }
+
+        .hero-content h1,
+        .hero-content p {
+            color: white;
+            text-shadow: 0px 1px 30px rgba(0, 0, 0, 0.22);
+        }
+
+        .hero-content h1 {
+            font-size: 3.5em;
+            margin-top: 0;
+        }
+
+        .supertitle {
+            display: block;
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color:
+        }
+
+
+        @media(max-width:767px) {
+            .video-bg {
                 display: block;
-                font-weight: 400;
-                font-size: 20px;
-                margin-bottom: 20px;
-                color:
+                position: static;
             }
-    
-            
-            @media(max-width:767px){
-                .video-bg{
-                    display: block;
-                    position:static;
-                }
-                .hero{
-                    min-height:50vh;
-                    position: static;
-                    display: block;
-                      background-color: white;
-                }
-                .hero-content{
-                    height:auto;
-                }
-                .hero-container-copy{
-                width:100%;
-            }
-                .hero-content h1, .hero-content p{
-                    color:black;
-                    text-shadow: 0px 0px 0px rgba(0,0,0,0);
 
-                }
-            
-                .hero-content h1{
-                    font-size: 2em;
-                    margin-top:1em;
-                    margin-bottom: .4em;
-                    color: #1F3169;
-                }
+            .hero {
+                min-height: 50vh;
+                position: static;
+                display: block;
+                background-color: white;
+            }
+
+            .hero-content {
+                height: auto;
+            }
+
+            .hero-container-copy {
+                width: 100%;
+            }
+
+            .hero-content h1,
+            .hero-content p {
+                color: black;
+                text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 
             }
-        </style>
+
+            .hero-content h1 {
+                font-size: 2em;
+                margin-top: 1em;
+                margin-bottom: .4em;
+                color: #1F3169;
+            }
+
+        }
+    </style>
 </head>
 
 <body vocab="http://schema.org/" typeof="WebPage">
@@ -169,12 +181,12 @@
     <main role="main" property="mainContentOfPage">
 
         <div class="hero">
-            <video autoplay muted loop poster="./img/2020/video-poster.jpg" src="./img/2020/hero-bg-loop.mp4" class="video-bg"></video>
+            <video autoplay muted loop poster="./img/2020/video-poster.jpg" src="./img/2020/hero-bg-loop-c.mp4" class="video-bg"></video>
             <div class="hero-content">
                 <div class="container">
                     <div class="hero-container-copy">
                         <h1 id="wb-content" property="name">Let's solve Canada’s biggest challenges.</h1>
-                        <p>The Government of Canada wants innovative solutions to economic, environmental, and social problems.</p>
+                        <p class="lead">The Government of Canada wants innovative solutions to economic, environmental, and social problems.</p>
                         <a class="btn btn-red mrgn-tp-lg wb-lbx lbx-modal" href="#videoModal" aria-controls="centred-popup-modal" role="button"><i class="fab fa-youtube"></i> Watch the video</a>
                         <section id="videoModal" class="mfp-hide modal-dialog modal-content overlay-def">
 
@@ -187,48 +199,48 @@
                                 </div>
                                 <div class="" style="padding:2rem">
                                     <ul class="list-unstyled">
-                                    <li>
-                                        <details>
-                                            <summary>What is Impact Canada? (Transcript)</summary>
-                                            <p>At Impact Canada, we tackle some of Canada’s biggest challenges.</p>
+                                        <li>
+                                            <details>
+                                                <summary>What is Impact Canada? (Transcript)</summary>
+                                                <p>At Impact Canada, we tackle some of Canada’s biggest challenges.</p>
 
-                                            <p>Like:
-                                                Driving new solutions in clean technology,
-                                                Building smarter cities and communities,
-                                                Helping families save for education,
-                                                Supporting indigenous innovation, and
-                                                Addressing the opioid crisis.</p>
+                                                <p>Like:
+                                                    Driving new solutions in clean technology,
+                                                    Building smarter cities and communities,
+                                                    Helping families save for education,
+                                                    Supporting indigenous innovation, and
+                                                    Addressing the opioid crisis.</p>
 
-                                            <p>These challenges are hard.</p>
+                                                <p>These challenges are hard.</p>
 
-                                            <p>ut we think that our relentless focus on outcomes will lead us to better results for Canadians.</p>
+                                                <p>ut we think that our relentless focus on outcomes will lead us to better results for Canadians.</p>
 
-                                            <p>So what makes us different from traditional government programs?</p>
+                                                <p>So what makes us different from traditional government programs?</p>
 
-                                            <p>We’re part of a global movement using modern methods like:
-                                                Challenge Prizes,
-                                                Behavioural Insights, and
-                                                Pay for Success funding models</p>
+                                                <p>We’re part of a global movement using modern methods like:
+                                                    Challenge Prizes,
+                                                    Behavioural Insights, and
+                                                    Pay for Success funding models</p>
 
-                                            <p>These methods focus our efforts on what it is we’re trying to achieve, while at the same time designing smarter processes with less red tape.</p>
+                                                <p>These methods focus our efforts on what it is we’re trying to achieve, while at the same time designing smarter processes with less red tape.</p>
 
-                                            <p>It requires us to work differently and to develop new partnerships across government, not-for-profit and private sectors. </p>
+                                                <p>It requires us to work differently and to develop new partnerships across government, not-for-profit and private sectors. </p>
 
-                                            <p>Together, we work to gain an in-depth understanding of the problem we’re addressing before choosing the right path to lead us to measurable results.</p>
+                                                <p>Together, we work to gain an in-depth understanding of the problem we’re addressing before choosing the right path to lead us to measurable results.</p>
 
-                                            <p>Our methods have already brought together non-traditional players and partnerships and we’re excited about some amazing new solutions….</p>
+                                                <p>Our methods have already brought together non-traditional players and partnerships and we’re excited about some amazing new solutions….</p>
 
-                                            <p>Solutions that are being tested and nurtured right now.</p>
+                                                <p>Solutions that are being tested and nurtured right now.</p>
 
-                                            <p>Working with our partners, we question how things have traditionally been done, and look for new ways to address our biggest problems.</p>
+                                                <p>Working with our partners, we question how things have traditionally been done, and look for new ways to address our biggest problems.</p>
 
-                                            <p>Together, we can bring exciting ideas to reality and shape a better future or all Canadians. </p>
-                                        </details>
-                                    </li>
+                                                <p>Together, we can bring exciting ideas to reality and shape a better future or all Canadians. </p>
+                                            </details>
+                                        </li>
 
-                                </ul>
+                                    </ul>
                                 </div>
-                                
+
                             </div>
                         </section>
                     </div>
@@ -520,6 +532,4 @@
     </script>
     <script src="https://cdn.jsdelivr.net/gh/loogart/impact-canada/custom-js/scripts.js"></script>
 
-</body>
-
-</html>
+</body></html>
