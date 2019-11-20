@@ -46,13 +46,16 @@
     <style>
         .video-bg {
             position: absolute;
-            right: -50%;
+            right: 0;
             bottom: 0;
             top: 0;
-            left: 20%;
+            left: 0;
             width: 100%;
             height: auto;
             z-index: 0;
+        }
+        .video-bg-mobile{
+            display: none;
         }
 
         .hero {
@@ -63,7 +66,7 @@
             min-height: 69vh;
             overflow: hidden;
             z-index: 0;
-            background-color: #263970;
+            background-color: #1f3269;
         }
 
         .hero-content {
@@ -86,20 +89,17 @@
             margin-top: 0;
         }
 
-        .supertitle {
-            display: block;
-            font-weight: 400;
-            font-size: 20px;
-            margin-bottom: 20px;
-            color:
-        }
-
-
         @media(max-width:767px) {
             .video-bg {
+                display: none;
+            }
+            
+            .video-bg-mobile{
                 display: block;
-                position: static;
+                position: relative;
                 background-color: #1F3169;
+                width:100%;
+                height:auto;
             }
 
             .hero {
@@ -164,7 +164,7 @@
                 <div class="branding">
                     <a href="./" class="to-the-homepage">
                         <img class="logo" src="./img/2020/logo-2020-ondark.svg" alt="Impact Canada Home" style="margin-top:-5px">
-<!--                        <img class="logo" src="./img/logo-header.svg" alt="Impact Canada Home">-->
+                        <!--                        <img class="logo" src="./img/logo-header.svg" alt="Impact Canada Home">-->
                         <span class="sr-only">Impact Canada</span>
                     </a>
                     <a class="mobile-menu-bars visible-xs" id="toggle-menu"><i class="fas fa-bars" aria-hidden></i> &nbsp;Menu</a>
@@ -183,7 +183,8 @@
     <main role="main" property="mainContentOfPage">
 
         <div class="hero">
-            <video autoplay muted loop playsinline poster="./img/2020/video-poster.jpg" src="./img/2020/hero-bg-loop-c.mp4" class="video-bg"></video>
+            <video autoplay muted loop playsinline poster="./img/2020/video-poster.jpg" src="./img/2020/hero-bg-loop.mp4" class="video-bg"></video>
+            <video autoplay muted loop playsinline poster="./img/2020/video-poster.jpg" src="./img/2020/hero-bg-loop-mobile.mp4" class="video-bg-mobile"></video>
             <div class="hero-content">
                 <div class="container">
                     <div class="hero-container-copy">
@@ -249,7 +250,7 @@
                 </div>
             </div>
         </div>
-<!--
+        <!--
         <div class="jumbotron">
             <div class="grid-line"></div>
             <div class="grid-line"></div>
@@ -281,7 +282,7 @@
         <!-- challenges section -->
         <section id="challenges">
             <div class="container">
-<!--
+                <!--
                 <h2 class="h1"><span class="blt blt-teal"></span>Impact Canada Challenge Hub</h2>
                 <p class="lead">The Government of Canada wants innovative solutions to economic, environmental, and social problems.</p>
 -->
