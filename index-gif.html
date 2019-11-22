@@ -44,17 +44,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loogart/impact-canada/wet-boew/css/noscript.min.css" />
     </noscript>
     <style>
-        .video-bg {
-            position: absolute;
-            right: -50%;
-            bottom: 0;
-            top: 0;
-            left: 20%;
-            width: 100%;
-            height: auto;
-            z-index: 0;
-        }
-
         .hero {
             display: flex;
             justify-content: center;
@@ -63,7 +52,14 @@
             min-height: 69vh;
             overflow: hidden;
             z-index: 0;
-            background-color: #263970;
+            background-color: #222E62;
+            background-image: url('./img/2020/desktop.gif');
+            background-position: center;
+            background-size: auto;
+            background-repeat: no-repeat;
+        }
+        .mobile-gif{
+            display: none;
         }
 
         .hero-content {
@@ -71,7 +67,7 @@
             position: relative;
         }
 
-        .hero-container-copy {
+        .hero-container {
             width: 60%;
         }
 
@@ -86,34 +82,24 @@
             margin-top: 0;
         }
 
-        .supertitle {
-            display: block;
-            font-weight: 400;
-            font-size: 20px;
-            margin-bottom: 20px;
-            color:
-        }
-
-
         @media(max-width:767px) {
-            .video-bg {
-                display: block;
-                position: static;
-                background-color: #1F3169;
-            }
-
             .hero {
                 min-height: 50vh;
                 position: static;
                 display: block;
                 background-color: white;
+                background-image: none;
+            }
+            .mobile-gif{
+                display: block;
+                overflow: hidden;
             }
 
             .hero-content {
                 height: auto;
             }
 
-            .hero-container-copy {
+            .hero-container {
                 width: 100%;
             }
 
@@ -164,7 +150,7 @@
                 <div class="branding">
                     <a href="./" class="to-the-homepage">
                         <img class="logo" src="./img/2020/logo-2020-ondark.svg" alt="Impact Canada Home" style="margin-top:-5px">
-<!--                        <img class="logo" src="./img/logo-header.svg" alt="Impact Canada Home">-->
+                        <!--                        <img class="logo" src="./img/logo-header.svg" alt="Impact Canada Home">-->
                         <span class="sr-only">Impact Canada</span>
                     </a>
                     <a class="mobile-menu-bars visible-xs" id="toggle-menu"><i class="fas fa-bars" aria-hidden></i> &nbsp;Menu</a>
@@ -183,10 +169,12 @@
     <main role="main" property="mainContentOfPage">
 
         <div class="hero">
-            <video autoplay muted loop playsinline poster="./img/2020/video-poster.jpg" src="./img/2020/hero-bg-loop-c.mp4" class="video-bg"></video>
+            <div class="mobile-gif">
+                <img src="./img/2020/mobile.gif" alt="" class="img-responsive">
+            </div>
             <div class="hero-content">
                 <div class="container">
-                    <div class="hero-container-copy">
+                    <div class="hero-container">
                         <h1 id="wb-content" property="name">Let's solve Canada’s biggest challenges.</h1>
                         <p class="lead">The Government of Canada wants innovative solutions to economic, environmental, and social problems.</p>
                         <a class="btn btn-red mrgn-tp-lg wb-lbx lbx-modal" href="#videoModal" aria-controls="centred-popup-modal" role="button"><i class="fab fa-youtube"></i> Watch the video</a>
@@ -197,7 +185,7 @@
                             </header>
                             <div class="modal-body" style="padding:0;">
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/puo7oJCvfXo"></iframe>
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cD-jLqKuw7Q"></iframe>
                                 </div>
                                 <div class="" style="padding:2rem">
                                     <ul class="list-unstyled">
@@ -249,43 +237,11 @@
                 </div>
             </div>
         </div>
-<!--
-        <div class="jumbotron">
-            <div class="grid-line"></div>
-            <div class="grid-line"></div>
-            <div class="grid-line"></div>
-            <div class="grid-line"></div>
-            <div class="grid-line"></div>
-            <div class="grid-line"></div>
-            <div class="container">
-                <div class="row align-vertical">
-                    <div class="col-sm-7 above">
-                        <h1 id="wb-content" property="name" class="mrgn-bttm-lg">Help us solve Canada’s biggest challenges.</h1>
-                        <a type="button" class="btn btn-primary btn-lg shadow-lg" href="#challenges">View challenges</a>
-                    </div>
-                    <div class="col-sm-5">
-                        <img class="rellax shape shape__3" alt="white outline of rounded diamond shape" src="./img/diamond-outline-white.svg" data-rellax-speed="4">
-                        <img class="rellax img-responsive" alt="Pink outline of a simplified map of Canada created by Loogart.com" src="./img/map_by_loogart.svg" data-rellax-speed="-5">
-                        <img class="rellax shape shape__5" alt="white outline of rounded speech bubble" src="./img/bubble-outline-white.svg" data-rellax-speed="-2">
-                        <img class="rellax shape shape__6" alt="teal rectangular speed bubble" src="./img/bubble-gradient-teal.svg" data-rellax-speed="-3">
-                        <img class="rellax shape shape__4 " alt="red quarter circle shape" src="./img/quarter-gradient-red.svg" data-rellax-speed="-3">
-                        <img class="rellax shape shape__2" alt="rounded blue square shape" src="./img/square-blue.svg" data-rellax-speed="2">
-                        <img class="rellax shape shape__1" alt="teal circle shape" src="./img/circle-gradient-teal.svg" data-rellax-speed="-2">
-                    </div>
-                </div>
-            </div>
 
-        </div>
--->
 
         <!-- challenges section -->
         <section id="challenges">
             <div class="container">
-<!--
-                <h2 class="h1"><span class="blt blt-teal"></span>Impact Canada Challenge Hub</h2>
-                <p class="lead">The Government of Canada wants innovative solutions to economic, environmental, and social problems.</p>
--->
-
                 <div class="row mrgn-tp-lg wb-eqht">
                     <div class="col-sm-6">
                         <a href="./challenge.html">
