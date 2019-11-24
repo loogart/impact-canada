@@ -40,48 +40,28 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/loogart/impact-canada/wet-boew/js/ie8-wet-boew.min.js"></script>
 		<![endif]-->
-   
     <noscript>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loogart/impact-canada/wet-boew/css/noscript.min.css" />
     </noscript>
-    
     <style>
         .video-bg {
             position: absolute;
             right: 0;
             bottom: 0;
             top: 0;
-            left: 20%;
+            left: 0;
             width: 100%;
             height: auto;
             z-index: 0;
         }
-
-        .video-bg-scrim {
-            position: absolute;
-            width: 40%;
-            height: 100%;
-            left: 0;
-            z-index: 1;
-            background: rgb(31, 50, 105);
-            background: -moz-linear-gradient(90deg, rgba(31, 50, 105, 1) 0%, rgba(31, 50, 105, 0) 100%);
-            background: -webkit-linear-gradient(90deg, rgba(31, 50, 105, 1) 0%, rgba(31, 50, 105, 0) 100%);
-            background: linear-gradient(90deg, rgba(31, 50, 105, 1) 0%, rgba(31, 50, 105, 0) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f3269", endColorstr="#1f3269", GradientType=1);
-
-        }
-
-        .video-bg-mobile {
+        .video-bg-mobile{
             display: none;
         }
 
         .hero {
             display: flex;
-            display: -ms-flexbox;
             justify-content: center;
-            -ms-justify-content: center;
             align-items: center;
-            -ms-flex-align: center;
             position: relative;
             min-height: 69vh;
             overflow: hidden;
@@ -94,7 +74,7 @@
             position: relative;
         }
 
-        .hero-container {
+        .hero-container-copy {
             width: 60%;
         }
 
@@ -108,27 +88,18 @@
             font-size: 3.5em;
             margin-top: 0;
         }
-        @media(max-width:991px){
-                    .hero-container {
-            width: 75%;
-        }
-        }
 
         @media(max-width:767px) {
             .video-bg {
                 display: none;
             }
-
-            .video-bg-mobile {
+            
+            .video-bg-mobile{
                 display: block;
                 position: relative;
                 background-color: #1F3169;
-                width: 100%;
-                height: auto;
-            }
-
-            .video-bg-scrim {
-                display: none;
+                width:100%;
+                height:auto;
             }
 
             .hero {
@@ -136,15 +107,13 @@
                 position: static;
                 display: block;
                 background-color: white;
-                padding-bottom:2.5em;
-                overflow: auto;
             }
 
             .hero-content {
                 height: auto;
             }
 
-            .hero-container {
+            .hero-container-copy {
                 width: 100%;
             }
 
@@ -214,14 +183,11 @@
     <main role="main" property="mainContentOfPage">
 
         <div class="hero">
-            <div id="bm" class="video-bg">
-                <div class="video-bg-scrim"></div>
-            </div>
-            <div id="bm2" class="video-bg-mobile">
-            </div>
+            <video autoplay muted loop playsinline poster="./img/2020/video-poster.jpg" src="./img/2020/hero-bg-loop.mp4" class="video-bg"></video>
+            <video autoplay muted loop playsinline poster="./img/2020/video-poster.jpg" src="./img/2020/hero-bg-loop-mobile.mp4" class="video-bg-mobile"></video>
             <div class="hero-content">
                 <div class="container">
-                    <div class="hero-container">
+                    <div class="hero-container-copy">
                         <h1 id="wb-content" property="name">Let's solve Canada’s biggest challenges.</h1>
                         <p class="lead">The Government of Canada wants innovative solutions to economic, environmental, and social problems.</p>
                         <a class="btn btn-red mrgn-tp-lg wb-lbx lbx-modal" href="#videoModal" aria-controls="centred-popup-modal" role="button"><i class="fab fa-youtube"></i> Watch the video</a>
@@ -232,7 +198,7 @@
                             </header>
                             <div class="modal-body" style="padding:0;">
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cD-jLqKuw7Q"></iframe>
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/puo7oJCvfXo"></iframe>
                                 </div>
                                 <div class="" style="padding:2rem">
                                     <ul class="list-unstyled">
@@ -277,31 +243,13 @@
 
                                     </ul>
                                 </div>
+
                             </div>
                         </section>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Scripts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js" integrity="sha256-Z6O4M7tqzCtU4AEYZT3+moexyqFde5vZNka/gcaixa0=" crossorigin="anonymous"></script>
-        <script>
-            var animation = bodymovin.loadAnimation({
-                container: document.getElementById('bm'),
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-                path: 'data.json'
-            })
-            var animationMobile = bodymovin.loadAnimation({
-                container: document.getElementById('bm2'),
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-                path: 'data.json'
-            })
-        </script>
         <!--
         <div class="jumbotron">
             <div class="grid-line"></div>
