@@ -1041,6 +1041,16 @@ h2,
 h3 {
   color: #1F3169; }
 
+.h1-supertitle {
+  display: block;
+  font-size: 2rem;
+  color: #E25456;
+  margin-bottom: 1rem; }
+
+p.leader {
+  font-size: 2.5rem;
+  font-weight: lighter; }
+
 h2.with-line::before {
   content: "";
   display: inline-block;
@@ -1056,7 +1066,8 @@ h2.with-line::before {
   top: 60px;
   background-color: white;
   padding: 1.25rem 0;
-  z-index: 1; }
+  z-index: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
 
 .subnav-mobile-toggler {
   display: inline-block;
@@ -1163,14 +1174,6 @@ ul.subnav-menu-items {
 .timeline-process {
   padding: 3.5em 0;
   background-color: white; }
-  .timeline-process .row {
-    display: flex;
-    align-items: center; }
-    @media (max-width: 767px) {
-      .timeline-process .row {
-        flex-direction: column; } }
-  .timeline-process div[class^="col-"] {
-    display: inline-block; }
   .timeline-process ul.list-unstyled li {
     padding-left: 3rem; }
     .timeline-process ul.list-unstyled li::before {
@@ -1195,11 +1198,37 @@ ul.subnav-menu-items {
   @media (max-width: 767px) {
     .business-benefits {
       background-image: none, none; } }
-  .business-benefits .row {
-    display: flex;
-    align-items: center; }
+
+.business-cta {
+  padding: 7rem 0;
+  background-color: white; }
+  @media (max-width: 767px) {
+    .business-cta {
+      padding: 1.5em 0; } }
+  .business-cta .img-frame {
+    position: relative;
+    padding: 0; }
+  .business-cta .frame-photo {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    bottom: -10px;
+    width: calc(100% - 25px);
+    border: 3px solid #E25456; }
+  .business-cta .padding-left {
+    padding-left: 5rem; }
     @media (max-width: 767px) {
-      .business-benefits .row {
-        flex-direction: column; } }
+      .business-cta .padding-left {
+        padding-left: 15px; } }
+
+.row-flex {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 767px) {
+    .row-flex {
+      flex-direction: column; } }
+  .row-flex div[class^="col-"] {
+    display: inline-block; }
 
 /*# sourceMappingURL=custom.css.map */
