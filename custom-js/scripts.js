@@ -4,9 +4,10 @@ $(document).ready(function () {
         $(".menu").toggleClass("menu-mobile-visible");
     });
     $('#toggleSubnav').click(function () {
-        $(".subnav-menu-items").toggleClass("hidden-xs visible-xs-block");
+        $(".subnav-menu-items").toggleClass("hidden-xs visible-block");
         $("#subnavToggler").toggleClass("fa-chevron-down fa-times");
     });
+
 });
 
 // Parallax effects
