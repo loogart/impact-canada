@@ -36,6 +36,7 @@ $space-xxl: $space-unit * 5.25;
 // ======== Import other sass files =======
 @import "custom-buttons";
 
+
 // ======== General body styling =======
 html {
     scroll-behavior: smooth;
@@ -1477,3 +1478,5 @@ footer nav {
     }
 
 }
+// new fellowship stylesheet
+@import "fellowship/fellowship-styles";
