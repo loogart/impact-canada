@@ -320,6 +320,12 @@ ul.subnav-menu-items {
     }
 }
 
+.icon-title {
+    width: .69em;
+    height: .69em;
+    margin-right: .25em;
+}
+
 .icon-1 {
     width: 69px;
     height: 69px;
@@ -333,10 +339,11 @@ ul.subnav-menu-items {
 .dark-cta {
     padding: 5rem 0;
     background-color: $dark-blue;
-    border-bottom: 10px solid white;
     color: white;
 
-    h2 {
+    h1,
+    h2,
+    h3 {
         color: white;
     }
 
@@ -351,10 +358,37 @@ ul.subnav-menu-items {
     }
 
     &.bg-navy-blue {}
+
+    &.border-bottom {
+        border-bottom: 10px solid white;
+    }
+
+    .ic-pagination {
+        a {
+
+            &.active,
+            &:hover {
+                color: $teal;
+            }
+        }
+    }
+}
+
+.ic-project-filter {
+    padding: 1rem 0 4rem;
+    select.form-control{
+        width:100%;
+        background-color: transparent;
+        color:white;
+    }
 }
 
 .big-step {
     font-size: 7rem;
+}
+
+.text-white {
+    color: white !important;
 }
 
 .text-blue {
@@ -375,4 +409,39 @@ ul.subnav-menu-items {
 
 .btn-default {
     color: black !important;
+}
+
+.ic-cards-wrapper {
+    a {
+        display: block;
+        text-decoration: none;
+        transition: all .25s ease-in-out;
+        margin-bottom: 4rem;
+
+        .ic-card {
+            h3 {
+                color: $teal;
+                font-size: 1.5rem;
+                font-weight: normal;
+            }
+
+            h4 {
+                font-weight: normal;
+                font-size: 1.69rem;
+                line-height: 1.4;
+                margin-top: 1rem;
+            }
+
+            p.date {
+                font-size: 1.25rem;
+                color: $gray-blue;
+            }
+        }
+
+        &:hover {
+            opacity: .69;
+        }
+    }
+
+
 }
