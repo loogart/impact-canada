@@ -376,10 +376,11 @@ ul.subnav-menu-items {
 
 .ic-project-filter {
     padding: 1rem 0 4rem;
-    select.form-control{
-        width:100%;
+
+    select.form-control {
+        width: 100%;
         background-color: transparent;
-        color:white;
+        color: white;
     }
 }
 
@@ -442,6 +443,35 @@ ul.subnav-menu-items {
             opacity: .69;
         }
     }
+}
 
+.resources {
+    padding: 3.5rem 0;
+    background: white;
 
+    .resource-item {
+        display: flex;
+        margin-bottom: 5rem;
+        align-items:center;
+
+        img {
+            width: 90px;
+            height: 120px;
+            object-fit: cover;
+            display: block;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: $navy-blue;
+            margin: 1rem 0;
+        }
+
+        @media (max-width:990px) {
+            flex-direction: column;
+        }
+    }
 }

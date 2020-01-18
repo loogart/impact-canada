@@ -1335,4 +1335,27 @@ ul.subnav-menu-items {
   .ic-cards-wrapper a:hover {
     opacity: .69; }
 
+.resources {
+  padding: 3.5rem 0;
+  background: white; }
+  .resources .resource-item {
+    display: flex;
+    margin-bottom: 5rem;
+    align-items: center; }
+    .resources .resource-item img {
+      width: 90px;
+      height: 120px;
+      object-fit: cover;
+      display: block;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+      margin-right: 2rem;
+      margin-bottom: 2rem; }
+    .resources .resource-item h2 {
+      font-size: 2rem;
+      color: #1F3169;
+      margin: 1rem 0; }
+    @media (max-width: 990px) {
+      .resources .resource-item {
+        flex-direction: column; } }
+
 /*# sourceMappingURL=custom.css.map */
