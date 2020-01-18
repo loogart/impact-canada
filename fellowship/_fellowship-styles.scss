@@ -5,7 +5,6 @@ nav.challenge-bar {
     top: 60px;
 }
 
-
 h1,
 h2,
 h3 {
@@ -25,14 +24,19 @@ p.leader {
     font-weight: lighter;
 }
 
-h2.with-line::before {
-    content: "";
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-right: 1rem;
-    width: 80px;
-    height: 3px;
-    background-color: $red;
+h2 {
+    margin-bottom: 2.5rem;
+
+    &.with-line::before {
+        content: "";
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-right: 1rem;
+        width: 80px;
+        height: 3px;
+        background-color: $red;
+    }
+
 }
 
 .business-subnav {
@@ -281,4 +285,43 @@ ul.subnav-menu-items {
     div[class^="col-"] {
         display: inline-block;
     }
+}
+
+.featurette-grid {
+    padding: 3rem 0;
+    background-color: #F8F8F8;
+    border: 10px solid white;
+}
+
+.icon-1 {
+    width: 69px;
+    height: 69px;
+}
+
+.dark-cta {
+    padding: 5rem 0;
+    background-color: $dark-blue;
+    border-bottom: 10px solid white;
+    color:white;
+
+    h2 {
+        color: white;
+    }
+
+    p,
+    a {
+        color: white;
+    }
+}
+
+.text-blue{
+    color:$blue;
+}
+
+.text-warning{
+    color:#F2B01C;
+}
+
+.text-success{
+    color:#5EC950;
 }
