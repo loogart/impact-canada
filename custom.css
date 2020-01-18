@@ -1200,6 +1200,14 @@ ul.subnav-menu-items {
   @media (max-width: 767px) {
     .business-benefits {
       background-image: none, none; } }
+  .business-benefits.v2 {
+    background-image: url(./fellowship/img/graphics/circle-teal.svg);
+    background-size: 469px;
+    background-position: -30% 50%;
+    background-repeat: no-repeat; }
+    @media (max-width: 767px) {
+      .business-benefits.v2 {
+        background-image: none; } }
 
 .business-cta {
   padding: 7rem 0;
@@ -1218,6 +1226,8 @@ ul.subnav-menu-items {
     bottom: -10px;
     width: calc(100% - 25px);
     border: 3px solid #E25456; }
+    .business-cta .frame-photo.blue {
+      border: 3px solid #469EE1; }
   .business-cta .padding-left {
     padding-left: 5rem; }
     @media (max-width: 767px) {
@@ -1237,10 +1247,21 @@ ul.subnav-menu-items {
   padding: 3rem 0;
   background-color: #F8F8F8;
   border: 10px solid white; }
+  .featurette-grid.bg-navy-blue {
+    background-color: #1F3169; }
+    .featurette-grid.bg-navy-blue h2,
+    .featurette-grid.bg-navy-blue h3,
+    .featurette-grid.bg-navy-blue p,
+    .featurette-grid.bg-navy-blue a {
+      color: white; }
 
 .icon-1 {
   width: 69px;
   height: 69px; }
+
+.icon-2 {
+  width: 99px;
+  height: 99px; }
 
 .dark-cta {
   padding: 5rem 0;
@@ -1256,13 +1277,22 @@ ul.subnav-menu-items {
     background-color: transparent;
     border: 0; }
 
+.big-step {
+  font-size: 7rem; }
+
 .text-blue {
-  color: #469EE1; }
+  color: #469EE1 !important; }
+
+.text-teal {
+  color: #51E7F2 !important; }
 
 .text-warning {
-  color: #F2B01C; }
+  color: #F2B01C !important; }
 
 .text-success {
-  color: #5EC950; }
+  color: #5EC950 !important; }
+
+.btn-default {
+  color: black !important; }
 
 /*# sourceMappingURL=custom.css.map */

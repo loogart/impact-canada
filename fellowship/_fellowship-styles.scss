@@ -239,6 +239,18 @@ ul.subnav-menu-items {
         background-image: none, none;
     }
 
+    &.v2 {
+        background-image: url(./fellowship/img/graphics/circle-teal.svg);
+        background-size: 469px;
+        background-position: -30% 50%;
+        background-repeat: no-repeat;
+
+        @media (max-width:767px) {
+            background-image: none;
+        }
+
+    }
+
 }
 
 .business-cta {
@@ -262,6 +274,10 @@ ul.subnav-menu-items {
         bottom: -10px;
         width: calc(100% - 25px);
         border: 3px solid $red;
+
+        &.blue {
+            border: 3px solid $blue;
+        }
     }
 
     .padding-left {
@@ -291,6 +307,17 @@ ul.subnav-menu-items {
     padding: 3rem 0;
     background-color: #F8F8F8;
     border: 10px solid white;
+
+    &.bg-navy-blue {
+        background-color: $navy-blue;
+
+        h2,
+        h3,
+        p,
+        a {
+            color: white;
+        }
+    }
 }
 
 .icon-1 {
@@ -298,11 +325,16 @@ ul.subnav-menu-items {
     height: 69px;
 }
 
+.icon-2 {
+    width: 99px;
+    height: 99px;
+}
+
 .dark-cta {
     padding: 5rem 0;
     background-color: $dark-blue;
     border-bottom: 10px solid white;
-    color:white;
+    color: white;
 
     h2 {
         color: white;
@@ -312,20 +344,35 @@ ul.subnav-menu-items {
     a {
         color: white;
     }
-    .table{
+
+    .table {
         background-color: transparent;
-        border:0;
+        border: 0;
     }
+
+    &.bg-navy-blue {}
 }
 
-.text-blue{
-    color:$blue;
+.big-step {
+    font-size: 7rem;
 }
 
-.text-warning{
-    color:#F2B01C;
+.text-blue {
+    color: $blue !important;
 }
 
-.text-success{
-    color:#5EC950;
+.text-teal {
+    color: $teal !important;
+}
+
+.text-warning {
+    color: #F2B01C !important;
+}
+
+.text-success {
+    color: #5EC950 !important;
+}
+
+.btn-default {
+    color: black !important;
 }
