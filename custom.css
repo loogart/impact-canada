@@ -1342,23 +1342,11 @@ h2.with-line::before {
 }
 
 .subnav-mobile-toggler {
-  display: inline-block;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  bottom: 0;
-  z-index: 2000;
-}
-@media (min-width: 768px) {
-  .subnav-mobile-toggler {
-    display: none;
-  }
+  display: block;
+  z-index: 1;
 }
 .subnav-mobile-toggler a {
   color: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 3rem;
 }
 
 ul.subnav-menu-items {
@@ -1368,7 +1356,35 @@ ul.subnav-menu-items {
 }
 @media (max-width: 767px) {
   ul.subnav-menu-items {
-    padding: 1.5em 0;
+    padding: 4rem 0 1.5rem;
+  }
+  @keyframes subnav-menu-items-appear {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  ul.subnav-menu-items li {
+    animation: subnav-menu-items-appear;
+  }
+  ul.subnav-menu-items li:nth-child(1) {
+    animation-duration: 0.25s;
+  }
+  ul.subnav-menu-items li:nth-child(2) {
+    animation-duration: 0.5s;
+  }
+  ul.subnav-menu-items li:nth-child(3) {
+    animation-duration: 0.75s;
+  }
+  ul.subnav-menu-items li:nth-child(4) {
+    animation-duration: 1s;
+  }
+  ul.subnav-menu-items li:nth-child(5) {
+    animation-duration: 1.25s;
   }
 }
 ul.subnav-menu-items li {
@@ -1571,6 +1587,7 @@ ul.subnav-menu-items li a:hover {
 }
 .row-flex div[class^=col-] {
   display: inline-block;
+  max-width: 100%;
 }
 
 .featurette-grid {
