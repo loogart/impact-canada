@@ -1729,10 +1729,14 @@ ul.subnav-menu-items li a:hover {
   color: #1F3169;
   margin: 1rem 0;
 }
+.resources .resource-item .resource-item-body {
+  max-width: 100%;
+}
 @media (max-width: 990px) {
   .resources .resource-item {
     flex-direction: column;
     align-items: flex-start;
+    max-width: 100%;
   }
 }
 
