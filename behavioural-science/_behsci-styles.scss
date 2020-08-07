@@ -1,25 +1,112 @@
 // Aug 7, 2020 additional styles
-.section-a {
-    position: relative;
-    overflow: hidden;
-    padding: 100px 30px;
 
-    @media (max-width:767px) {}
+.logo-behsci {
+    width: 86px;
 }
+
+section.module {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+
+    @media(max-width:991px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+}
+
+section.module-1 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+
+    @media(max-width:991px) {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+
+}
+
 
 .bg-light {
     background-color: $light-blue;
 }
 
-.img-right-full {
-    width: 40%;
-    position: absolute;
-    right: 0;
-    top: 0;
+.bg-white {
+    background-color: white;
+}
 
-    @media (max-width:767px) {
-        width: 100%;
-        position: relative;
-        
+.bg-dark {
+    background-color: $dark-blue;
+    color: white;
+
+    h1,
+    h2,
+    h3,
+    a {
+        color: white;
     }
+}
+
+p.quote {
+    color: $navy-blue;
+    font-size: 32px;
+}
+
+p.lead-2 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+.module-img-right {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+
+    @media(max-width:991px) {
+        display: block;
+        width: 100%;
+        position: static;
+        object-fit: cover;
+        height: 320px;
+        object-position: 0 40%;
+        margin-bottom: 50px;
+    }
+
+    @media(min-width:1200px) {
+        width: 40%;
+    }
+}
+
+.bs-grid-item {
+    padding-right: 60px;
+    margin-bottom: 80px;
+
+    @media(max-width:767px) {
+        padding-right: 0;
+        margin-bottom: 60px;
+    }
+
+    ul li {
+        margin-bottom: 20px;
+    }
+}
+
+.bs-icon {
+    height: 45px;
+}
+
+.bs-line {
+    border: 1px solid $navy-blue;
 }

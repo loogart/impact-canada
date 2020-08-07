@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loogart/impact-canada/custom.css">-->
     <link rel="stylesheet" href="../custom.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" />
     <!--<![endif]-->
     <!--[if lt IE 9]>
 		<link href="https://cdn.jsdelivr.net/gh/loogart/impact-canada/theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
@@ -98,7 +98,7 @@
         <nav class="business-subnav">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-10 col-sm-2 col-md-2"><a href="./index.html"><img class="business-logo" src="./img/graphics/logo-fellowship-full.svg" alt=""></a></div>
+                    <div class="col-xs-10 col-sm-2 col-md-2"><a href="./index.html"><img class="business-logo" src="./img/logo-nav.svg" alt=""></a></div>
                     <div class="subnav-mobile-toggler col-xs-2 visible-xs text-left" style="z-index:1;text-align: right">
                         <a href="#!" id="toggleSubnav"><i class="fas fa-chevron-down" id="subnavToggler" style=""></i></a>
                     </div>
@@ -118,26 +118,115 @@
         <!-- Hero section -->
         <section class="business-hero">
             <div class="container narrow text-center">
-                <img data-aos="fade-in" class="logo-fellowship" src="./img/graphics/logo-fellowship.svg" alt="">
-                <h1 id="wb-content" property="name">Behavioural science</h1>
-                <p>Behavioural Science (BehSci) is a multidisciplinary approach to the study of human behaviour and decision-making, combining the findings and methods from psychology, neuroscience, and other social sciences.</p>
-                <p><a href="#!">Learn more</a></p>
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10">
+                        <img data-aos="fade-up" data-aos-duration="1000" class="logo-behsci" src="./img/logo-hero.svg" alt="">
+                        <h1 id="wb-content" property="name">Behavioural science</h1>
+                        <p>Behavioural Science (BehSci) is a multidisciplinary approach to the study of human behaviour and decision-making, combining the findings and methods from psychology, neuroscience, and other social sciences.</p>
+                        <p><a href="#!">Learn more</a></p>
+                    </div>
+                </div>
             </div>
         </section>
 
 
-        <section class="section-a bg-light">
-            <div class="container">
+        <section class="module-1 bg-light">
+            <img src="./img/photo1.jpg" alt="" class="module-img-right">
+            <div class=" container">
                 <div class="row">
                     <div class="col-md-7">
-                        <p class="leader">What choices are people making? How are they behaving? Why?</p>
-                        <p><b>Behavioural scientists ask these questions and design and test solutions based on that understanding.</b></p>
+                        <p class="quote">What choices are people making?<br>How are they behaving? Why?</p>
+                        <p class="lead-2">Behavioural scientists ask these questions and design and test solutions based on that understanding.</p>
                         <p>The Impact and Innovation Unit (IIU) applies insights from BehSci to inform the design and implementation of priority programs, services, and initiatives across government. From improving Canadians’ financial health, to improving environmental outcomes, to slowing the spread of COVID-19, we are leveraging our expertise to drive better outcomes for all Canadians.</p>
                     </div>
                 </div>
             </div>
-            <img src="https://images.unsplash.com/photo-1517586979036-b7d1e86b3345?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="" class="img-right-full">
         </section>
+
+        <section class="module bg-white">
+            <div class="container">
+                <h2 class="with-line">Our approach: The behavioural design process</h2>
+                <p>We are data-driven and evidence-based. Testing is integral to how we work. We conduct high-quality research to understand behaviour, and use a variety of rigorous experimental and quasi-experimental approaches to test - and scale - effective solutions. Our projects often follow a multi-stage process, which we tailor to fit the needs and contexts of each project and partner:</p>
+                <div class="row mrgn-tp-xl">
+                    <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
+                        <div class="bs-grid-item">
+                            <img src="./img/eye-duotone.svg" alt="" class="bs-icon">
+                            <h3>1 Identify</h3>
+                            <hr class="bs-line">
+                            <ul>
+                                <li>Consult with departmental leadership to identify priority target outcomes of interest and key behaviours to target</li>
+                                <li>Discuss current approaches and additional opportunities for innovation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
+                        <div class="bs-grid-item">
+                            <img src="./img/file-search-duotone.svg" alt="" class="bs-icon">
+                            <h3>2 Understand</h3>
+                            <hr class="bs-line">
+                            <ul>
+                                <li>Conduct initial research (e.g. literature scans, stakeholder interviews) to inform hypotheses of drivers and barriers to behaviours</li>
+                                <li>Conduct additional mixed-methods research (e.g. interviews, observations, surveys, and analysis of administrative data) to test hypotheses</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
+                        <div class="bs-grid-item">
+                            <img src="./img/drafting-compass-duotone.svg" alt="" class="bs-icon">
+                            <h3>3 Design</h3>
+                            <hr class="bs-line">
+                            <ul>
+                                <li>Ideate solutions for confirmed hypotheses, referencing the behavioural science literature</li>
+                                <li>Present prototypes of solutions to partners for feedback</li>
+                                <li>Iterate to refine solutions and prepare priority solutions for testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-md-block visible-lg-block"></div>
+                    <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
+                        <div class="bs-grid-item">
+                            <img src="./img/bullseye-pointer-duotone.svg" alt="" class="bs-icon">
+                            <h3>4 Test</h3>
+                            <hr class="bs-line">
+                            <ul>
+                                <li>Prepare plans for experimental or quasi-experimental tests of solutions and analysis of results</li>
+                                <li>Implement solutions in line with testing plan</li>
+                                <li>Collect data</li>
+                                <li>Analyse and present results</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
+                        <div class="bs-grid-item">
+                            <img src="./img/layer-plus-duotone.svg" alt="" class="bs-icon">
+                            <h3>5 Scale</h3>
+                            <hr class="bs-line">
+                            <ul>
+                                <li>Prepare plans for scaling (e.g. for broad dissemination of results, preparing policy memos, and supporting other key stakeholders to adapt and adopt provides solutions)</li>
+                                <li>Support plan execution</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dark-cta border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <h2 class="with-line">
+                            Get in touch
+                        </h2>
+                        <p>To learn more or explore working with us, please contact Jessica Leifer, Senior Lead, Behavioural Science at <a href="mailto:Jessica.Leifer@pco-bcp.gc.ca">Jessica.Leifer@pco-bcp.gc.ca.</a></p>
+                        <p class="mrgn-tp-lg"><a href="mailto:Jessica.Leifer@pco-bcp.gc.ca" class="btn btn-default">Email us</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 
     </main>
@@ -211,7 +300,7 @@
 		<![endif]-->
     <script src="https://cdn.jsdelivr.net/gh/loogart/impact-canada/custom-js/rellax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/loogart/impact-canada/custom-js/scrollreveal.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
     <script>
         AOS.init();
 
