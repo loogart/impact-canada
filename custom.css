@@ -1374,4 +1374,22 @@ ul.subnav-menu-items {
         align-items: flex-start;
         max-width: 100%; } }
 
+.section-a {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 30px; }
+
+.bg-light {
+  background-color: #D9E9F6; }
+
+.img-right-full {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 0; }
+  @media (max-width: 767px) {
+    .img-right-full {
+      width: 100%;
+      position: relative; } }
+
 /*# sourceMappingURL=custom.css.map */

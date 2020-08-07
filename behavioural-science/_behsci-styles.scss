@@ -1,0 +1,25 @@
+// Aug 7, 2020 additional styles
+.section-a {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 30px;
+
+    @media (max-width:767px) {}
+}
+
+.bg-light {
+    background-color: $light-blue;
+}
+
+.img-right-full {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @media (max-width:767px) {
+        width: 100%;
+        position: relative;
+        
+    }
+}
