@@ -53,6 +53,26 @@ section.module-1 {
     }
 }
 
+.bg-cosmo {
+    background-color: #173A58;
+    color: white;
+
+    h1,
+    h2,
+    h3,
+    a {
+        color: white;
+    }
+}
+
+.module-border {
+    border: 16px solid white;
+
+    &.module-border__light {
+        border-color: $light-blue;
+    }
+}
+
 p.quote {
     color: $navy-blue;
     font-size: 32px;
@@ -62,6 +82,10 @@ p.lead-2 {
     font-size: 20px;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.text-navy {
+    color: $navy-blue !important;
 }
 
 
@@ -87,6 +111,15 @@ p.lead-2 {
     @media(min-width:1200px) {
         width: 40%;
     }
+
+    &.rounded-corner-four {
+        border-bottom-left-radius: 69px;
+
+        @media(max-width:991px) {
+            border-bottom-left-radius: 0;
+            height: 269px;
+        }
+    }
 }
 
 .bs-grid-item {
@@ -109,4 +142,95 @@ p.lead-2 {
 
 .bs-line {
     border: 1px solid $navy-blue;
+}
+
+.img-team-circle {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+p.team-title {
+    color: $red;
+}
+
+.bs-service-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+
+    @media(max-width:767px) {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+}
+
+.bs-service-img-holder {
+    background-color: $light-blue;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.014),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.02),
+        0 12.5px 10px rgba(0, 0, 0, 0.025),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.03),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.036),
+        0 100px 80px rgba(0, 0, 0, 0.05);
+
+    @media(max-width:767px) {
+        padding: 30px;
+    }
+}
+
+.bs-service-text {
+    padding: 30px;
+
+    h2 {
+
+        border-left: 4px $red solid;
+        padding-left: 20px;
+    }
+}
+
+
+.bs-service-img {
+    width: 200px;
+    height: 200px;
+
+    @media(max-width:767px) {
+        width: 169px;
+    }
+}
+
+.ic-cards-wrapper {
+    .ic-card img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+
+    &.ic-cards-wrapper__light {
+        a {
+            .ic-card {
+                h3 {
+                    color: $navy-blue;
+                }
+
+                h4 {
+                    font-weight: bold;
+                    color: $navy-blue;
+                }
+
+                p.date {
+                    color: $navy-blue;
+                }
+            }
+        }
+    }
+
 }
