@@ -89,14 +89,17 @@ p.lead-2 {
 }
 
 
-.module-img-right {
+.module-img-right-1 {
     display: inline-block;
     position: absolute;
     top: 0;
     right: 0;
     width: 35%;
     height: 100%;
-    object-fit: cover;
+    background-image: url(./behavioural-science/img/photo1.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: cover;
 
     @media(max-width:991px) {
         display: block;
@@ -111,14 +114,36 @@ p.lead-2 {
     @media(min-width:1200px) {
         width: 40%;
     }
+}
 
-    &.rounded-corner-four {
-        border-bottom-left-radius: 69px;
 
-        @media(max-width:991px) {
-            border-bottom-left-radius: 0;
-            height: 269px;
-        }
+.module-img-right-2 {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    background-image: url(./behavioural-science/img/photo2.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: cover;
+    border-bottom-left-radius: 69px;
+
+    @media(max-width:991px) {
+        display: block;
+        width: 100%;
+        position: static;
+        object-fit: cover;
+        height: 320px;
+        object-position: 0 40%;
+        margin-bottom: 50px;
+        border-bottom-left-radius: 0;
+        height: 269px;
+    }
+
+    @media(min-width:1200px) {
+        width: 40%;
     }
 }
 
@@ -208,12 +233,6 @@ p.team-title {
 }
 
 .ic-cards-wrapper {
-    .ic-card img {
-        width: 100%;
-        height: 240px;
-        object-fit: cover;
-    }
-
     &.ic-cards-wrapper__light {
         a {
             .ic-card {
