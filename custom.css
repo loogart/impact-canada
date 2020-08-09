@@ -1425,6 +1425,9 @@ section.module-1 {
 
 .module-border {
   border: 16px solid white; }
+  @media (max-width: 767px) {
+    .module-border {
+      border: 0; } }
   .module-border.module-border__light {
     border-color: #D9E9F6; }
 

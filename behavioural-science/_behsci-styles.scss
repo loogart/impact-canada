@@ -67,7 +67,9 @@ section.module-1 {
 
 .module-border {
     border: 16px solid white;
-
+    @media(max-width:767px){
+        border:0;
+    }
     &.module-border__light {
         border-color: $light-blue;
     }
