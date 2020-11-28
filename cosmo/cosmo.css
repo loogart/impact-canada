@@ -1,0 +1,87 @@
+:root {
+    --impact-red: #e25456;
+    --impact-navy: #1F3069;
+    --impact-light: #d9e9f6;
+    --impact-lighter: #f0f8ff;
+    --impact-navy-dark: #10172d;
+    --cosmo-navy: #173a58;
+}
+
+section,.tile {
+    overflow: hidden;
+    position: relative;
+}
+
+.tile-wrapper{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+.tile{
+    border-radius: 20px;
+    padding:30px;
+}
+
+.cosmo-hero {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 86px 0;
+    background-image: url(../img/cosmo/hero-1.jpg), url(../img/cosmo/hero-2.jpg);
+    background-position: left bottom, right bottom;
+    background-size: 420px, 300px;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.cosmo-hero .logo{
+    width:45px;
+    height:45px;
+}
+
+.bg-light{
+    background-color: var(--impact-light);
+    color:var(--impact-navy-dark);
+    
+}
+
+.cosmo-hero h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    line-height: 1;
+    color:white;
+}
+
+
+.phrase {
+    filter: opacity(.56);
+    margin: 30px auto;
+}
+
+.btn{
+    transition: all .15s ease-in-out;
+}
+
+.btn-outline-light {
+    border: 1px solid var(--impact-light);
+    background-color: var(--impact-navy-dark);
+    color: var(--impact-light);
+}
+
+.btn-outline-light:hover{
+    border: 1px solid var(--impact-light);
+    background-color: var(--impact-navy-dark);
+    color: var(--impact-light);
+}
+
+.btn-outline-light:active,
+.btn-outline-light:focus {
+    border: 1px solid var(--impact-navy);
+    background-color: #090e1d;
+    color: var(--impact-light);
+}
+
+@media (max-width:767px) {
+    .cosmo-hero {
+        background-position: -50% bottom, 125% bottom;
+        background-size: 240px, 180px;
+    }
