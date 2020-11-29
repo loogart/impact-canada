@@ -7,19 +7,124 @@
     --cosmo-navy: #173a58;
 }
 
-section,.tile {
+h1.cosmo {
+    font-size: 64px;
+    margin-bottom: 20px;
+    line-height: 1;
+    color: white;
+}
+
+h2.cosmo {
+    font-size: 44px;
+}
+
+h3.cosmo {
+    font-size: 24px;
+}
+
+
+
+@media (max-width:767px) {
+    h1.cosmo {
+        font-size: 44px;
+    }
+
+    h2.cosmo {
+        font-size: 32px;
+    }
+
+
+    h3.cosmo {
+        font-size: 20px;
+    }
+}
+
+section,
+.tile {
     overflow: hidden;
     position: relative;
 }
 
-.tile-wrapper{
-    padding-top:15px;
-    padding-bottom: 15px;
+.tile-section {
+    padding: 7.5px;
 }
 
-.tile{
+
+.tile-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tile {
+    padding: 16px;
+    display: inline-block;
     border-radius: 20px;
-    padding:30px;
+    padding: 60px 30px;
+    width: 100%;
+    margin: 7.5px;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+.tile-50 {
+    width: 45.5%;
+}
+
+.tile-33 {
+    width: 30%;
+}
+
+
+@media (max-width:767px) {
+    .tile, .tile-50, tile-33 {
+        width: 100%;
+    }
+
+}
+
+img.tile-mask {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    bottom: -200px;
+    z-index: 0;
+}
+
+.tile-person {
+    background-image: url(../img/cosmo/tile-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tile h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bg-light {
+    background-color: var(--impact-light);
+    color: var(--impact-navy-dark);
+}
+
+.bg-lighter {
+    background-color: var(--impact-lighter);
+    color: var(--impact-navy-dark);
+}
+
+.text-light {
+    color: #95B6D1 !important;
+}
+
+.text-dark {
+    color: var(--impact-navy) !important;
+}
+
+.text-red {
+    color: var(--impact-red) !important;
 }
 
 .cosmo-hero {
@@ -33,41 +138,63 @@ section,.tile {
     background-repeat: no-repeat, no-repeat;
 }
 
-.cosmo-hero .logo{
-    width:45px;
-    height:45px;
+@media (max-width:767px) {
+    .cosmo-hero {
+        background-position: -50% bottom, 125% bottom;
+        background-size: 240px, 180px;
+    }
 }
 
-.bg-light{
-    background-color: var(--impact-light);
-    color:var(--impact-navy-dark);
-    
+
+
+.cosmo-method {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-image: url(../img/cosmo/hero-3.jpg);
+    background-position: left bottom;
+    background-size: 420px, ;
+    background-repeat: no-repeat;
 }
 
-.cosmo-hero h1 {
-    font-size: 64px;
-    margin-bottom: 20px;
-    line-height: 1;
-    color:white;
+@media (max-width:767px) {
+    .cosmo-method {
+        background-position: -10% bottom;
+        background-size: 320px;
+    }
 }
 
+.cosmo-hero .logo {
+    width: 45px;
+    height: 45px;
+}
+
+.cosmo-block {
+    padding: 80px 0;
+}
+
+
+.cosmo-block__120 {
+    padding: 120px 0;
+}
 
 .phrase {
     filter: opacity(.56);
     margin: 30px auto;
 }
 
-.btn{
+.btn {
     transition: all .15s ease-in-out;
 }
 
+/* light outline button */
 .btn-outline-light {
     border: 1px solid var(--impact-light);
     background-color: var(--impact-navy-dark);
     color: var(--impact-light);
 }
 
-.btn-outline-light:hover{
+.btn-outline-light:hover {
     border: 1px solid var(--impact-light);
     background-color: var(--impact-navy-dark);
     color: var(--impact-light);
@@ -80,8 +207,22 @@ section,.tile {
     color: var(--impact-light);
 }
 
-@media (max-width:767px) {
-    .cosmo-hero {
-        background-position: -50% bottom, 125% bottom;
-        background-size: 240px, 180px;
-    }
+/* dark outline button */
+.btn-outline-dark {
+    border: 1px solid var(--impact-navy-dark);
+    background-color: var(--impact-light);
+    color: var(--impact-navy-dark) !important;
+}
+
+.btn-outline-dark:hover {
+    border: 1px solid var(--impact-navy);
+    background-color: var(--impact-lighter);
+    color: var(--impact-navy);
+}
+
+.btn-outline-dark:active,
+.btn-outline-dark:focus {
+    border: 1px solid var(--cosmo-navy);
+    background-color: white;
+    color: var(--cosmo-navy);
+}
