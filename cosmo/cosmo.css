@@ -69,17 +69,30 @@ section,
     width: 100%
 }
 
+.tile-92{
+    width:93.5%;
+}
+
 .tile-50 {
-    width: 45.5%;
+    width: 46%;
 }
 
 .tile-33 {
     width: 30%;
 }
 
+.tile-icon-top-left{
+    position: absolute;
+    top:30px;
+    left:30px;
+    width:40px;
+    height:40px;
+    z-index: 0;
+}
+
 
 @media (max-width:767px) {
-    .tile, .tile-50, tile-33 {
+    .tile, .tile-50, .tile-33, .tile-92 {
         width: 100%;
     }
 
