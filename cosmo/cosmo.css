@@ -16,10 +16,12 @@ h1.cosmo {
 
 h2.cosmo {
     font-size: 44px;
+    color: var(--impact-dark-navy);
 }
 
 h3.cosmo {
     font-size: 24px;
+    color: var(--impact-dark-navy);
 }
 
 
@@ -46,7 +48,7 @@ section,
 }
 
 .tile-section {
-    padding: 7.5px;
+    padding: 5px;
 }
 
 
@@ -57,43 +59,115 @@ section,
     justify-content: center;
 }
 
+
+.tile-wrapper__space-between {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .tile {
     padding: 16px;
     display: inline-block;
     border-radius: 20px;
     padding: 60px 30px;
     width: 100%;
-    margin: 7.5px;
+    margin: 5px;
     overflow: hidden;
     position: relative;
     width: 100%
 }
 
-.tile-92{
-    width:93.5%;
-}
-
 .tile-50 {
-    width: 46%;
+    width: 47.5%;
 }
 
 .tile-33 {
     width: 30%;
 }
 
-.tile-icon-top-left{
+.tile-icon-top-left {
     position: absolute;
-    top:30px;
-    left:30px;
-    width:40px;
-    height:40px;
+    top: 30px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
     z-index: 0;
 }
 
 
-@media (max-width:767px) {
-    .tile, .tile-50, .tile-33, .tile-92 {
+.tile-icon-top-right {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    z-index: 0;
+}
+
+
+.tile-auto {
+    padding: 16px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 60px 30px;
+    width: 100%;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+
+.tile-results__layout {
+    display: flex;
+}
+
+.tile-results__number {
+    font-size: 64px;
+    font-weight: bolder;
+    margin-right: 30px;
+    color: var(--impact-navy-dark);
+    display: block;
+    margin-top: -15px;
+}
+
+
+@media (min-width:768px) and (max-width:991px) {
+    .tile-wrapper__space-between {
+        flex-flow: column wrap;
+    }
+
+    .tile-auto {
         width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .tile-section {
+        margin: 5px;
+    }
+
+    .tile-wrapper__space-between {
+        flex-flow: column wrap;
+    }
+
+    .tile,
+    .tile-50,
+    .tile-33,
+    .tile-92 {
+        width: 100%;
+        margin: 5px 0;
+
+    }
+
+    .tile-results__layout {
+        flex-direction: column;
+    }
+
+    .tile-auto {
+        margin: 5px 0;
     }
 
 }
@@ -128,6 +202,25 @@ img.tile-mask {
     color: var(--impact-navy-dark);
 }
 
+.bg-white {
+    background-color: white;
+    color: var(--impact-navy-dark);
+}
+
+.bg-dark {
+    background-color: var(--impact-navy-dark);
+    color: white;
+}
+
+.bg-navy {
+    background-color: var(--impact-navy);
+    color: white;
+}
+
+.border-dark {
+    border: 2px solid var(--impact-navy-dark);
+}
+
 .text-light {
     color: #95B6D1 !important;
 }
@@ -135,6 +228,12 @@ img.tile-mask {
 .text-dark {
     color: var(--impact-navy) !important;
 }
+
+
+.text-darker {
+    color: var(--impact-navy-dark) !important;
+}
+
 
 .text-red {
     color: var(--impact-red) !important;
@@ -177,13 +276,13 @@ img.tile-mask {
     }
 }
 
-.cosmo-hero .logo {
+.logo-cosmo {
     width: 45px;
     height: 45px;
 }
 
 .cosmo-block {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 
