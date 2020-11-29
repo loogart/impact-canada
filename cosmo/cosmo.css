@@ -24,8 +24,8 @@ h2.cosmo {
 h3.cosmo {
     font-size: 24px;
     color: var(--impact-dark-navy);
-    margin-top:0;
-    margin-bottom:20px;}
+    margin-top:15px;
+    margin-bottom:10px;}
 
 
 
@@ -353,4 +353,12 @@ img.tile-mask {
     .box-contact{
         margin-top:50px;
     }
+}
+details[open]{
+    border:none;
+}
+
+details summary{
+    border:none;
+    color:var(--impact-navy-dark);
 }
