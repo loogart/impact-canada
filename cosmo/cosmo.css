@@ -17,12 +17,15 @@ h1.cosmo {
 h2.cosmo {
     font-size: 44px;
     color: var(--impact-dark-navy);
+    margin-top:20px;
+    margin-bottom:20px;
 }
 
 h3.cosmo {
     font-size: 24px;
     color: var(--impact-dark-navy);
-}
+    margin-top:0;
+    margin-bottom:20px;}
 
 
 
@@ -96,9 +99,9 @@ section,
 }
 
 
-.tile-icon-top-right {
+.tile-icon-bottom-right {
     position: absolute;
-    top: 20px;
+    bottom: 20px;
     right: 25px;
     width: 40px;
     height: 40px;
@@ -145,7 +148,7 @@ section,
 }
 
 @media (max-width:767px) {
-    .tile-section {
+    .tile-section, tile-auto {
         margin: 5px;
     }
 
@@ -337,4 +340,17 @@ img.tile-mask {
     border: 1px solid var(--cosmo-navy);
     background-color: white;
     color: var(--cosmo-navy);
+}
+
+.box-contact{
+    background-color: #141D39;
+    padding:60px;
+    color:white;
+    border-radius: 20px;
+
+}
+@media (max-width:767px) {
+    .box-contact{
+        margin-top:50px;
+    }
 }
