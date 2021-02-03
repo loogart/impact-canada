@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>BehSci services | Impact Canada
+    <title>Challenges | Impact Canada
     </title>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta name="description" content="Impact Canada: Help us solve Canada’s biggest challenges. Innovation has the potential to solve the big challenges that we face as Canadians. Outcomes-based approaches represent a new way of opening up the problem-solving process to innovators who can bring fresh perspectives and new ideas.">
@@ -30,10 +30,11 @@
     <meta name="theme-color" content="#1F3169">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loogart/impact-canada/theme-wet-boew/css/theme.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">-->
     <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loogart/impact-canada/custom.css">-->
     <link rel="stylesheet" href="../custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" />
+    <script src="https://kit.fontawesome.com/c485e064c0.js" crossorigin="anonymous"></script>
     <!--<![endif]-->
     <!--[if lt IE 9]>
 		<link href="https://cdn.jsdelivr.net/gh/loogart/impact-canada/theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
@@ -85,8 +86,8 @@
                 <div class="menu">
                     <h2 class="sr-only">Topics menu</h2>
                     <a href="../about.html" aria-posinset="1" aria-setsize="4">About</a>
-                    <a href="../challenges/" aria-posinset="2" aria-setsize="4">Challenges</a>
-                    <a class="active" href="./" aria-posinset="3" aria-setsize="4">Behavioural Insights</a>
+                    <a class="active" href="#!" aria-posinset="2" aria-setsize="4">Challenges</a>
+                    <a href="../behavioural-science/" aria-posinset="3" aria-setsize="4">Behavioural Insights</a>
                     <a href="../fellowship/" aria-posinset="4" aria-setsize="4">Fellowship</a>
                 </div>
             </section>
@@ -98,15 +99,17 @@
         <nav class="business-subnav">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-10 col-sm-2 col-md-2"><a href="./index.html"><img class="business-logo" src="./img/logo-nav.svg" alt=""></a></div>
+                    <div class="col-xs-10 col-sm-2 col-md-2">
+                        <a href="./index.html"><img class="business-logo hidden-sm" src="./img/logo-nav.svg" alt=""><img class="business-logo visible-sm" src="./img/logo-nav-short.svg" alt=""></a>
+                    </div>
                     <div class="subnav-mobile-toggler col-xs-2 visible-xs text-left" style="z-index:1;text-align: right">
                         <a href="#!" id="toggleSubnav"><i class="fas fa-chevron-down" id="subnavToggler" style=""></i></a>
                     </div>
                     <div class="col-sm-10 col-md-8">
                         <ul class="subnav-menu-items hidden-xs">
-                            <li><a href="./">Overview</a></li>
+                            <li><a class="active" href=".">Overview</a></li>
                             <li><a href="./team.html">Team</a></li>
-                            <li><a class="active" href="./services.html">Services</a></li>
+                            <li><a href="./host.html">Host</a></li>
                             <li><a href="./projects.html">Projects</a></li>
                             <li><a href="./resources.html">Resources</a></li>
                         </ul>
@@ -115,16 +118,15 @@
             </div>
         </nav>
 
-
-        <section class="module-1 bg-white">
-                        <div class="module-img-right-2"></div>
-
-            <div class=" container">
+        <!-- Hero section -->
+        <section class="business-hero">
+            <div class="container narrow text-center">
                 <div class="row">
-                    <div class="col-md-7">
-                        <h1><span class="h1-supertitle">From A to Z</span>What we Do</h1>
-                        <p class="lead-2">The BehSci team offers a variety of supports and services to our GC partners. Book a meeting and learn more about how the central team or a BehSci Fellow can tailor our services to your organizations.</p>
-                        <p><a href="mailto:Jessica.Leifer@pco-bcp.gc.ca" class="btn btn-navy">Book a meeting</a></p>
+                    <div class="col-md-offset-1 col-md-10">
+                        <img data-aos="fade-up" data-aos-duration="1000" class="logo-behsci" src="./img/logo-hero.svg" alt="">
+                        <h1 id="wb-content" property="name">Challenges</h1>
+                        <p class="lead-2">Behavioural Science (BehSci) is a multidisciplinary approach to the study of human behaviour and decision-making, combining the findings and methods from psychology, neuroscience, and other social sciences.</p>
+                        <p><a href="#!">Learn more</a></p>
                     </div>
                 </div>
             </div>
@@ -132,73 +134,67 @@
 
         <section class="module bg-white">
             <div class="container">
-                <!-- service 1 -->
-                <div class="row bs-service-row">
-                    <div class="col-sm-5" data-aos="fade-up" data-aos-duration="750">
-                        <div class="bs-service-img-holder">
-                            <img src="./img/service1.svg" alt="" class="bs-service-img">
-                        </div>
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="bs-service-text">
-                            <h2>Research, behavioural design, and testing</h2>
-                            <p>We collaborate closely with our partners to run end-to-end projects that result in scaled, evidence-based interventions to improve public policy, programs, or services.</p>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <details>
-                                        <summary>Example</summary>
-                                        <p>To increase uptake of the Canada Learning Bond -- an educational savings incentive that helps low-income families save for their children’s post-secondary education -- our team integrated principles from BehSci into promotional letters sent to eligible recipients of the bond. Best-performers were identified in a nationwide randomized controlled trial, and have gone on to inform full-scale mail-outs to help ensure that as many children as possible receive the CLB.
-                                        </p>
-                                    </details>
-                                </li>
+                <h2 class="with-line">Our approach: The challenge design process</h2>
+                <p>The development and delivery of Challenges tend to follow five key phases. These phases may be highly customized depending on particular contexts and the needs of our partners.</p>
+                <div class="row mrgn-tp-xl">
+                    <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
+                        <div class="bs-grid-item">
+                            <i class="fad fa-eye fa-4x text-navy"></i>
+                            <h3>1 Understand</h3>
+                            <hr class="bs-line">
+                            <ul>
+                                <li>Consult with departmental leadership to identify priority target outcomes of interest and key behaviours to target</li>
+                                <li>Discuss current approaches and additional opportunities for innovation</li>
                             </ul>
                         </div>
                     </div>
-                </div>
-
-                <!-- service 2 -->
-                <div class="row bs-service-row">
-                    <div class="col-sm-push-7 col-sm-5" data-aos="fade-up" data-aos-duration="750">
-                        <div class="bs-service-img-holder">
-                            <img src="./img/service2.svg" alt="" class="bs-service-img">
-                        </div>
-                    </div>
-                    <div class="col-sm-pull-5 col-sm-7">
-                        <div class="bs-service-text">
-                            <h2>Expert Guidance</h2>
-                            <p>If testing is not possible, or our GC partners have a need to integrate behavioural insights into the design of a new policy or program on a short time horizon, we can offer recommendations and guidance on the basis of reviews of rapid, relevant literature reviews, rapid behavioural analyses, and our expertise and experience.</p>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <details>
-                                        <summary>Example</summary>
-                                        <p>To maximize the uptake of pardons for cannabis possession after legalization - particularly among disadvantaged groups - our team helped inform the design of a behaviourally-informed application process to reduce the administrative and financial burdens on the applicants.
-                                        </p>
-                                    </details>
-                                </li>
+                    <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
+                        <div class="bs-grid-item">
+                            <i class="fad fa-eye fa-4x text-navy"></i>
+                            <h3>2 Design</h3>
+                            <hr class="bs-line">
+                            <ul>
+                                <li>Conduct initial research (e.g. literature scans, stakeholder interviews) to inform hypotheses of drivers and barriers to behaviours</li>
+                                <li>Conduct additional mixed-methods research (e.g. interviews, observations, surveys, and analysis of administrative data) to test hypotheses</li>
                             </ul>
                         </div>
                     </div>
-                </div>
-
-                <!-- service 3 -->
-                <div class="row bs-service-row">
-                    <div class="col-sm-5" data-aos="fade-up" data-aos-duration="750">
-                        <div class="bs-service-img-holder">
-                            <img src="./img/service3.svg" alt="" class="bs-service-img">
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
+                        <div class="bs-grid-item">
+                            <i class="fad fa-eye fa-4x text-navy"></i>
+                            <h3>3 Test</h3>
+                            <hr class="bs-line">
+                            <ul>
+                                <li>Ideate solutions for confirmed hypotheses, referencing the behavioural science literature</li>
+                                <li>Present prototypes of solutions to partners for feedback</li>
+                                <li>Iterate to refine solutions and prepare priority solutions for testing</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-sm-7">
-                        <div class="bs-service-text">
-                            <h2>BehSci Capacity Building</h2>
-                            <p>We help departments grow their ability to apply BehSci to policy priorities by offering strategic advice, resources, and workshops and other learning opportunities.</p>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <details>
-                                        <summary>Example</summary>
-                                        <p>The IIU founded the Behavioural Insights Community of Practice within the Government of Canada in 2016. Today, its 500+ members regularly connect online and in-person to share and learn about best practices, research methodologies, and experimentation results.
-                                        </p>
-                                    </details>
-                                </li>
+                    <div class="clearfix visible-md-block visible-lg-block"></div>
+                    <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
+                        <div class="bs-grid-item">
+                            <i class="fad fa-eye fa-4x text-navy"></i>
+                            <h3>4 Implement</h3>
+                            <hr class="bs-line">
+                            <ul>
+                                <li>Prepare plans for experimental or quasi-experimental tests of solutions and analysis of results</li>
+                                <li>Implement solutions in line with testing plan</li>
+                                <li>Collect data</li>
+                                <li>Analyse and present results</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
+                        <div class="bs-grid-item">
+                            <i class="fad fa-eye fa-4x text-navy"></i>
+                            <h3>5 Evaluate &amp; scale</h3>
+                            <hr class="bs-line">
+                            <ul>
+                                <li>Prepare plans for scaling (e.g. for broad dissemination of results, preparing policy memos, and supporting other key stakeholders to adapt and adopt provides solutions)</li>
+                                <li>Support plan execution</li>
                             </ul>
                         </div>
                     </div>
@@ -211,10 +207,9 @@
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8">
                         <h2 class="with-line">
-                            Book a meeting
+                            Get in touch
                         </h2>
                         <p>To learn more or explore working with us, please contact Jessica Leifer, Senior Lead, Behavioural Science at <a href="mailto:Jessica.Leifer@pco-bcp.gc.ca">Jessica.Leifer@pco-bcp.gc.ca.</a></p>
-                        <p>If you’d like to host a Behavioural Science Fellow in your organization, you can learn more <a href="#!">here</a>.</p>
                         <p class="mrgn-tp-lg"><a href="mailto:Jessica.Leifer@pco-bcp.gc.ca" class="btn btn-default">Email us</a></p>
                     </div>
                 </div>
