@@ -1578,6 +1578,10 @@ p.team-title {
         width: 36px;
         padding-bottom: 12px; } }
 
+.h2-bar {
+  border-left: 4px #E25456 solid;
+  padding-left: 20px; }
+
 .btn-white {
   background-color: white;
   color: #1F3169 !important;
@@ -1590,8 +1594,17 @@ p.team-title {
 .text-navy {
   color: #1F3169; }
 
+.text-dark {
+  color: #10172D; }
+
 .text-red {
   color: #E25456; }
+
+.text-blue {
+  color: #469EE1; }
+
+.text-teal {
+  color: #51E7F2; }
 
 .bg-red {
   background-color: #E25456; }
@@ -1610,6 +1623,11 @@ p.team-title {
   text-align: center; }
   .tile-challenge img {
     height: 80px; }
+  .tile-challenge img.featurette {
+    height: 130px; }
+
+.shadow-smaf {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014), 0 6.7px 5.3px rgba(0, 0, 0, 0.02), 0 12.5px 10px rgba(0, 0, 0, 0.025), 0 22.3px 17.9px rgba(0, 0, 0, 0.03), 0 41.8px 33.4px rgba(0, 0, 0, 0.036), 0 100px 80px rgba(0, 0, 0, 0.05); }
 
 .business-logo {
   max-height: 24px; }
@@ -1661,5 +1679,38 @@ p.team-title {
   @media (max-width: 767px) {
     .img-hero-runners {
       background-image: none; } }
+
+a.project-card {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 30px; }
+  a.project-card .img-project {
+    border-radius: 12px;
+    width: 100%;
+    height: 169px;
+    object-fit: cover; }
+  a.project-card h3 {
+    color: #10172D;
+    margin-top: 20px; }
+  a.project-card .project-type {
+    display: block;
+    color: #10172D;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 10px; }
+
+.icon-type1 {
+  color: #E25456;
+  margin-right: 8px; }
+
+.icon-type2 {
+  color: #469EE1;
+  transform: rotate(45deg);
+  margin-right: 8px; }
+
+.icon-type3 {
+  color: #51E7F2;
+  transform: rotate(90deg);
+  margin-right: 8px; }
 
 /*# sourceMappingURL=custom.css.map */
