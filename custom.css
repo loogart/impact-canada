@@ -1562,7 +1562,104 @@ p.team-title {
 .ic-cards-wrapper.ic-cards-wrapper__light a .ic-card p.date {
   color: #1F3169; }
 
+.h1-super {
+  font-size: 3.5em;
+  margin-bottom: 0;
+  margin-top: 0; }
+  @media (max-width: 767px) {
+    .h1-super {
+      font-size: 2em; } }
+  .h1-super .logomark-before {
+    width: 60px;
+    padding-bottom: 20px;
+    margin-right: 12px; }
+    @media (max-width: 767px) {
+      .h1-super .logomark-before {
+        width: 36px;
+        padding-bottom: 12px; } }
+
+.btn-white {
+  background-color: white;
+  color: #1F3169 !important;
+  font-weight: bold;
+  transition: all .15s ease-in-out; }
+  .btn-white:hover, .btn-white:active, .btn-white:focus,
+  .btn-white .active {
+    background-color: #D9E9F6; }
+
 .text-navy {
   color: #1F3169; }
+
+.text-red {
+  color: #E25456; }
+
+.bg-red {
+  background-color: #E25456; }
+
+.bg-light-blue {
+  background-color: #D9E9F6; }
+
+.bg-navy {
+  background-color: #1F3169; }
+
+.bg-dark {
+  background-color: #10172D; }
+
+.tile-challenge {
+  padding: 50px;
+  text-align: center; }
+  .tile-challenge img {
+    height: 80px; }
+
+.business-logo {
+  max-height: 24px; }
+
+.no-padding-bottom {
+  padding-bottom: 0; }
+
+.red-floor {
+  display: block;
+  width: 100%;
+  height: 69px;
+  background-color: #E25456; }
+
+.row__hero-challenges {
+  display: flex;
+  align-items: flex-end; }
+  @media (max-width: 990px) {
+    .row__hero-challenges {
+      display: block; } }
+
+.row__vertical-align {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 990px) {
+    .row__vertical-align {
+      display: block; } }
+
+.border-section-thick {
+  border: 12px solid white; }
+  @media (max-width: 767px) {
+    .border-section-thick {
+      border: 8px solid white; } }
+
+.border-section-rounded {
+  border-radius: 32px; }
+
+.img-rounded {
+  border-radius: 20px; }
+
+.icon-challenge-type {
+  max-width: 36px;
+  max-height: 36px; }
+
+.img-hero-runners {
+  background-image: url("./challenges/img/artwork-race.svg");
+  background-size: 269px;
+  background-repeat: no-repeat;
+  background-position: 90% 90%; }
+  @media (max-width: 767px) {
+    .img-hero-runners {
+      background-image: none; } }
 
 /*# sourceMappingURL=custom.css.map */

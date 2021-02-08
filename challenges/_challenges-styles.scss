@@ -1,5 +1,137 @@
 // Feb 1, 2021 additional styles
 
-.text-navy{
-    color:$navy-blue;
+.h1-super {
+    font-size: 3.5em;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    @media(max-width:767px) {
+        font-size: 2em;
+    }
+
+    .logomark-before {
+        width: 60px;
+        padding-bottom: 20px;
+        margin-right: 12px;
+
+        @media(max-width:767px) {
+            width: 36px;
+            padding-bottom: 12px;
+        }
+    }
+}
+
+.btn-white {
+    background-color: white;
+    color: $navy-blue !important;
+    font-weight: bold;
+    transition: all .15s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus,
+    .active {
+        background-color: $light-gray;
+    }
+}
+
+.text-navy {
+    color: $navy-blue;
+}
+
+.text-red {
+    color: $red;
+}
+
+.bg-red {
+    background-color: $red;
+}
+
+.bg-light-blue {
+    background-color: $light-blue;
+}
+
+.bg-navy {
+    background-color: $navy-blue;
+}
+
+.bg-dark {
+    background-color: $dark-blue;
+}
+
+.tile-challenge {
+    padding: 50px;
+    text-align: center;
+
+    img {
+        height: 80px;
+    }
+}
+
+
+.business-logo {
+    max-height: 24px;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0;
+}
+
+.red-floor {
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-color: $red;
+}
+
+.row__hero-challenges {
+    display: flex;
+    align-items: flex-end;
+
+    @media(max-width:990px) {
+        display: block;
+    }
+
+}
+
+.row__vertical-align {
+    display: flex;
+    align-items: center;
+
+    @media(max-width:990px) {
+        display: block;
+    }
+
+}
+
+.border-section-thick {
+    border: 12px solid white;
+
+    @media(max-width:767px) {
+        border: 8px solid white;
+    }
+}
+
+.border-section-rounded {
+    border-radius: 32px;
+}
+
+.img-rounded {
+    border-radius: 20px;
+}
+
+.icon-challenge-type {
+    max-width: 36px;
+    max-height: 36px;
+}
+
+.img-hero-runners {
+    background-image: url('./challenges/img/artwork-race.svg');
+    background-size: 269px;
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+
+    @media(max-width:767px) {
+        background-image: none;
+    }
 }

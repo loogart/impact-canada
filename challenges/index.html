@@ -30,7 +30,7 @@
     <meta name="theme-color" content="#1F3169">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loogart/impact-canada/theme-wet-boew/css/theme.min.css">
-<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">-->
+    <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">-->
     <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loogart/impact-canada/custom.css">-->
     <link rel="stylesheet" href="../custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" />
@@ -100,7 +100,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-10 col-sm-2 col-md-2">
-                        <a href="./index.html"><img class="business-logo hidden-sm" src="./img/logo-nav.svg" alt=""><img class="business-logo visible-sm" src="./img/logo-nav-short.svg" alt=""></a>
+                        <a href="./"><img class="business-logo" src="./img/logo-light-en.svg" alt=""></a>
                     </div>
                     <div class="subnav-mobile-toggler col-xs-2 visible-xs text-left" style="z-index:1;text-align: right">
                         <a href="#!" id="toggleSubnav"><i class="fas fa-chevron-down" id="subnavToggler" style=""></i></a>
@@ -119,19 +119,131 @@
         </nav>
 
         <!-- Hero section -->
-        <section class="business-hero">
-            <div class="container narrow text-center">
-                <div class="row">
-                    <div class="col-md-offset-1 col-md-10">
-                        <img data-aos="fade-up" data-aos-duration="1000" class="logo-behsci" src="./img/logo-hero.svg" alt="">
-                        <h1 id="wb-content" property="name">Challenges</h1>
-                        <p class="lead-2">Behavioural Science (BehSci) is a multidisciplinary approach to the study of human behaviour and decision-making, combining the findings and methods from psychology, neuroscience, and other social sciences.</p>
-                        <p><a href="#!">Learn more</a></p>
+        <section class="business-hero no-padding-bottom">
+            <div class="container">
+                <div class="row row__hero-challenges">
+                    <div class="col-md-7" style="padding-bottom: 69px">
+                        <h1 id="wb-content" property="name" class="h1-super"><img src="./img/challenges-logomark.svg" alt="" class="logomark-before">Challenges</h1>
+                        <p class="lead-2">Challenges are an open innovation approach, meaning that they are designed to crowd-in innovative ideas and solutions from a wide variety of actors and sources to expand the Government’s problem-solving abilities.</p>
+                        <p>Challenges are designed to have a “look and feel” that is different from the types of funding programs that governments and their stakeholders are accustomed to running and participating in.</p>
+                        <a class="btn btn-lg btn-white mrgn-tp-lg wb-lbx lbx-modal" href="#videoModal" aria-controls="centred-popup-modal" role="button"><i class="fas fa-play text-red mrgn-rght-sm"></i>Watch the video</a>
                     </div>
+                    <div class="col-sm-8 col-md-5">
+                        <img src="./img/artwork-hero.svg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="red-floor"></div>
+            <section id="videoModal" class="mfp-hide modal-dialog modal-content overlay-def">
+
+                <header class="modal-header sr-only" style="border-bottom:0;">
+                    <h2 class="modal-title">What's a challenge?</h2>
+                </header>
+                <div class="modal-body" style="padding:0;">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CifBAFEZqmc"></iframe>
+                    </div>
+                    <div class="" style="padding:2rem">
+                        <ul class="list-unstyled">
+                            <li>
+                                <details>
+                                    <summary>What's a challenge? (Transcript)</summary>
+                                    <p>At Impact Canada, we use Challenges to reward the best solutions to some of Canada’s biggest problems.</p>
+                                    <p>By offering incentives, more innovators are encouraged to participate in the problem solving process.</p>
+                                    <p>This helps us to more rapidly achieve outcomes that matter to Canadians.</p>
+                                    <p>Running a challenge also helps to: draw attention to an issue area, attract and develop talent, AND build new partnerships & networks.</p>
+                                    <p>So far, we’ve launched over 12 challenges and initiatives with our partners, including:</p>
+                                    <p>An opioid Drug Checking Technology Challenge, offering $1.75M in prizes for an accurate and accessible drug checking device,</p>
+                                    <p>A Smart Cities Grand Challenge offering $300M to improve the lives of Canadians using data and connected technology, AND</p>
+                                    <p>A $1M Accelerator to help women cleantech entrepreneurs advance their breakthrough ideas and grow their businesses.</p>
+                                    <p>Learn more about some exciting new solutions at impact.canada.ca</p>
+                                </details>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-navy popup-modal-dismiss" type="button">Close window</button>
+                </div>
+            </section>
+        </section>
+
+        <!-- Featurettes -->
+        <section class="module bg-white">
+            <div class="container">
+                <div class="row row__vertical-align mrgn-bttm-xl">
+                    <div class="col-md-8">
+                        <h2 class="with-line">What is a challenge?</h2>
+                        <p class="lead-2">Challenges are meant to attract new talent and new ideas from a wide variety of actors, and accelerate progress towards solving problems and achieving stronger social, environmental, and economic outcomes for citizens.</p>
+                        <p>They provide incentives (both financial and non-financial) to encourage a broad range of innovators to tackle problems where solutions are not apparent, or current responses are not achieving the desired results. Incentives are typically structured through a stage-gated approach, where challenge participants receive incentives at different stages of the challenge.</p>
+                        <p>Challenges can act as “pull mechanisms”, where a sponsoring organization, such as government, identifies a problem, publicizes the criteria, and awards innovators if and when they can measurably improve on a given outcome that the sponsoring organization is looking to achieve.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-responsive img-rounded mrgn-tp-lg mrgn-bttm-lg bg-red" src="./img/artwork-race-prize.svg" alt="" data-aos="fade-up" data-aos-duration="1000">
+                    </div>
+                </div>
+
+                <div class="row row__vertical-align">
+                    <div class="col-md-5">
+                        <div class="img-rounded bg-dark tile-challenge mrgn-bttm-lg" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="./img/icon-eye.svg" alt="">
+                        </div>
+                         <div class="img-rounded bg-navy tile-challenge" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="./img/icon-magnet.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="with-line">Why run a Challenge?</h2>
+                        <p>Challenges aim to solve big problems, accelerate progress towards ambitious goals, and have a history of producing major breakthroughs in human knowledge and practice. They do this by shining a powerful light on an issue or opportunity and providing an incentive for innovators to prioritize the challenge goal.</p>
+                        <p>Challenges have a set of inherent features meant to attract new talent and new ideas, and accelerate progress towards solving problems that matter to people. In terms of public policy benefits, challenges can:</p>
+                        <ul>
+                            <li>Provide a targeted mechanism to shine a powerful spotlight on important public policy issues and enhance public awareness;</li>
+                            <li>Open up problem-solving by creating opportunities for government to attract and collaborate with nontraditional stakeholders and innovators in the private, academic, and not-for-profit sectors to pursue solutions of mutual interest using streamlined processes;</li>
+                            <li>Unlock strategic investments in areas where no natural incentive for innovation yet exists or where the risk of private investment prohibits a solution from being developed;</li>
+                            <li>Develop a pipeline of new innovations (e.g. programs, services, technologies, products) that can help address complex policy challenges and/or fill important market gaps with tangible impact; and</li>
+                            <li>Introduce an outcomes-based orientation to government programming by linking payments to progress and achievement, as opposed to paying only for expenditures and activities</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- 3 types of challenges -->
+        <div class="bg-light-blue border-section-thick border-section-rounded">
+            <section class="module">
+                <div class="container text-center">
+                    <h2>Types of challenges</h2>
+                    <div class="row mrgn-bttm-lg">
+                        <div class="col-md-offset-3 col-md-6">
+                            <p>There are three basic types of challenges used to tackle a wide variety of problems from different starting points.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./img/icon-type1.svg" alt="" class="icon-challenge-type">
+                            <h3>Challenge prizes</h3>
+                            <p>Offer an outcomes-based funding award to whomever can first or most effectively meet a defined challenge or solve a specific problem according to a set of verifiable and pre-determined criteria.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./img/icon-type2.svg" alt="" class="icon-challenge-type">
+                            <h3>Grand Challenges</h3>
+                            <p>Use open and thematic competitions to fund a broad range of potential innovations on a prospective basis and focus on rigorous evaluations of effectiveness.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./img/icon-type3.svg" alt="" class="icon-challenge-type">
+                            <h3>Accelerators</h3>
+                            <p>Provide intensive and time-limited business support for cohorts of early stage enterprises (e.g. start-ups)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- Our approahc grid -->
         <section class="module bg-white">
             <div class="container">
                 <h2 class="with-line">Our approach: The challenge design process</h2>
@@ -139,62 +251,61 @@
                 <div class="row mrgn-tp-xl">
                     <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
                         <div class="bs-grid-item">
-                            <i class="fad fa-eye fa-4x text-navy"></i>
+                            <i class="fad fa-ball-pile fa-4x text-navy"></i>
                             <h3>1 Understand</h3>
                             <hr class="bs-line">
                             <ul>
-                                <li>Consult with departmental leadership to identify priority target outcomes of interest and key behaviours to target</li>
-                                <li>Discuss current approaches and additional opportunities for innovation</li>
+                                <li>Identify and define the specific problem that the challenge will seek to address</li>
+                                <li>Select a policy priority; conduct discovery research; undertake stakeholder identification and engagement; and establish problem identification and definition</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
                         <div class="bs-grid-item">
-                            <i class="fad fa-eye fa-4x text-navy"></i>
+                            <i class="fad fa-drafting-compass fa-4x text-navy"></i>
                             <h3>2 Design</h3>
                             <hr class="bs-line">
                             <ul>
-                                <li>Conduct initial research (e.g. literature scans, stakeholder interviews) to inform hypotheses of drivers and barriers to behaviours</li>
-                                <li>Conduct additional mixed-methods research (e.g. interviews, observations, surveys, and analysis of administrative data) to test hypotheses</li>
+                                <li>Ideate design parameters that will support the most effective delivery of a challenge</li>
+                                <li>Present the challenge statement and develop the structure of the challenge, including timelines</li>
+                                <li>Draft challenge criteria, prize incentives and evaluation framework</li>
                             </ul>
                         </div>
                     </div>
                     <div class="clearfix visible-sm-block"></div>
                     <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
                         <div class="bs-grid-item">
-                            <i class="fad fa-eye fa-4x text-navy"></i>
+                            <i class="fad fa-vials fa-4x text-navy"></i>
                             <h3>3 Test</h3>
                             <hr class="bs-line">
                             <ul>
-                                <li>Ideate solutions for confirmed hypotheses, referencing the behavioural science literature</li>
-                                <li>Present prototypes of solutions to partners for feedback</li>
-                                <li>Iterate to refine solutions and prepare priority solutions for testing</li>
+                                <li>Validate the design elements previously developed to achieve a challenge design that is likely to deliver on the objectives</li>
                             </ul>
                         </div>
                     </div>
                     <div class="clearfix visible-md-block visible-lg-block"></div>
                     <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
                         <div class="bs-grid-item">
-                            <i class="fad fa-eye fa-4x text-navy"></i>
+                            <i class="fad fa-rocket-launch fa-4x text-navy"></i>
                             <h3>4 Implement</h3>
                             <hr class="bs-line">
                             <ul>
-                                <li>Prepare plans for experimental or quasi-experimental tests of solutions and analysis of results</li>
-                                <li>Implement solutions in line with testing plan</li>
-                                <li>Collect data</li>
-                                <li>Analyse and present results</li>
+                                <li>Launch Challenge</li>
+                                <li>Provide participants with support through the applications process</li>
+                                <li>Assessment of applications by a jury</li>
+                                <li>Select semi-finalists, finalists and winner(s)</li>
                             </ul>
                         </div>
                     </div>
                     <div class="clearfix visible-sm-block"></div>
                     <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="750">
                         <div class="bs-grid-item">
-                            <i class="fad fa-eye fa-4x text-navy"></i>
+                            <i class="fad fa-arrows fa-4x text-navy"></i>
                             <h3>5 Evaluate &amp; scale</h3>
                             <hr class="bs-line">
                             <ul>
-                                <li>Prepare plans for scaling (e.g. for broad dissemination of results, preparing policy memos, and supporting other key stakeholders to adapt and adopt provides solutions)</li>
-                                <li>Support plan execution</li>
+                                <li>Conduct a horizontal impact assessment of the challenges using quantitative and qualitative data</li>
+                                <li>Prepare plans for scaling and support execution</li>
                             </ul>
                         </div>
                     </div>
@@ -202,6 +313,7 @@
             </div>
         </section>
 
+        <!-- Get in touch module -->
         <section class="dark-cta border-bottom">
             <div class="container">
                 <div class="row">
@@ -209,8 +321,8 @@
                         <h2 class="with-line">
                             Get in touch
                         </h2>
-                        <p>To learn more or explore working with us, please contact Jessica Leifer, Senior Lead, Behavioural Science at <a href="mailto:Jessica.Leifer@pco-bcp.gc.ca">Jessica.Leifer@pco-bcp.gc.ca.</a></p>
-                        <p class="mrgn-tp-lg"><a href="mailto:Jessica.Leifer@pco-bcp.gc.ca" class="btn btn-default">Email us</a></p>
+                        <p>To learn more or explore working with us on Challenges, please contact Julie Greene, Senior Lead, Capacity and Partnerships, by email at <a href="mailto:Julie.Greene@pco-bcp.gc.ca">JJulie.Greene@pco-bcp.gc.ca.</a></p>
+                        <p class="mrgn-tp-lg"><a href="mailto:Julie.Greene@pco-bcp.gc.ca" class="btn btn-default">Email us</a></p>
                     </div>
                 </div>
             </div>
