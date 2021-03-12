@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Case study: Drug Checking Technology Challenge
+    </title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description"
+        content="Impact Canada: Help us solve Canada’s biggest challenges. Innovation has the potential to solve the big challenges that we face as Canadians. Outcomes-based approaches represent a new way of opening up the problem-solving process to innovators who can bring fresh perspectives and new ideas.">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Impact Canada">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="./img/favicon.png">
+    <meta name="msapplication-TileColor" content="#1F3169">
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="mask-icon" href="../img/icons/safari-pinned-tab.svg" color="#1F3169">
+    <meta name="theme-color" content="#1F3169">
+
+    <link rel="stylesheet" href="../theme-wet-boew/css/theme.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../custom.css">
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+		<link href="./theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="./wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+    <noscript>
+        <link rel="stylesheet" href="./wet-boew/css/noscript.min.css" />
+    </noscript>
+
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+    <header role="banner">
+        <ul id="wb-tphp">
+            <li class="wb-slc">
+                <a class="wb-sl" href="#wb-content">Skip to main content</a>
+            </li>
+            <li class="wb-slc visible-sm visible-md visible-lg">
+                <a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+            </li>
+            <li class="wb-slc">
+                <a class="wb-sl" href="#wb-lng">Skip to Language Toggle</a>
+            </li>
+        </ul>
+
+        <nav role="navigation" class="pre-nav">
+            <div class="container">
+                <section class="pre-nav__items">
+                    <a href="https://canada.ca" target="_blank" tabindex="0"><img class="back-to-canada"
+                            src="https://cdn.jsdelivr.net/gh/loogart/impact-canada/img/GoC-fip-en.svg"
+                            alt="Government of Canada logo"></a>
+                    <a id="wb-lng" lang="fr" hreflang="fr" href="#!"><span class="sr-only">Toggle
+                            language</span>Français</a>
+                </section>
+            </div>
+        </nav>
+    </header>
+    <nav role="navigation" class="navigation-bar">
+        <div class="container">
+            <section class="navigation__items">
+                <div class="branding">
+                    <a href="./" class="to-the-homepage">
+                        <img class="logo" src="../img/2020/logo-2020-ondark.svg" alt="Impact Canada Home"
+                            style="margin-top:-5px">
+                        <!--                        <img class="logo" src="../img/logo-header.svg" alt="Impact Canada Home">-->
+                        <span class="sr-only">Impact Canada</span>
+                    </a>
+                    <a class="mobile-menu-bars visible-xs" id="toggle-menu"><i class="fas fa-bars" aria-hidden></i>
+                        &nbsp;Menu</a>
+                </div>
+                <div class="menu">
+                    <a href="../about.html" aria-posinset="1" aria-setsize="4">About</a>
+                    <a href="../challenges/" aria-posinset="2" aria-setsize="4">Challenges</a>
+                    <a href="../behavioural-science/" aria-posinset="3" aria-setsize="4">Behavioural Insights</a>
+                    <a href="../fellowship/" aria-posinset="4" aria-setsize="4">Fellowship</a>
+                </div>
+            </section>
+        </div>
+    </nav>
+    <main role="main" property="mainContentOfPage">
+        <style>
+            .basic-padding {
+                padding-top: 3em;
+                padding-bottom: 3em;
+            }
+
+            .section-bookmark {
+                padding-top: 40px;
+                margin-top: -40px;
+            }
+
+            @media (min-width:992px) {
+                .side-menu-sticky {
+                    position: sticky;
+                    position: -webkit-sticky;
+                    top: 80px;
+                }
+            }
+        </style>
+        <div class="basic-padding">
+            <div class="container">
+                <div class="row">
+
+                    <!-- sticky secondary menu -->
+                    <div class="col-md-4 side-menu-sticky">
+                        <!-- table of contents-->
+                        <div class="list-group mrgn-bttm-lg">
+                            <a href="#section1" class="list-group-item">1. Executive Summary</a>
+                            <a href="#section2" class="list-group-item">2. Key Insights</a>
+                            <a href="#section3" class="list-group-item">3. About Impact Canada</a>
+                            <a href="#section4" class="list-group-item">4. About Health Canada</a>
+                            <a href="#section5" class="list-group-item">5. Challenge overview</a>
+                        </div>
+                    </div>
+
+                    <!-- main content goes here -->
+                    <div class="col-md-8">
+                        
+                        <!-- Page MAIN title-->
+                        <h1 class="mrgn-tp-0"><span class="h1-supertitle">Case study</span>Drug
+                            Checking<br>Technology Challenge</h1>
+
+                        <img src="http://impact.canada.ca/sites/default/files/challenge-images/2018-12/3_drug-checking-tech.jpg"
+                            alt="" class="img-responsive img-rounded">
+
+
+                        <!-- chapter block-->
+                        <section id="section1" class="section-bookmark">
+                            <h2>1. Executive Summary</h2>
+                            <div class="mrgn-bttm-md">
+                            <p class="lead">The Drug Checking Technology Challenge was designed to improve drug checking
+                                technology. This would allow the community of people who use drugs and those who support
+                                them to make more informed decisions, based on the composition of a drug and to reduce
+                                harm.</p>
+                            </div>
+                            <p>This case study introduces the reader to how this Challenge is unfolding, and details its
+                                stage-gated design. While the ultimate winner of the challenge will not be determined
+                                until spring 2021, the Challenge already features an impressive set of inventions and
+                                preliminary positive insights about its overall impact.
+                            </p>
+                            <p>Key insights about the Challenge are presented using the Impact Canada challenges <a
+                                    href="https://www.canada.ca/en/innovation-hub/services/reports-resources/logic-model-narrative.html"
+                                    target="_blank">logic model</a>, and explore both the process, as well as economic,
+                                social and environmental outcomes. These insights help us to understand whether and to
+                                what extent using a challenge methodology can help to advance priority policy areas for
+                                the Government, and deliver meaningful and measurable social, economic and environmental
+                                impacts for Canadians. The case study will also provide an overview of the objectives
+                                and structure of the challenge, as well as introduce the reader to the Challenge
+                                Finalists and Jury. </p>
+                        </section>
+
+                        <hr class="mrgn-tp-xl">
+                        
+                         <!-- chapter block-->
+                        <section id="section2" class="section-bookmark">
+                            <h2>2. Key insights</h2>
+
+                            <img src="./img/2-insights.svg"
+                            alt="" class="img-responsive img-rounded">
+
+                            <h3>2.1 Process outcomes</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>2.1.1 Enhanced Public Awareness of a Problem or Issue</h4>
+                                        </summary>
+                                        <p>Challenge prizes are designed to have a ‘look and feel’ that is very
+                                            different from the
+                                            types of funding programs that governments and their usual stakeholders are
+                                            accustomed
+                                            to running and participating in. This strategy of openness and transparency
+                                            has the dual
+                                            purpose of attracting new talent (and with new talent, new ideas – see
+                                            below), but also
+                                            of better engaging the general public on the broader policy issue(s) at
+                                            hand. By working
+                                            in the open through a challenge prize, its host creates opportunities to
+                                            communicate in
+                                            a strategic manner with the public on matters that are relevant to its
+                                            central mandate,
+                                            in a style that may be more attractive to a broader audience than
+                                            traditional
+                                            communications approaches may be. It is possible to think of challenge
+                                            prizes in this
+                                            manner as ‘flagship’ initiatives that might themselves have a narrow scope,
+                                            but which
+                                            have the potential to shed light on the broader social or environmental
+                                            issues at hand.
+                                        </p>
+                                        <p>The opioid overdose crisis continues to have significant impacts on Canadian
+                                            communities
+                                            and families. With an average of 11 deaths and 13 hospitalizations every day
+                                            between
+                                            January 2016 and June 2020, the opioid overdose crisis remains one of the
+                                            most serious
+                                            public health crises in Canada’s recent history.
+                                        </p>
+                                        <p>Health Canada launched the <a
+                                                href="https://impact.canada.ca/en/challenges/drug-checking-challenge"
+                                                target="_blank">Drug Checking Technology Challenge</a> in 2018, to
+                                            improve on drug
+                                            checking technology that will allow the community of people who use drugs
+                                            and those who
+                                            support them to make more informed decisions based on the composition of a
+                                            drug. This
+                                            opening statement reflects the Government of Canada’s support of harm
+                                            reduction, which
+                                            comprises of measures that reduce the negative effects of drugs and
+                                            substances on
+                                            individuals and communities, without requiring abstinence. In fact, harm
+                                            reduction, is
+                                            one of the four pillars of the <a
+                                                href="https://www.canada.ca/en/health-canada/services/publications/healthy-living/pillars-canadian-drugs-substances-strategy.html"
+                                                target="_blank">Canadian Drugs and Substances Strategy (CDSS)</a>,
+                                            alongside
+                                            prevention, treatment and enforcement. The CDSS guides federal policy,
+                                            program and
+                                            actions to address problematic substance use issues, including the opioid
+                                            overdose
+                                            crisis.</p>
+                                        <p>Launching a Challenge to “create a rapid, accurate, easy to use, and low-cost
+                                            testing
+                                            device or instrument that can be used with minimal training and preparation
+                                            work”
+                                            demonstrates clearly how the Government has made it a priority to support
+                                            people who use
+                                            drugs and avert the harms associated with the toxic supply of street drugs.
+                                        </p>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>2.1.2 New Talent Mobilized</h4>
+                                        </summary>
+                                        <p>Challenge Prizes aim to engage a diversity of actors and attract new players
+                                            into an existing field of work. The majority of the 24 initial applicants to
+                                            the Challenge were new applicants to government, having never been funded
+                                            through Health Canada’s Substance Use and Addictions Program. The
+                                            semi-finalist and finalist pool represent a cross-section of
+                                            well-established research and academic institutions, and new technology
+                                            start-ups. By the second selection stage, the finalist pool of three is
+                                            represented almost exclusively by those in the latter category – small,
+                                            start up companies, looking to make a breakthrough in the drug checking
+                                            technology market.</p>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>2.1.3 Build Collaborative Networks and Partnerships</h4>
+                                        </summary>
+                                        <p>Engagement: Varying from the original direction for the challenge, and
+                                            following significant and thoughtful stakeholder and citizen engagement, the
+                                            objective of the challenge shifted from developing new technologies for
+                                            enforcement purposes (e.g., for use by police), to drug checking devices for
+                                            front-line service delivery environments (e.g. supervised consumption sites,
+                                            overdose prevention sites, public health centres, etc.). Throughout the
+                                            Understand and Design phases of challenge planning, it became clear where
+                                            there was a need and an opportunity to intervene: we would launch a
+                                            challenge to provide more information to people who use drugs, and those who
+                                            support them, so they can make informed choices. </p>
+                                        <p>Integrating End User Perspective: To ensure that the perspectives of the end
+                                            user for the solutions are respected - people who use drugs and those who
+                                            support them - the challenge has used multiple methods. First, applicants
+                                            must demonstrate how they have incorporated the end user perspective into
+                                            the development of their drug checking technology throughout the challenge.
+                                            Second, people with lived and living experience have also been incorporated
+                                            into jury discussions and decision-making. And finally, when COVID-19 forced
+                                            the planning team away from planned in-person demonstrations of the final
+                                            three devices, a practical review process was put in place, wherein four
+                                            members of the drug checking community with lived and living expertise
+                                            participated in virtual demonstrations with innovators, and provided
+                                            feedback both to innovators, and to the jury, as they engaged in Stage 3
+                                            deliberations. These actions helped to ensure continual engagement from
+                                            design to implementation and beyond. </p>
+                                        <p>Leveraging Horizontal Resources: Partnerships were put in place with Health
+                                            Canada’s Drug Analysis Service (DAS) and the National Research Council’s
+                                            Industrial Research Assistance Program (IRAP) to support the Challenge
+                                            assessment and the validation of findings. The DAS organized a process
+                                            during which they verified the abilities of the finalists’ drug checking
+                                            devices to accurately detect relevant substances by preparing samples in
+                                            advance to test them on the finalist’s drug-checking devices, and provide a
+                                            report with results for the Jury. IRAP supports Health Canada by completing
+                                            supplemental technical reviews of the drug checking devices. IRAP utilizes
+                                            its extensive technical knowledge of the state of R&D in a given market, and
+                                            their experience with supporting the innovation and commercialization
+                                            capacity of Canadian small and medium-sized businesses, so that the Jury has
+                                            impartial technical expertise. </p>
+                                    </details>
+                                </li>
+                            </ul>
+
+                            <h3>2.2 Medium term outcomes: Sustainable business models</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>2.2.1 Increased investment</h4>
+                                        </summary>
+                                        <p>Accelerating Progress: The timeline for the Drug Checking Technology
+                                            Challenge motivated the innovators to move their technology quickly to a
+                                            stage of technical readiness required to pilot test their prototypes in the
+                                            field. By launching this Challenge, Health Canada increased investment in
+                                            the drug checking technology space, enabling the development of new
+                                            solutions more conducive to attracting diverse market entrants and
+                                            leveraging financial and non-financial resources from participating teams
+                                        </p>
+                                        <p>Challenges seeks to build a community of solvers, and to increase investment
+                                            in the sector and market more broadly. The Drug Checking Technology
+                                            Challenge has developed a cohort of nine solvers, who received progressive
+                                            supports to enable and accelerate R&D on their drug checking technology.
+                                            While ultimately, there will be one grand prize winner, there has been
+                                            increased investment in all solvers through the prizes at the various
+                                            stages, which can continue beyond the challenge. One such example is a
+                                            semi-finalist for the challenge – Greenlight Analytical. Although not
+                                            selected by the jury to move into the final three, the company went on to
+                                            receive support from the Government of Canada through the <a
+                                                href="http://entrevestor.com/home/entry/greenlight-borrows-374k-from-acoa"
+                                                target="_blank">Atlantic Canada Opportunities Agency</a>, and a Nova
+                                            Scotia based <a
+                                                href="https://innovacorp.ca/news/five-nova-scotia-start-ups-selected-innovacorp%E2%80%99s-2020-accelerate-program"
+                                                target="_blank">early stage venture capital organization</a>, in order
+                                            to move their device (now focused more specifically to cannabis) to market.
+                                            In addition, the city of Kingston <a
+                                                href="https://www.thewhig.com/news/local-news/pilot-project-could-provide-early-warning-of-toxic-drugs-in-kingston"
+                                                target="_blank">approved</a> spending of approximately $270,000 to
+                                            support a pilot project using the drug checking device of one of the
+                                            finalists. </p>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>2.2.2 Enhanced skill and capacity</h4>
+                                        </summary>
+                                        <p>Enhancing the skill and capacities of the community of ‘solvers’ is an
+                                            example of an important process outcome associated with challenges.
+                                            Challenges are very often ‘staged’ such that solvers need to graduate
+                                            through a series of successive ‘gates’ leading to the award of the final
+                                            prize. While the literature generally sees enhancements to skills and
+                                            capacities within organizations as ‘by-products’, and things that are
+                                            generally overlooked by challenge sponsors (McKinsey & Company, 2009), for
+                                            Impact Canada, this is a critical outcome. Typically, Impact Canada
+                                            challenges are intentionally designed in a staged manner, seizing
+                                            opportunities to build the capacity of the entire community of solvers in
+                                            meaningful ways. </p>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>2.2.3 Innovative products services and technologies</h4>
+                                        </summary>
+                                        <p>This is a key outcome for many Impact Canada challenges. Health Canada’s Drug
+                                            Checking Technology Challenge seeks to incent the development of technology
+                                            that will allow those who use drugs to make informed decisions about their
+                                            consumption, based on the composition of the drug itself. This type of
+                                            challenge is largely seen as a way for government to intervene where there
+                                            is little or no market incentive to develop a technology that would (if it
+                                            existed) lead to improved socioeconomic or environmental outcomes that have
+                                            public value. The challenge has helped bring forward a number of promising
+                                            devices using a range of novel technological solutions that have real-world
+                                            service applicability. <a
+                                                href="https://impact.canada.ca/en/challenges/drug-checking-challenge/finalists"
+                                                target="_blank">For example:</a>
+                                        </p>
+                                        <ul>
+                                            <li>A smartphone-based portable drug checking that uses non-destructive
+                                                electronic interrogation of a sample and transmits data to an app for
+                                                analysis.
+                                            </li>
+                                            <li>A cutting-edge dual spectrometer that uses both Raman and Near-Infrared
+                                                spectra, to provide instant, real-time reporting a user-friendly
+                                                interface designed for health workers. </li>
+                                            <li>A Raman-based portable technology that requires minimal training and
+                                                allows operators to detect fentanyl and other additives within minutes.
+                                            </li>
+                                        </ul>
+                                    </details>
+                                </li>
+                            </ul>
+
+                            <h3>2.3 Longer term outcomes</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>Social, environmental and economic benefits</h4>
+                                        </summary>
+                                        <p>This Challenge demonstrates the Government of Canada’s commitment to invest
+                                            in harm reduction and support people who use drugs. The possibility of a
+                                            novel drug checking technology could allow a community of people to benefit
+                                            from the results of the Challenge. The device can be used by social
+                                            organizations to help achieve the goal of reducing harms associated with
+                                            substance use. </p>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>Effective and efficient government</h4>
+                                        </summary>
+                                        <ul>
+                                            <li><strong>Leveraging Impact Canada Terms & Conditions:</strong>Impact
+                                                Canada’s set of horizontal Terms & Conditions (Ts&Cs) for transfer
+                                                payments provided Health Canada with the flexibility to issue
+                                                outcomes-based payments, and to expand its list of eligible applicants,
+                                                to include the private sector (for companies like technology firms).
+                                                Applying these Ts&Cs has enabled the department to attract new
+                                                applicants and to place the emphasis on the attainment of and payments
+                                                for outcomes, and not outputs, or implementation costs.
+                                            </li>
+                                            <li><strong>Generating Positive External Validation of Canada’s use of
+                                                    Challenges to Solve Problems: </strong>Nesta Challenges, the leader
+                                                in developing and delivering challenge prizes in the UK, has recognized
+                                                and featured the DCTC as world class example in their Challenge Practice
+                                                Guide, and in op-eds about Canadian innovation (add quote here). This
+                                                form of external validation of the approach from international
+                                                organizations, and the generation of positive media coverage for the
+                                                approach can be seen as a proxy for effective government (e.g. improved
+                                                international reputation).</li>
+                                        </ul>
+                                    </details>
+                                </li>
+                            </ul>
+
+                        </section>
+
+                        <hr class="mrgn-tp-xl">
+
+                        <!-- chapter block-->
+                        <section id="section3" class="section-bookmark">
+                            <h2>3. About Impact Canada</h2>
+                            <img src="./img/3-about.svg"
+                            alt="" class="img-responsive img-rounded mrgn-bttm-lg">
+                            <p>Impact Canada is part of a comprehensive set of initiatives launched by the Government of
+                                Canada in 2017 aimed at solving complex policy challenges using challenge prizes,
+                                pay-for-success, and behaviourally based models. Impact Canada enables the use of
+                                challenge prizes through a set of flexible Terms and Conditions (Ts&Cs) for Grants and
+                                Contributions that allow funding to be linked to outcomes achieved as well as funding
+                                rigorous, research based evaluations.</p>
+                            <p>The Impact and Innovation Unit at the Privy Council Office helps departments develop
+                                innovative funding opportunities that bring together the best ideas and brightest
+                                talent, and reward those organizations and individuals that deliver high impact results
+                                for Canadians.
+                            </p>
+
+                            <h3>3.1 What is a Challenge?</h3>
+                            <blockquote>
+                                Challenges aim to solve big problems and accelerate progress towards ambitious goals,
+                                and have a history of producing major breakthroughs in human knowledge and practice.
+                                They do this by shining a light on an issue or opportunity and providing an incentive
+                                for innovators and investors to make meeting the challenge a priority.
+                            </blockquote>
+                            <p>Challenges are open innovation approaches, designed to provide incentives (both financial
+                                and non-financial) to encourage a broad set of innovators to tackle problems where
+                                solutions are not apparent. Challenges typically employ a series of stages to move
+                                innovators through to the ultimate goal of solving a given problem. Instead of
+                                prescribing a particular set of specifications, those that issue Challenges in the
+                                public sector are most often looking for the most promising solutions to meet a set of
+                                defined criteria. Challenges can act as “pull mechanism”, where a sponsoring
+                                organization, such as government, identifies a problem, publicizes criteria, and awards
+                                innovators if and when they can measurably improve on a given outcome that the
+                                organization is looking to achieve. </p>
+
+                                <img src="./img/3-challenge.svg"
+                                alt="" class="img-responsive img-rounded mrgn-tp-lg mrgn-bttm-lg">
+                            <p>The Drug Checking Technology Challenge is an example of a Challenge prize. Challenge
+                                prizes offer an outcomes-based funding award to whomever can first or most effectively
+                                meet a defined challenge or solve a specific problem according to a set of verifiable
+                                and pre-determined criteria. They focus on attracting innovators to help accelerate
+                                progress to address an identified gap – such as a lack of innovation in a particular
+                                area of the market. </p>
+                        </section>
+
+                        <hr class="mrgn-tp-xl">
+
+                        <!-- chapter block-->
+                        <section id="section4" class="section-bookmark">
+                            <h2>4. About Health Canada</h2>
+                            <img src="./img/4-health-canada.svg"
+                            alt="" class="img-responsive img-rounded mrgn-bttm-lg">
+                            <p>Health Canada (HC) leads the Drug Checking Technology Challenge of Impact Canada. HC is
+                                responsible for helping Canadians maintain and improve their health. It ensures that
+                                high-quality health services are accessible, and works to reduce health risks.
+                            </p>
+
+                            <h3>4.1 Why a Drug Checking Technology Challenge?</h3>
+                            <p>The number of overdoses and deaths caused by opioids, including fentanyl, has risen
+                                sharply and continues to rise: 17,602 apparent opioid-related deaths occurred between
+                                January 2016 and June 2020. Between January and June 2020, 75% of accidental apparent
+                                opioid-related deaths involved fentanyl or fentanyl analogues. Governments,
+                                non-government organizations, health and public safety professionals, and Canadians
+                                across the country have been responding to this crisis in an effort to save lives.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <details>
+                                        <summary>Continue reading</summary>
+                                        <p>A key pillar of the Government of Canada’s approach to the opioid overdose
+                                            crisis is using a harm reduction approach – measures that reduce the
+                                            negative effects of drugs and substances on individuals and communities,
+                                            without requiring abstinence. Drug checking is a harm reduction measure
+                                            where people have their drugs tested to find out what is in them, including
+                                            if they contain toxic substances or potent drugs like fentanyl.
+                                        </p>
+                                        <p>In October 2018, the Drug Checking Technology Challenge was launched to
+                                            improve on drug checking technology to allow the community of people who use
+                                            drugs and those who support them to make informed decisions based on the
+                                            composition of a drug and to reduce harm. </p>
+                                        <p>As demonstrated in Impact Canada’s <a
+                                                href="https://www.youtube.com/watch?v=8qlx11BF4-o&feature=youtu.be"
+                                                target="_blank">video blog</a> about the Drug Checking Technology
+                                            Challenge, the objective shifted from drug detection to drug checking
+                                            following stakeholder engagement in the research and planning phases of the
+                                            Challenge. The goal of this challenge is to reduce harm to those who use
+                                            drugs. </p>
+                                    </details>
+                                </li>
+                            </ul>
+
+                            <h3>4.2 Challenge objectives</h3>
+                            <p>The following three main objectives encompass this Challenge Prize:
+                            </p>
+                            <ul>
+                                <li>Accelerate innovation to develop an ideal drug-checking device or instrument to be
+                                    used in a controlled environment (e.g. supervised consumption sites, overdose
+                                    prevention sites, public health centres, etc.)</li>
+                                <li>Provide more valuable information to people who use drugs and those who support
+                                    them, so they can make informed choices, which can help lower the risk of overdose
+                                    deaths.</li>
+                                <li>Increase uptake of drug-checking services with the goal of providing better and more
+                                    valuable information to people who use drugs.</li>
+                            </ul>
+
+                            <img src="./img/6-ui-elements.svg"
+                            alt="" class="img-responsive img-rounded mrgn-bttm-lg">
+
+                            <h3>4.3 Judging criteria</h3>
+                            <table class="table table-striped">
+                                <caption class="wb-inv">
+                                    Judding criteria for the Drug Checking Technology Challenge
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Creteria</th>
+                                        <th scope="col">Explanation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Accuracy / Reliability</strong></td>
+                                        <td>Provides consistent and reliable results with as few false results as
+                                            possible</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Sensitivity</strong></td>
+                                        <td>Able to detect the presence of as many substances as possible, including
+                                            fentanyl and fentanyl analogues, even in trace amounts, and various other
+                                            opioids.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Adaptabl:</strong></td>
+                                        <td>Adaptable to detect additional/unknown substances, including non-opioid
+                                            substances.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Speed</strong></td>
+                                        <td>Able to provide results quickly.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Affordability</strong></td>
+                                        <td>Priced for broad deployment in resource-limited environments.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Ease of Use</strong></td>
+                                        <td>Useable by the general population with minimal training, minimal sample and
+                                            device/instrument preparation work.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Suitability / Portability</strong></td>
+                                        <td>Suitable for use in front line service delivery environments, and preferably
+                                            portable.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Quantification</strong></td>
+                                        <td>Able to provide quantity or relative quantity of each component in a sample.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Non-destructive</strong></td>
+                                        <td> To the extent possible, not consume, destroy or contaminate with reagent
+                                            any part of the drug sample tested.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Robust</strong></td>
+                                        <td>Secure and resistant to malfunction.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Networked</strong></td>
+                                        <td> Able to record and produce reports on data on the prevalence of different
+                                            types of drugs, and ‘bad batches’.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Consultation</strong></td>
+                                        <td>Developed in consultation with end users.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Adoption</strong></td>
+                                        <td>Planned adoption for broad deployment among intended end users.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Prototype</strong></td>
+                                        <td>The project work plan should aim to produce a functional prototype that can
+                                            be tested by July 2019.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <hr class="mrgn-tp-xl">
+
+                        <!-- chapter block-->
+                        <section id="section5" class="section-bookmark">
+                            <h2>5. Challenge overview</h2>
+                            <img src="./img/5-annex.svg"
+                            alt="" class="img-responsive img-rounded mrgn-bttm-lg">
+                            <h3>5.1 Entry criteria</h3>
+                            <p>Applicants needed to be:</p>
+                            <ul>
+                                <li>Any for-profit and not-for-profit organizations such as companies, industry
+                                    associations, Indigenous organizations and research associations, as well as
+                                    post-secondary institutions.
+                                </li>
+                                <li>Demonstrating ownership of/or permission to use any intellectual property (IP) used
+                                    in the Challenge.</li>
+                                <li>Willing to possess authorization under the Controlled Drugs and Substances Act to be
+                                    protected from criminal charges.</li>
+                                <li>Demonstrating respect towards people who use drugs and those that support them
+                                    throughout the Challenge process.</li>
+                                <li>Willing to undergo any required training to work with people who use drugs and those
+                                    that support them, if they will be interacting with them directly or will be working
+                                    in a supervised consumption site or overdose prevention site during the Challenge.
+                                </li>
+                            </ul>
+
+                            <h3>5.2 Challenge stages</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>5.2.1 Consultation Phase and Challenge Launch</h4>
+                                        </summary>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Timeline</th>
+                                                    <th scope="col">Phase</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>October-December 2017</strong></td>
+                                                    <td>Internal challenge research and scoping</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>January-September 2018</strong></td>
+                                                    <td>Stakeholder and key informant engagement and consultation,
+                                                        including online consultation on the Impact Canada platform
+                                                        during July and August.
+                                                        <hr><small>Note: The scope shifted from drug detection
+                                                            technology to drug checking based on stakeholder engagement,
+                                                            including in person interviews, key informant interviews,
+                                                            and workshops.</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>October 2, 2018</strong></td>
+                                                    <td>Challenge Launch. 24 applicants from three countries.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>5.2.2 First-Stage Screening</h4>
+                                        </summary>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Timeline</th>
+                                                    <th scope="col">Phase</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>April 2019</strong></td>
+                                                    <td>The Jury evaluated applications against challenge objectives and
+                                                        assessment criteria. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>April 2019</strong></td>
+                                                    <td>At the semi-finalist stage, the jury selected nine innovators to
+                                                        move to the second stage, to advance prototype development, with
+                                                        a view toward pilot testing. These nine semi-Finalists received
+                                                        $25K in funding to further develop their prototypes.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>5.2.3 Incubation Period</h4>
+                                        </summary>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Timeline</th>
+                                                    <th scope="col">Phase</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>April to September 2019</strong></td>
+                                                    <td>Semi-Finalists further developed their prototypes.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>5.2.4 Second-Stage Screening</h4>
+                                        </summary>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Timeline</th>
+                                                    <th scope="col">Phase</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>December 2019</strong></td>
+                                                    <td>Jury deliberates to choose up to 5 Finalists chosen from the 9
+                                                        Semi-Finalists, who would receive an estimated $100K to pilot
+                                                        their prototypes.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>December 2019</strong></td>
+                                                    <td>The jury selected <a
+                                                            href="https://impact.canada.ca/en/challenges/drug-checking-challenge/finalists"
+                                                            target="_blank">three Finalists</a>, whose ideas truly
+                                                        represent breakthrough innovations in the field of drug checking
+                                                        technologies, were selected after the second-stage screening by
+                                                        the Jury to have their prototypes piloted in the field, each
+                                                        receiving $166K to support further R&D on their devices.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>5.2.5 Pilot phase</h4>
+                                        </summary>
+                                        <p>In light of COVID-19, Health Canada made some changes to the assessment
+                                            process. Instead of requiring pilot testing in the field, Health Canada
+                                            established a group of front-line workers and people with lived and living
+                                            experience, to conduct a virtual, “practical review” of the devices. The
+                                            purpose of this panel is to assess:
+                                        </p>
+                                        <ul>
+                                            <li>The suitability of the devices for a front-line environment. (e.g., easy
+                                                to use, portable, produces result quickly, resistant to malfunction);
+                                                and
+                                            </li>
+                                            <li>Whether the device will meet the needs of the end user (i.e. people who
+                                                use drugs). </li>
+                                        </ul>
+                                        <p>Finalists also went to a Health Canada Drug Analysis Service (DAS) laboratory
+                                            for a ‘data verification process’. DAS employees prepared a number of
+                                            samples in advance. Finalists were each given a block of time to use their
+                                            drug checking device to identify the composition of the sample. A report
+                                            with results was provided to the Jury. This process helped to verify the
+                                            performance of the finalists’ devices against some of the technical judging
+                                            criteria (e.g., accuracy and quantification).
+                                        </p>
+                                        <p>Finalists will also submit a final Stage 3 Report, including a Business Plan,
+                                            and make a final (virtual, due to COVID-19 restrictions) pitch in front of
+                                            the jury in February 2021. </p>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <h4>Grand Prize Winner Selected and Announced</h4>
+                                        </summary>
+                                        <p><strong>In spring 2021</strong>, the grand prize winner will be announced and
+                                            awarded an estimated prize of $1 million to further research and development
+                                            of their innovation, moving toward making the product available for uptake
+                                            and use.
+                                        </p>
+                                    </details>
+                                </li>
+
+                            </ul>
+
+                            <h3>5.3 Meet the finalists</h3>
+                            <section class="panel panel-default">
+                                <header class="panel-heading">
+                                    <h4 class="panel-title">Malcolm Eade</h4>
+                                    <span>Spectra Plasmonics</span>
+                                </header>
+                                <div class="panel-body">
+                                    <p>Handheld Raman with Amplifi Trace Drug ID Kit - Spectra’s solution allows precise
+                                        identification of the components present in a substance, including what cutting
+                                        agents and fentanyl analogues are present, in a process that is as portable and
+                                        simple to use as a test kit. The combination of speed, ease of use, and detailed
+                                        results also enables proactive measures to be taken with regional drug strategy
+                                        groups by offering near-real time data on substances in the community.</p>
+                                </div>
+                            </section>
+                            <section class="panel panel-default">
+                                <header class="panel-heading">
+                                    <h4 class="panel-title">Alexander Boukin and Ari Forman</h4>
+                                    <span>Scatr</span>
+                                </header>
+                                <div class="panel-body">
+                                    <p>Scatr Series One - Alex Boukin and Ari Forman (Ontario) are developing a cutting-edge dual spectrometer that will challenge the standard for overdose
+                                        prevention. By obtaining and analyzing both Raman and Near-Infrared spectra, the
+                                        device will provide instant, real-time reporting on the identity and
+                                        concentration of drug mixtures and their analogues. Utilizing a cloud-based
+                                        machine learning infrastructure, the Series One will continuously update itself
+                                        to reflect a constantly increasing sample size and the latest in spectroscopy
+                                        science. The data will be presented in a user-friendly interface designed for
+                                        health workers in the field without the need for chemical analysis training.
+                                    </p>
+                                </div>
+                            </section>
+
+                            <section class="panel panel-default">
+                                <header class="panel-heading">
+                                    <h4 class="panel-title">Dr. Dan Werb and Dr. Drew Hall</h4>
+                                    <span>DoseCheck Technologies</span>
+                                </header>
+                                <div class="panel-body">
+                                    <p>A smartphone-based drug checking technology and data dissemination tool - Dan Werb and Drew Hall are developing a smartphone-based portable drug checking technology to detect toxic adulterants in street drugs. The device uses non-destructive electronic interrogation of the sample and then transmits data to an app for analysis that provides users with quantitative information about their drug sample. This information is then aggregated to provide information about trends in the composition of the street drug market. Because the technology employs disposable sensors, it can be continually adjusted to account for the emergence of new adulterants and toxic chemicals in the street drug supply.
+                                    </p>
+                                </div>
+                            </section>
+
+                            <h3>5.4 Meet the jury</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <details>
+                                        <summary><h4>Steve Cody, Chair</h4></summary>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="https://impact.canada.ca/sites/default/files/steve_0.jpg" class="img-responsive img-rounded mrgn-tp-sm mrgn-bttm-md" alt="">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <p>Steve is an Ottawa entrepreneur, currently working as the CEO and Founder of Ruckify. Steve Cody is a father of five children, husband to a terrific wife, and papa to two very cool grandkids. Steve and his wife lost their son Nicholas to drugs in 2013. After seeing Sharon and Tony House's passion and commitment to help others through Kaleidoscope of Hope*, Steve knew that he wanted to be a part of this journey helping others in his community. He is extremely touched that he can have a direct impact on the mental health, drug awareness, and education of children.</p>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary><h4>Alexandra de Kiewit</h4></summary>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="https://impact.canada.ca/sites/default/files/alexandra.jpeg" class="img-responsive img-rounded mrgn-tp-sm mrgn-bttm-md" alt="">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <p>Alexandra de Kiewit is an advocate for community work since 2010 and works with people who use drugs and sex workers. She cofounded the Canadian Association of Drug Users (CAPUD). Alexandra is also an instructor at the Institute for the Development of Positive Leadership (IDLP) in Quebec and is a member of CATIE’s Board of Directors.</p>
+                                            </div>
+                                        </div>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary><h4>Rob Boyd</h4></summary>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="https://impact.canada.ca/sites/default/files/rob.jpg" class="img-responsive img-rounded mrgn-tp-sm mrgn-bttm-md" alt="">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <p>Rob Boyd has been working in the field of mental health, substance use disorder and homelessness in Ottawa for nearly 30 years. He started at the Salvation Army Youth shelter in 1990, then moved on the YMCA/YWCA to manage their housing programs before becoming the Oasis Program Director at the Sandy Hill Community Health Centre in 2004. Originally, a walk in medical clinic with a drop in and limited outreach capacity, Rob and the team at Sandy Hill CHC have expanded services to respond to the changing needs of people who use drugs in Ottawa.</p>
+                                            </div>
+                                        </div>
+                                       
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary><h4>Rick Lees</h4></summary>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="https://impact.canada.ca/sites/default/files/rick-lees.jpg" class="img-responsive img-rounded mrgn-tp-sm mrgn-bttm-md" alt="">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <p>Rick Lees is the Executive Director of Main Street Project. With over 25 years of community health experience, Rick is an advocate for marginalized populations through his various positions as Director of Organizational Development with Sherbourne Health Centre; Director of Programs and Services with the Toronto People with AIDS Foundation (TPWA) and Director of Corporate Services with Street Health, Toronto. </p>
+                                            </div>
+                                        </div>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary><h4>Stéphanie Lessard</h4></summary>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="https://impact.canada.ca/sites/default/files/alexandra.jpg" class="img-responsive img-rounded mrgn-tp-sm mrgn-bttm-md" alt="">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <p>Stéphanie Lessard is a laboratory specialist for the Regulatory Operations and Enforcement Branch of Health Canada since 2018. She is part of the Drug Analysis Service’s Research and Science Development Team. Prior to this, Stéphanie worked as a medicinal chemist in the pharmaceutical industry for 8 years. She obtained her M.Sc. degree in organic chemistry at the University of Alberta in 2009. After her career debut in drug discovery, she is now involved in projects related to the opioid crisis and drug abuse, as well as to innovative approaches for drug analysis. </p>
+                                            </div>
+                                        </div>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary><h4>Dr. Roman Szumski</h4></summary>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="https://impact.canada.ca/sites/default/files/roman_0.jpg" class="img-responsive img-rounded mrgn-tp-sm mrgn-bttm-md" alt="">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <p>Dr. Roman Szumski is Vice-President of Life Sciences at the National Research Council since July 2005. A medical doctor and pathologist by training, Dr. Szumski is recognized as a visionary leader and an innovative manager with unique experience in building strategic public-private sector partnerships in the life sciences sector. He was the founding CEO of Calgary Laboratory Services, and more Vice-President (Science & Technology) of MDS Inc.</p>
+                                            </div>
+                                        </div>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary><h4>Dr. Mark Lysyshyn</h4></summary>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="https://impact.canada.ca/sites/default/files/mark.jpg" class="img-responsive img-rounded mrgn-tp-sm mrgn-bttm-md" alt="">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <p>Dr. Mark Lysyshyn works for Vancouver Coastal Health as a Medical Health Officer and the medical lead for the health authority’s harm reduction programs. He is co-leading the health authority response to the overdose emergency and has been investigating drug checking as a potential response to the crisis. He is a specialist in Public Health and Preventive Medicine and Internal Medicine and has worked as an Addiction Medicine physician at St. Paul’s Hospital in Vancouver. He is also a Clinical Assistant Professor at the University of British Columbia School of Population and Public Health.
+                                            </div>
+                                        </div>
+                                    </p>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary><h4>Dr. Shahab Shahnazari</h4></summary>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="https://impact.canada.ca/sites/default/files/shahab.jpg" class="img-responsive img-rounded mrgn-tp-sm mrgn-bttm-md" alt="">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <p>Dr. Shahab Shahnazari leads <a href="https://www.marsdd.com/" target="_blank">MaRS'</a> Innovation Challenges practice which works with governments, agencies, foundations and private sector organizations to engage the global community in the identification and testing of novel concepts, methodologies and products that can address organizational innovation gaps and needs. He holds a B.Sc. in Biochemistry from McMaster University and a Ph.D. in Molecular Genetics from the University of Toronto.
+                                            </div>
+                                        </div>
+                                    </p>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary><h4>Malcolm Birbeck</h4></summary>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="https://impact.canada.ca/sites/default/files/malcolm-birbeck.jpeg" class="img-responsive img-rounded mrgn-tp-sm mrgn-bttm-md" alt="">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <p>Malcolm Birbeck is a representative of the community for which this challenge is aimed to help. His lived experience has led him to work in many roles within the harm reduction community. He has worked in community health centers, with research projects for Ottawa University (I-Track), and he is an active advocate for harm reduction services and approaches. Malcolm is currently employed as a Community Worker at the Somerset West Community Health Centre, where he works on the front lines of the deadly toxic drug supply epidemic. His experience has led him to have a passion for finding innovative ways to help his community out and, hopefully, decreasing the amount of unnecessary deaths. Previously, Malcolm worked in the Aerospace and Automotive industries as a certified quality Technician/Auditor, certified by ASQ with a Metrology/Statistical background for 25 years. He also enjoys working on various fine wood projects in his free time.
+                                                </p>
+                                            </div>
+                                        </div>
+                                       
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary><h4>Ashley Smoke (Stage 3)</h4></summary>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="https://impact.canada.ca/sites/default/files/ashley-smoke.jpg" class="img-responsive img-rounded mrgn-tp-sm mrgn-bttm-md" alt="">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <p>Ashley Smoke is an Indigenous Woman from Alderville First Nation's living in Brampton, Ontario. She has a diploma in Community and Justice Services and does lots of work in Harm Reduction and Indigenous Services. Ashley also does advisory work for various research projects around people who use drugs and does advocacy at Regional, Provincial and National levels. Ashley does this work from a place of living expertise and is driven by the experiences she has had throughout the years as someone who uses drugs and has accessed harm reduction services herself such as methadone and safe supply. Ashley has a one-and-a-half-year-old son named Austin and does this work in hopes that his future can be bright and so he won't have to bury his friends at the same rate as well as to commemorate all those friends, family, coworkers and clients that have been lost during the opioid crisis.
+                                                </p>
+                                            </div>
+                                        </div>
+                                       
+                                    </details>
+                                </li>
+
+                            </ul>
+
+                            <h3>5.5 Partners</h3>
+                            <h4>Health Canada (Challenge lead)</h4>
+                            <ul>
+                                <li><strong>Health Canada - </strong> Office of Drug Policy and Science 
+                                </li>
+                                <li><strong>Health Canada - </strong> Substance Use and Addictions Program
+                                </li>
+                                <li><strong>Health Canada - </strong> Drug Analysis Service
+                                </li>
+                            </ul>
+                            <h4>National Research Council Canada</h4>
+                            <ul>
+                                <li><strong>National Research Council Canada - </strong> Industrial Research Assistance Program</li>
+                            </ul>
+
+                        </section>
+
+                        <hr class="mrgn-tp-xl">
+
+                    </div><!-- end of .col-md-8 -->
+                </div><!-- end of .row -->
+            </div><!-- end of .container -->
+        </div><!-- end of .basic-padding -->
+
+    </main>
+
+    <footer role="contentinfo" id="wb-info">
+        <nav role="navigation">
+            <div class="footer__left">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <h3><a href="./index.html"><img class="footer-logo"
+                                    src="https://cdn.jsdelivr.net/gh/loogart/impact-canada/img/logo-footer.svg"
+                                    alt="Impact Canada logo"></a></h3>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="#!">About</a></li>
+                            <li><a href="./about.html">Challenges</a></li>
+                            <li><a href="./how-it-works.html">Behavioural insights</a></li>
+                            <li><a href="./news.html">Fellowship</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <h3>Get in touch</h3>
+                        <ul>
+                            <li><a href="mailto:christopher.soueidan@pco-bcp.gc.ca">Contact</a></li>
+                            <li><a href="./partner-with-us.html">Partner with us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-offset-4 col-md-8">
+                        <p class="small">© 2018 Impact Canada Initiative</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="row">
+                    <span class="circle circle-teal"></span>
+                    <span class="circle circle-red"></span>
+                    <img class="wink"
+                        src="https://cdn.jsdelivr.net/gh/loogart/impact-canada/img/kiss-wink-heart-solid.svg"
+                        alt="Website and brand created by Chris Soueidan">
+                    <div class="col-sm-6">
+
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="./terms.html">Terms</a></li>
+                            <li><a href="./privacy.html">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Social media</h3>
+                        <ul>
+                            <li><a href="https://twitter.com/impact_innoven" target="_blank"><i class="fab fa-twitter"
+                                        aria-hidden></i> Twitter</a></li>
+                            <li><a href="https://twitter.com/impact_innoven" target="_blank"><i class="fab fa-facebook"
+                                        aria-hidden></i> Facebook</a></li>
+                            <li><a href="https://www.linkedin.com/company/impact-and-innovation-unit/"
+                                    target="_blank"><i class="fab fa-linkedin" aria-hidden></i> LinkedIn</a></li>
+                            <li><a href="https://www.youtube.com/channel/UC6iz9z05o0bXlLxCTbI9xiA" target="_blank"><i
+                                        class="fab fa-youtube" aria-hidden></i> Youtube</a></li>
+                            <li><a href="https://www.youtube.com/channel/UC6iz9z05o0bXlLxCTbI9xiA" target="_blank"><i
+                                        class="fab fa-medium" aria-hidden></i> Medium</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <div class="sub-footer"><img class="sub-footer__logo"
+                src="https://cdn.jsdelivr.net/gh/loogart/impact-canada/img/canada-wordmark-white.svg"
+                alt="Canada wordmark"></div>
+
+    </footer>
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+		<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
+		<![endif]-->
+    <script src="../custom-js/rellax.min.js"></script>
+    <script src="../custom-js/scrollreveal.min.js"></script>
+    <script src="../custom-js/scripts.js"></script>
+</body>
+
+</html>
