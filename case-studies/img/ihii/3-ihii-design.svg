@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="200" viewBox="0 0 720 200">
+  <rect x="-8.455" y="-9.171" width="736.911" height="218.341" fill="#d84190"/>
+  <g>
+    <g>
+      <g>
+        <polyline points="540.479 30.772 540.479 27.189 536.896 27.189" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5"/>
+        <line x1="529.675" y1="27.189" x2="186.715" y2="27.189" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5" stroke-dasharray="7.22 7.22"/>
+        <polyline points="183.105 27.189 179.521 27.189 179.521 30.772" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5"/>
+        <line x1="179.521" y1="37.634" x2="179.521" y2="157.71" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5" stroke-dasharray="6.861 6.861"/>
+        <polyline points="179.521 161.14 179.521 164.724 183.105 164.724" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5"/>
+        <line x1="190.325" y1="164.724" x2="533.285" y2="164.724" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5" stroke-dasharray="7.22 7.22"/>
+        <polyline points="536.896 164.724 540.479 164.724 540.479 161.14" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5"/>
+        <line x1="540.479" y1="154.279" x2="540.479" y2="34.203" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5" stroke-dasharray="6.861 6.861"/>
+      </g>
+      <rect x="531.37" y="18.08" width="18.218" height="18.218" fill="#d84190" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+      <rect x="170.412" y="18.08" width="18.218" height="18.218" fill="#d84190" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+      <rect x="531.37" y="155.615" width="18.218" height="18.218" fill="#d84190" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+      <rect x="170.412" y="155.615" width="18.218" height="18.218" fill="#d84190" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+    </g>
+    <polygon points="360 53.987 311.538 137.925 408.462 137.925 360 53.987" fill="#47c4d9"/>
+    <rect x="450.369" y="53.987" width="46.013" height="46.013" fill="#47c4d9"/>
+    <circle cx="246.586" cy="109.921" r="28.004" fill="#47c4d9"/>
+  </g>
+</svg>

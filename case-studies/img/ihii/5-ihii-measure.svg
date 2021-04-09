@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="200" viewBox="0 0 720 200">
+  <rect x="-8.455" y="-9.171" width="736.911" height="218.341" fill="#4e9bd5"/>
+  <g>
+    <line x1="36.001" y1="209.17" x2="36.001" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="85.916" y1="209.17" x2="85.916" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="135.83" y1="209.17" x2="135.83" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="185.744" y1="209.17" x2="185.744" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="235.659" y1="209.17" x2="235.659" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="285.573" y1="209.17" x2="285.573" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="335.487" y1="209.17" x2="335.487" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="385.401" y1="209.17" x2="385.401" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="435.316" y1="209.17" x2="435.316" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="485.23" y1="209.17" x2="485.23" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="535.144" y1="209.17" x2="535.144" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="585.058" y1="209.17" x2="585.058" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="634.973" y1="209.17" x2="634.973" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+    <line x1="684.887" y1="209.17" x2="684.887" y2="153.093" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+  </g>
+  <line x1="36.001" y1="209.17" x2="36.001" y2="85.222" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+  <line x1="485.347" y1="209.17" x2="485.347" y2="85.222" fill="none" stroke="#47c4d9" stroke-miterlimit="10" stroke-width="10"/>
+  <g>
+    <line x1="52.215" y1="52.728" x2="55.798" y2="52.728" fill="none" stroke="#d5e9f8" stroke-miterlimit="10" stroke-width="5"/>
+    <line x1="62.987" y1="52.728" x2="461.956" y2="52.728" fill="none" stroke="#d5e9f8" stroke-miterlimit="10" stroke-width="5" stroke-dasharray="7.189 7.189"/>
+    <line x1="465.551" y1="52.728" x2="469.134" y2="52.728" fill="none" stroke="#d5e9f8" stroke-miterlimit="10" stroke-width="5"/>
+  </g>
+  <rect x="469.134" y="36.514" width="32.427" height="32.427" fill="#243268"/>
+  <rect x="19.788" y="36.514" width="32.427" height="32.427" fill="#ef4752"/>
+</svg>
