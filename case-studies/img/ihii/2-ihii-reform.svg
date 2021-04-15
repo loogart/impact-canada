@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="200" viewBox="0 0 720 200">
-  <rect x="-8.455" y="-9.171" width="736.911" height="218.341" fill="#4e9bd5"/>
-  <g>
-    <polygon points="480.319 47.9 540.479 152.1 420.16 152.1 480.319 47.9" fill="#d5e9f8"/>
-    <polygon points="420.16 152.1 360 47.9 480.319 47.9 420.16 152.1" fill="#243268"/>
-    <polygon points="360 47.9 420.16 152.1 299.84 152.1 360 47.9" fill="#ef4752"/>
-    <polygon points="299.84 152.1 239.681 47.9 360 47.9 299.84 152.1" fill="#47c4d9"/>
-    <polygon points="239.681 47.9 299.84 152.1 179.521 152.1 239.681 47.9" fill="#fff"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="200" viewBox="0 0 720 200"><rect width="736.911" height="218.341" x="-8.455" y="-9.171" fill="#4e9bd5"/><g><polygon fill="#d5e9f8" points="480.319 47.9 540.479 152.1 420.16 152.1 480.319 47.9"/><polygon fill="#243268" points="420.16 152.1 360 47.9 480.319 47.9 420.16 152.1"/><polygon fill="#ef4752" points="360 47.9 420.16 152.1 299.84 152.1 360 47.9"/><polygon fill="#47c4d9" points="299.84 152.1 239.681 47.9 360 47.9 299.84 152.1"/><polygon fill="#fff" points="239.681 47.9 299.84 152.1 179.521 152.1 239.681 47.9"/></g></svg>
