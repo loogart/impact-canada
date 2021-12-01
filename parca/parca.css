@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 3em;
+}
+
+blockquote{
+    padding-top:0;
+    padding-bottom: 0;;
+font-size: 1.69em;
+padding-left:1em;
+border-left: 8px solid #9FC363;
+line-height: 1.5;
+}
+
+p{
+    line-height: 1.6;
+}
+
+.bg-dark{
+    background-color: #10172D;
+}
+
+.d-block{
+    display: block;
+}
+
+.pt-lg{
+    padding-top: 10rem;
+}
+.pb-lg{
+    padding-bottom:10rem;
+}
+
+.p-lg{
+    padding:5rem;
+}
+.text-light{
+    color:#D9E9F6!important;
+}
+.text-green{
+    color: #9FC363!important;
+}
+
+.border-green{
+    border:2px solid #9FC363;
+}
+
+.bg-green{
+    background-color: #9FC363!important;
+}
+
+.badge-outline-white{
+    border:1px solid white;
+    padding:.69rem 1.5rem;
+    border-radius: 50px;
+    font-size: .9em;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width:767px){
+    h1{
+        font-size: 1.5em;
+    } 
+
+.pt-lg{
+    padding-top: 4rem;
+}
+.pb-lg{
+    padding-bottom:4rem;
+}
+
+.p-lg{
+    padding:3rem;
+}
+}
