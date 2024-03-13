@@ -44,28 +44,68 @@
 
 <style>
     .bg-navy-dark{
-        background-color: #182851;
+        background-image: url(img/404-bg.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: 100%;
         color:white;
+    }
+    .bg-navy-dark h2{
+        color:white;
+    }
+    .bg-navy-dark a{
+        color:#51E7F2;
+    }
+    .eyebrow404{
+        display: block;
+        color: #D84E50;
+        font-size: .7em;
+        margin-bottom: 10px;
+    }
+    
+    .img-404{
+        max-width: 150px;
+        margin: auto;
+        /* Apply the animation */
+        animation: floatInSpace 20s ease-in-out infinite;
+    }
+    @keyframes floatInSpace {
+        0%, 100% {
+            transform: translate(-50px, 0);
+        }
+        25% {
+            transform: translate(-30px, -15px);
+        }
+        50% {
+            transform: translate(-25px, 0);
+        }
+        75% {
+            transform: translate(-30px, -15px);
+        }
     }
 </style>
 
 <body vocab="http://schema.org/" typeof="WebPage" class="bg-navy-dark">
     <main role="main" property="mainContentOfPage" class="container" style="background-color: transparent;">
-        <div class="row mrgn-tp-lg">
+        <div class="text-center mrgn-tp-xl">
+            <img class="img-404" src="img/404-shuttle.png" alt="">
+        </div>
+        <div class="row mrgn-tp-lg mrgn-bttm-xl">
             <section class="col-sm-12 col-md-6">
-                <h2><span class="glyphicon glyphicon-warning-sign mrgn-rght-md"></span> We couldn't find that Web page</h2>
-                <p>Error 404</p>
-                <p>We're sorry you ended up here. Sometimes a page gets moved or deleted, but hopefully we can help you find what you're looking for.</p>
+                <h2><span class="eyebrow404">Error 404</span>We couldn't find that Web page</h2>
+                <p>We're sorry you ended up here. Sometimes a page gets moved or deleted, but hopefully we can help you find what you're looking for. What next?</p>
                 <ul>
                     <li>Return to the <a href="./index.html">home page</a></li>
+                    <li><a href="mailto:iiu-uii@pco-bcp.gc.ca">Email us</a> and we'll help you out.</li>
                 </ul>
             </section>
             <section lang="fr" class="col-sm-12 col-md-6">
-                <h2><span class="glyphicon glyphicon-warning-sign mrgn-rght-md"></span> Nous ne pouvons trouver cette page Web</h2>
-                <p>Erreur 404</p>
-                <p>Nous sommes désolés que vous ayez abouti ici. Il arrive parfois qu'une page ait été déplacée ou supprimée. Heureusement, nous pouvons vous aider à trouver ce que vous cherchez.</p>
+                <h2><span class="eyebrow404">Erreur 404</span>Nous ne pouvons trouver cette page Web</h2>
+                <p>Nous sommes désolés que vous ayez abouti ici. Il arrive parfois qu'une page ait été déplacée ou supprimée. Heureusement, nous pouvons vous aider à trouver ce que vous cherchez. Que faire?</p>
                 <ul>
-                    <li>Retournez à la <a href="./index.html">page d'accueil</a></li>
+                    <li>Retournez à la <a href="./index.html"> page d'accueil</a></li>
+                    <li><a href="mailto:iiu-uii@pco-bcp.gc.ca">Envoyez-nous un courriel</a> pour obtenir de l'aide.</li>
                 </ul>
             </section>
         </div>
